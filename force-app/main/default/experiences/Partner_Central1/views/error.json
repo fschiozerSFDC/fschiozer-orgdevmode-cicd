@@ -1,0 +1,86 @@
+{
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "3dfe298d-4394-4f42-b436-cf082b74581a",
+  "label" : "Error",
+  "regions" : [ {
+    "id" : "cf922be6-fa4d-4ed2-9403-2c912d21e8f3",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : " <div class='slds-grid slds-grid--vertical slds-align--absolute-center slds-container--large'>   <div class='slds-align-middle slds-m-bottom--xx-large slds-m-top--xx-large' alt='Page not available'>      <img src='/sfsites/c/img/community/slds/messaging/illustration-page-not-found.png' class='slds-p-horizontal--large'/>   </div>   <h4 class='slds-text-align--center slds-text-heading--large slds-text-color--weak slds-m-bottom--small'>Page not available</h4>    <p class='slds-text-align--center slds-text-heading--medium slds-text-color--weak'>Maybe the page was deleted, the URL is incorrect, or something else went wrong. If you know the page exists but you still can’t get to it, please ask the community administrator for help.</p>  </div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "fabf5054-2f31-48b3-801a-ecfe4a8822f8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "46f97e24-b49f-489b-ab33-6684f57e2c64",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "4b95232a-0f13-4ea3-aafb-bd95d9701c9f",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Error"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "6ce7f2ce-c8bd-4005-acff-f185a5f60206",
+      "renditionMap" : {
+        "de" : "c3a3c2cd-30d8-43c4-8a65-28f30e3b54b7",
+        "es" : "fd7779a4-2def-47d2-9429-420a8feecb20",
+        "fr" : "1ecd332f-efb6-4f3f-8b23-d26b21445569",
+        "ja" : "dfcf2e5f-0e02-426b-aaf1-f15e39438d95"
+      },
+      "renditions" : [ {
+        "id" : "c3a3c2cd-30d8-43c4-8a65-28f30e3b54b7",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Error"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "1ecd332f-efb6-4f3f-8b23-d26b21445569",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Error"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "fd7779a4-2def-47d2-9429-420a8feecb20",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Error"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "dfcf2e5f-0e02-426b-aaf1-f15e39438d95",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Error"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "1b45cbf4-cb4c-46ec-a29b-c01925ea6525",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "error"
+}

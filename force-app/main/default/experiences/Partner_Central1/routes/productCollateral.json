@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "c2dd3e01-ab41-424e-80d1-cac5e825676d",
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "configurationTags" : [ ],
+  "id" : "f0cfaf13-5019-4c21-8b2c-36515d3448f2",
+  "label" : "Product Collateral",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-product-collateral",
+  "type" : "route",
+  "urlPrefix" : "product-collateral"
+}

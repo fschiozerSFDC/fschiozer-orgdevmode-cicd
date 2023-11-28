@@ -1,0 +1,142 @@
+{
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "f1cec04b-6ccf-450d-8f17-54db936a9f10",
+  "label" : "Account Detail",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "0054985b-e7e2-4a33-a43f-7ac5233b2fff",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c1196870-50a9-4c31-bc0c-9d1d63e9c853",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "944ad266-72d4-4799-942c-ecc9b2c0fada",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "64439861-320b-4d98-8398-c819d2988c4c",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Details"
+          }, {
+            "UUID" : "3bb266a5-48ff-4872-9322-b354c5dfb0b8",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "People"
+          }, {
+            "UUID" : "bf44428c-50e8-4f03-b0a3-2e2e28bc1859",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "3",
+            "tabName" : "Related"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "944ad266-72d4-4799-942c-ecc9b2c0fada",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:recordDetail",
+          "id" : "40a47ff5-659a-4b9c-bdaa-cf4f5e20afba",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "64439861-320b-4d98-8398-c819d2988c4c",
+        "regionLabel" : "Details",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "relatedListApiName" : "Users",
+            "relatedListComponentOverride" : "GRID",
+            "width" : "MEDIUM"
+          },
+          "componentName" : "forceCommunity:relatedListSingle",
+          "id" : "1f675b47-3efa-4c7b-b95e-3fae05e06a37",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "relatedListApiName" : "Contacts",
+            "relatedListComponentOverride" : "GRID",
+            "width" : "MEDIUM"
+          },
+          "componentName" : "forceCommunity:relatedListSingle",
+          "id" : "3db68164-8aea-4c48-b1f4-246052236c89",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "3bb266a5-48ff-4872-9322-b354c5dfb0b8",
+        "regionLabel" : "People",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:relatedRecords",
+          "id" : "bb385b59-1c0b-4146-a2a7-1e452f567cb7",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "bf44428c-50e8-4f03-b0a3-2e2e28bc1859",
+        "regionLabel" : "Related",
+        "regionName" : "3",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2d7d7d80-e4bd-4524-baf4-a0cafcf571ca",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "4be30411-f83b-473c-b032-ad6c46057826",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "27569811-29d8-4a2e-bc09-19e43f3faed2",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2e0a49f5-aff3-4cfa-a07b-7ef1334ebecb",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-001"
+}

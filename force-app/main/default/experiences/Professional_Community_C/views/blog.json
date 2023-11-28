@@ -1,0 +1,195 @@
+{
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "8792956f-01dc-457e-b3b5-02e5c3c090f7",
+  "label" : "Blog",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgb(255,255,255)",
+        "backgroundOverlay" : "rgba(255,255,255,0.7)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "a1ba2a24-2950-409a-9df8-80cddb4cfb2e",
+          "columns" : [ {
+            "UUID" : "8b14bf31-21e7-4018-894f-4b74a88aef66",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "9",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "540389f0-9c8c-4f44-a292-684743c9a726",
+            "columnKey" : "e7ba9",
+            "columnName" : "Column 2",
+            "columnWidth" : "3",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "a1ba2a24-2950-409a-9df8-80cddb4cfb2e",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "config" : {
+              "collectionLayoutDefinition" : {
+                "attributes" : {
+                  "collectionTitle" : "Latest Entries",
+                  "collectionTitleHeadingTag" : "h2",
+                  "columns" : "1",
+                  "rows" : "5",
+                  "showCollectionTitle" : true,
+                  "showViewMoreButton" : true,
+                  "spacing" : "medium",
+                  "viewMoreButtonBackgroundColor" : "",
+                  "viewMoreButtonBackgroundColorHover" : "",
+                  "viewMoreButtonBorderColor" : "",
+                  "viewMoreButtonBorderColorHover" : "",
+                  "viewMoreButtonLabel" : "More Blog Entries",
+                  "viewMoreButtonPlacement" : "center",
+                  "viewMoreButtonRadius" : "20",
+                  "viewMoreButtonTextColor" : "",
+                  "viewMoreButtonTextColorHover" : ""
+                },
+                "componentName" : "forceCommunity:dynamicCollectionGrid"
+              },
+              "dataProviderDefinition" : {
+                "attributes" : {
+                  "dataProviderInfo" : {
+                    "apiName" : "Corporate_Blog"
+                  },
+                  "dataProviderType" : "NamedCollection"
+                },
+                "componentName" : "forceCommunity:managedContentCollectionDataProvider"
+              },
+              "itemLayoutDefinition" : {
+                "attributes" : {
+                  "additionalLinks" : "{}",
+                  "backgroundPosition" : "center center",
+                  "backgroundSize" : "cover",
+                  "borderColor" : "",
+                  "componentBorderStyles" : "",
+                  "componentHoverEffect" : "none",
+                  "componentPadding" : "none",
+                  "contentBackgroundColor" : "#ffffff",
+                  "contentOffset" : "0",
+                  "contentOffsetBackgroundColor" : "#ffffff",
+                  "contentOffsetPadding" : "medium",
+                  "contentPosition" : "center",
+                  "contentWidth" : 100,
+                  "defaultLinksOverrides" : "{\"title\":{\"linkURL\":\"{!CurrentItem.ActionText}\"}}",
+                  "eyebrowFontSize" : "regular",
+                  "eyebrowHighlightColor" : "",
+                  "eyebrowText" : "{!CurrentItem.BlogCategory}",
+                  "eyebrowTextColor" : "",
+                  "eyebrowTextDecoration" : "",
+                  "flagAlignment" : "top left",
+                  "flagBackgroundColor" : "rgb(53, 167, 86)",
+                  "flagBorderColor" : "#ffffff",
+                  "flagBorderStyles" : "{\"borderTopLeftRadius\":{\"value\":\"30\",\"isPx\":true},\"borderTopRightRadius\":{\"value\":\"30\",\"isPx\":true},\"borderBottomRightRadius\":{\"value\":\"30\",\"isPx\":true},\"borderBottomLeftRadius\":{\"value\":\"30\",\"isPx\":true}}",
+                  "flagConstraints" : "media",
+                  "flagRotation" : 0,
+                  "flagSpacing" : "medium",
+                  "flagText" : "{!CurrentItem.BlogFlag}",
+                  "flagTextColor" : "#ffffff",
+                  "flagTextDecoration" : "",
+                  "imageAlignment" : "top",
+                  "imageAltText" : "{!CurrentItem.BlogTitle}",
+                  "imageBorderColor" : "#ffffff",
+                  "imageBorderStyles" : "",
+                  "imageUrl" : "{!CurrentItem.BlogImageMain.url}",
+                  "mediaAspectRatio" : "16:9",
+                  "mediaHeight" : "293",
+                  "metadata1HighlightColor" : "",
+                  "metadata1Text" : "{!CurrentItem.ActionText}",
+                  "metadata2HighlightColor" : "",
+                  "metadata2Text" : "",
+                  "metadataFontSize" : "regular",
+                  "metadataTextColor" : "",
+                  "metadataTextDecoration" : "",
+                  "showExcerpt" : true,
+                  "showEyebrow" : true,
+                  "showEyebrowHighlight" : false,
+                  "showFeaturedMedia" : true,
+                  "showFlag" : true,
+                  "showMetadata1" : true,
+                  "showMetadata1Highlight" : false,
+                  "showMetadata2" : true,
+                  "showMetadata2Highlight" : false,
+                  "showTitle" : true,
+                  "showTitleHighlight" : false,
+                  "subTitle" : "",
+                  "subTitleFontSize" : "regular",
+                  "subTitleTextColor" : "",
+                  "textAlignment" : "left",
+                  "title" : "{!CurrentItem.BlogTitle}",
+                  "titleFontSize" : "large",
+                  "titleHeadingTag" : "p",
+                  "titleHighlightColor" : "",
+                  "titleTextColor" : "",
+                  "titleTextDecoration" : "",
+                  "useAspectRatio" : false,
+                  "videoUrl" : ""
+                },
+                "componentName" : "forceCommunity:flexTileLayout"
+              },
+              "schemaVersion" : "V2.0"
+            }
+          },
+          "componentName" : "forceCommunity:dynamicCollection",
+          "id" : "2e2bb22c-40bc-4ab8-83df-eec3ba100571",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "8b14bf31-21e7-4018-894f-4b74a88aef66",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h1><img class=\"sfdcCbImage\" src=\"{!contentAsset.AstroTrailheadXSmall.1}\" style=\"width: 50px; height: 64.9219px;\" /> <span style=\"color: rgb(230, 0, 0);\">Salesforce SEs:</span></h1>\n<p>We've used Salesforce CMS to publish this corporate blog. Want to edit the entries/content in this blog?</p>\n<ol>\n <li>Open <b><u>Lightning Experience</u></b> and navigate to the <b><u>Salesforce CMS</u></b> app.</li>\n <li>Open the <b><u>Corporate Blog</u></b> workspace</li>\n <li>Edit any of the articles seen there as draft.</li>\n <li>Publish the articles and the changes will be seen here.</li>\n</ol>\n<p>&nbsp;</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "47db7c69-855b-4c2a-9f39-4fed17109ff0",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "540389f0-9c8c-4f44-a292-684743c9a726",
+        "regionLabel" : "Column 2",
+        "regionName" : "e7ba9",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a4bd39c2-5efa-498b-856e-ae29f250d0f2",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "Our official corporate blog.",
+        "title" : "Corporate Blog"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "364bd100-0c20-4d19-8792-d3196d968120",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9755065c-1f01-4fbe-960c-b83e80f25ef0",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-blog"
+}

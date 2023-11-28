@@ -1,0 +1,300 @@
+{
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "componentName" : "siteforce:sldsTwoCol48Layout",
+  "dataProviders" : [ ],
+  "id" : "454de540-0df2-4679-a125-8bc6f71914d7",
+  "label" : "Home: Partners",
+  "regions" : [ {
+    "id" : "cf066595-909d-433e-aecb-9ca9fd62cfe3",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "channel" : "DefaultChannel",
+        "title" : "Take Action!"
+      },
+      "componentName" : "forceCommunity:recommendations",
+      "id" : "1f7164a0-d4ba-4b5f-ae91-af6263702801",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "listViewIdForNavigation" : "00B30000005PNxQEAW",
+        "navigateToListView" : true,
+        "pageSize" : 5,
+        "sortBy" : "CreatedDate",
+        "title" : "Gold Partners: Leads We've Shared with You"
+      },
+      "componentName" : "forceCommunity:leadInbox",
+      "id" : "b83fbb68-1772-4bde-bd7e-dffc27045870",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "cacheAge" : 1440,
+        "reportId" : "00Oa00000083YSt",
+        "showRefreshButton" : false,
+        "showTitle" : true
+      },
+      "componentName" : "forceCommunity:reportChart",
+      "id" : "84879a16-4369-482b-b468-6b407265cafc",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "81cf3d79-49c0-4998-93ed-9ce626443abf",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "bannerText" : "Become an expert. Find new customers. Grow your business.",
+        "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "showSubTopics" : true,
+        "title" : "Welcome to Partner Central"
+      },
+      "componentName" : "forceCommunity:headline",
+      "id" : "f2bd771e-088c-4f26-92fb-fa85f3e156f0",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "33eac7a2-662b-41a9-9e81-7e482dca31ee",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "5a137437-8304-4f67-9894-7d2fc53cebdc",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "News"
+          }, {
+            "UUID" : "75adefab-adb0-4c83-a60d-b3efa4e0b300",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "57a2d",
+            "tabName" : "Metrics"
+          }, {
+            "UUID" : "0bda077e-7743-4105-93bb-264335b6b9e7",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "3",
+            "tabName" : "Ideas"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "33eac7a2-662b-41a9-9e81-7e482dca31ee",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "cmsJsonConfig" : {
+              "cmsConnectJsonPath" : "Blog_List",
+              "cmsConnectSettingName" : "Channel_Blog",
+              "componentPathUrl" : "",
+              "contentCollectionLayoutAttributes" : {
+                "itemsPerPage" : "3",
+                "largeDeviceSize" : "3"
+              },
+              "contentCollectionLayoutName" : "forceCommunity:cmsContentGridLayout",
+              "contentLayoutAttributeProviderType" : "DesignFile",
+              "contentLayoutAttributes" : {
+                "author" : "@author/name",
+                "content" : "@content",
+                "imageSrc" : "@featured_image",
+                "navLink" : {
+                  "externalURL" : "http://",
+                  "linkLabel" : "Read More",
+                  "navigationType" : "Community_Standard_Page",
+                  "pageName" : "Channel_Blog-Channel_Blog",
+                  "queryParamList" : [ {
+                    "paramName" : "recordId",
+                    "paramValue" : "@ID"
+                  }, {
+                    "paramName" : "cmsSourceName",
+                    "paramValue" : "Channel_Blog"
+                  }, {
+                    "paramName" : "cmsTypeName",
+                    "paramValue" : "Channel_Blog"
+                  }, {
+                    "paramName" : "recordName",
+                    "paramValue" : "@title"
+                  } ],
+                  "routeType" : "extdetail-cms-Channel_Blog-Channel_Blog"
+                },
+                "publishedOn" : "@date",
+                "title" : "@title"
+              },
+              "contentLayoutName" : "forceCommunity:cmsContentCardLayout",
+              "dataBindingProviderAttributes" : {
+                "collectionStartNode" : "@posts"
+              },
+              "dataBindingProviderComponent" : "forceCommunity:cmsConnectJSONCollectionDataBindingProvider",
+              "dataProviderComponent" : "forceCommunity:cmsConnectJSONDataProvider",
+              "isSelectedCmsSiteConfigDisabled" : ""
+            }
+          },
+          "componentName" : "forceCommunity:cmsContent",
+          "id" : "de2fd311-c8c1-4bae-bdd4-447ace6f8987",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "5a137437-8304-4f67-9894-7d2fc53cebdc",
+        "regionLabel" : "News",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "cacheAge" : 1440,
+            "filterName" : "",
+            "reportId" : "00O1N000008zEdF",
+            "showRefreshButton" : false,
+            "showTitle" : true
+          },
+          "componentName" : "forceCommunity:reportChart",
+          "id" : "70a6eb07-2208-47f5-aec2-916135681c3d",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "75adefab-adb0-4c83-a60d-b3efa4e0b300",
+        "regionLabel" : "Metrics",
+        "regionName" : "57a2d",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "ideaDetailPath" : "idea/",
+            "ideaPostPath" : "postidea/",
+            "ideasPerPage" : 10,
+            "listingTitle" : "Ideas",
+            "viewName" : "My"
+          },
+          "componentName" : "c:CommunityIdeaList",
+          "id" : "ff3cd9d5-d971-4f2c-aada-38f6f542c8d6",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "0bda077e-7743-4105-93bb-264335b6b9e7",
+        "regionLabel" : "Ideas",
+        "regionName" : "3",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e2c646cc-122f-4959-ab1c-a07a8842bf51",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "allowPrepopulatePrechatFields" : true,
+        "avatarImgURL" : "",
+        "defaultMinimizedText" : "Chat with an Expert",
+        "displayHelpButton" : true,
+        "eswConfigurationJSON" : {
+          "baseCoreURL" : "https://sdomaster2.my.salesforce.com",
+          "baseLiveAgentContentURL" : "https://c.la1-c1-iad.salesforceliveagent.com/content",
+          "baseLiveAgentURL" : "https://d.la1-c1-iad.salesforceliveagent.com/chat",
+          "buttonId" : "5731N0000008Xlo",
+          "deploymentId" : "5721N0000008Wv7",
+          "enabledFeatures" : [ "LiveAgent" ],
+          "entryFeature" : "LiveAgent",
+          "eswConfigDevName" : "Snap_ins_Live_Agent",
+          "eswConfigId" : "04I1N000000GmhUUAS",
+          "eswLiveAgentDevName" : "EmbeddedServiceLiveAgent_Parent04I1N000000000QUAQ_161f7756989",
+          "isOfflineCasesEnabled" : "0",
+          "orgId" : "00D1N000000OQlC"
+        },
+        "externalScripts" : "",
+        "externalStyles" : "",
+        "fallbackRouting" : "",
+        "offlineSupportMinimizedText" : "Text me back",
+        "offlineText" : "Agent Offline",
+        "onlineLoadingText" : "Loading",
+        "prechatBackgroundImgURL" : "",
+        "smallCompanyLogoImgURL" : "",
+        "snippetSettingsFile" : "snapinsSnippetSettingsFile_DE",
+        "waitingStateBackgroundImgURL" : ""
+      },
+      "componentName" : "forceCommunity:embeddedService",
+      "id" : "38ff90fb-72f6-44f3-9328-de2a022278f5",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b89bb82d-ba19-4a3f-bf0c-aeac36b75fb8",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "Our partner tools home page.",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "e0c3a798-f516-4519-99e9-bb9ba7f0c33a",
+      "renditionMap" : {
+        "de" : "94de97e6-c786-4b63-9b07-db11ccb47342",
+        "es" : "47a758f2-7533-4e0b-9264-528ba3be5c8d",
+        "fr" : "09b639ea-2448-441a-aaef-55d4ee33d0fa",
+        "ja" : "384c742a-7a71-4d11-845f-728f4d788555"
+      },
+      "renditions" : [ {
+        "id" : "94de97e6-c786-4b63-9b07-db11ccb47342",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Home: Guest Users"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "09b639ea-2448-441a-aaef-55d4ee33d0fa",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Home: Guest Users"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "47a758f2-7533-4e0b-9264-528ba3be5c8d",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Home: Guest Users"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "384c742a-7a71-4d11-845f-728f4d788555",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Home: Guest Users"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "97645c62-55da-4daa-87ff-01e33f6013e1",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

@@ -1,0 +1,75 @@
+{
+  "appPageId" : "e4bd7437-87f9-492f-bb9b-cca60c9128dd",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "017b0349-e266-4393-ba57-7a2bc48348a0",
+  "label" : "My Feed",
+  "regions" : [ {
+    "id" : "2ab39aea-812b-4685-8060-b0e912ede71a",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "canChangeSorting" : true,
+        "defaultFilter" : "",
+        "feedDesign" : "BROWSE",
+        "hasFeedSearch" : true,
+        "subjectId" : "{!recordId}",
+        "type" : "News"
+      },
+      "componentName" : "forceCommunity:forceCommunityFeed",
+      "id" : "e42a7930-1299-4460-bb7c-4f802f161002",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "be99bce3-d08b-4240-8d00-1c17fabb28d8",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "display" : "KNOWLEDGE_POINTS",
+        "excludeInternalUsers" : true,
+        "knowledgeLabel" : "Knows about",
+        "numberOfUsers" : 5,
+        "showContextUser" : true,
+        "showTooltip" : false,
+        "showUserRank" : true,
+        "title" : "Leaderboard",
+        "tooltipText" : "Earn points and climb to new levels when you contribute in the community!"
+      },
+      "componentName" : "forceCommunity:reputationLeaderboard42",
+      "id" : "16bf6582-e4eb-4123-8895-cd28ba539db4",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "abe050c0-a020-41ed-a81c-14d8eded27b3",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "a8f1f64b-11a8-431c-915c-09245471a428",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "My Feed"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "f2959409-0669-455b-aedf-985d2c098938",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c7d1fdb2-88d7-4b11-9786-b24977803c11",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-my-feed"
+}

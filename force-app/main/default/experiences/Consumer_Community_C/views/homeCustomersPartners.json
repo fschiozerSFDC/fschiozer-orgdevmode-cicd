@@ -1,0 +1,440 @@
+{
+  "appPageId" : "e4bd7437-87f9-492f-bb9b-cca60c9128dd",
+  "componentName" : "siteforce:sldsThreeCol363Layout",
+  "dataProviders" : [ ],
+  "id" : "c4d2eab8-187a-4a52-ba93-33a39e2fe321",
+  "label" : "Home (Customers + Partners)",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "config" : {
+          "collectionLayoutDefinition" : {
+            "attributes" : {
+              "collectionTitle" : "News for {!CurrentUser.firstName}",
+              "collectionTitleHeadingTag" : "h2",
+              "columns" : "4",
+              "rows" : "1",
+              "showCollectionTitle" : true,
+              "showViewMoreButton" : true,
+              "spacing" : "medium",
+              "viewMoreButtonBackgroundColor" : "",
+              "viewMoreButtonBackgroundColorHover" : "",
+              "viewMoreButtonBorderColor" : "",
+              "viewMoreButtonBorderColorHover" : "",
+              "viewMoreButtonLabel" : "More News",
+              "viewMoreButtonPlacement" : "center",
+              "viewMoreButtonRadius" : "20",
+              "viewMoreButtonTextColor" : "",
+              "viewMoreButtonTextColorHover" : ""
+            },
+            "componentName" : "forceCommunity:dynamicCollectionGrid"
+          },
+          "dataProviderDefinition" : {
+            "attributes" : {
+              "dataProviderInfo" : {
+                "apiName" : "Home_News2"
+              },
+              "dataProviderType" : "NamedCollection"
+            },
+            "componentName" : "forceCommunity:managedContentCollectionDataProvider"
+          },
+          "itemLayoutDefinition" : {
+            "attributes" : {
+              "backgroundPosition" : "center center",
+              "backgroundSize" : "cover",
+              "bannerHeight" : 450,
+              "bannerSubTitleTextColor" : "#ffffff",
+              "bannerTitleTextColor" : "#ffffff",
+              "callToActionButtonBackgroundColor" : "",
+              "callToActionButtonBackgroundColorHover" : "",
+              "callToActionButtonBorderColor" : "",
+              "callToActionButtonBorderColorHover" : "",
+              "callToActionButtonRadius" : "20",
+              "callToActionButtonTextColor" : "",
+              "callToActionButtonTextColorHover" : "",
+              "callToActionLabel" : "Read",
+              "contentWidth" : 80,
+              "imageAltText" : "",
+              "imageUrl" : "@bannerImage/url",
+              "overlayBackgroundColor" : "rgba(0, 0, 0, 0.4)",
+              "showButton" : true,
+              "showCaption" : true,
+              "subTitle" : "@excerpt",
+              "subTitleFontSize" : "regular",
+              "textAlignment" : "center center",
+              "title" : "@Name",
+              "titleFontSize" : "large",
+              "titleHeadingTag" : "p"
+            },
+            "componentName" : "forceCommunity:bannerImageLayout"
+          },
+          "schemaVersion" : "V1.0"
+        }
+      },
+      "componentName" : "forceCommunity:dynamicCollection",
+      "id" : "b83eb66f-e0d7-4788-a170-6460fa0c8eaa",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "1b91290f-c151-43fe-9759-83bd86c1fd35",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h1><b style=\"font-size: 18px; color: rgb(230, 0, 0);\">SEs: START HERE</b></h1><p><b>This community is driven a standard </b><a href=\"https://help.salesforce.com/articleView?id=community_builder_theme.htm&amp;type=0\" target=\"_blank\"><b>Theme Layout</b></a><b> called Webster.&nbsp;&nbsp;To demo it, follow these setup intructions:</b></p><ol><li>Follow the <a href=\"https://sfdc.co/SDOCommSetup\" target=\"_blank\">SDO Community Cloud Setup Instructions</a> (Aloha SSO required, internal Salesforce only)</li><li>Re-select the \"Snap-ins Live Agent\" Snap-ins Deployment for the Chat button component.</li><li>Review <a href=\"https://docs.google.com/presentation/d/1HRR8qn_i3gRM6ZeGIF7E1vy4fnBMFetA6c3d1eWQWJM/edit#slide=id.p28\" target=\"_blank\">branding instructions</a> for this community. (Aloha SSO required, internal Salesforce only)</li><li>Remove this component<span style=\"color: rgb(0, 0, 0);\"> from the page layout.</span></li></ol>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "a43acf91-821e-412b-9e4b-8069e608f2b9",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "7f75b213-b87b-49b3-b340-cd9e97fbfebf",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "96132772-a615-4e06-b4cd-b31e6e716269",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "4e622",
+            "tabName" : "Discussions"
+          }, {
+            "UUID" : "4e84ad6d-5c04-4669-ad6d-1274f96c2ecf",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "c8aea",
+            "tabName" : "Idées géniales"
+          }, {
+            "UUID" : "9ee44e47-bf88-4a9f-bc2d-1ac9bd93cd59",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "Mes requêtes"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "7f75b213-b87b-49b3-b340-cd9e97fbfebf",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "canChangeSorting" : true,
+            "defaultFilter" : "",
+            "feedDesign" : "BROWSE",
+            "hasFeedSearch" : true,
+            "subjectId" : "{!recordId}",
+            "type" : "Home"
+          },
+          "componentName" : "forceCommunity:forceCommunityFeed",
+          "id" : "bc24d01b-983d-4942-94ae-61bb971a6fdf",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "96132772-a615-4e06-b4cd-b31e6e716269",
+        "regionLabel" : "Discussion",
+        "regionName" : "4e622",
+        "renditionMap" : {
+          "fr" : "f3d6f1fc-072d-4348-84bd-b40211dbf898"
+        },
+        "renditions" : [ {
+          "id" : "f3d6f1fc-072d-4348-84bd-b40211dbf898",
+          "renditionValue" : {
+            "regionLabel" : "Discussions"
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "ideaDetailPath" : "idea/",
+            "ideaPostPath" : "postidea/",
+            "ideasPerPage" : 3,
+            "listingTitle" : "Ideas",
+            "viewName" : "Popular"
+          },
+          "componentName" : "c:CommunityIdeaList",
+          "id" : "fc009de4-30a7-44d6-8d7c-3d7abb2033be",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "4e84ad6d-5c04-4669-ad6d-1274f96c2ecf",
+        "regionLabel" : "Popular Ideas",
+        "regionName" : "c8aea",
+        "renditionMap" : {
+          "es" : "930e980a-b087-43e2-92dc-03ffc4f09a79",
+          "fr" : "bb85911b-9212-434b-a3c3-10bacccb63f1"
+        },
+        "renditions" : [ {
+          "id" : "bb85911b-9212-434b-a3c3-10bacccb63f1",
+          "renditionValue" : {
+            "regionLabel" : "Idées géniales"
+          },
+          "type" : "renditionComponent"
+        }, {
+          "id" : "930e980a-b087-43e2-92dc-03ffc4f09a79",
+          "renditionValue" : {
+            "regionLabel" : "Ideas Populares"
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "filterName" : "00B1N000008fdiBUAQ",
+            "layout" : "COMPACT",
+            "pageSize" : 10,
+            "scope" : "Case",
+            "showDisplay" : "showall"
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "84ed913e-6410-461a-aec7-35a639fcb8e8",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "9ee44e47-bf88-4a9f-bc2d-1ac9bd93cd59",
+        "regionLabel" : "My Cases",
+        "regionName" : "2",
+        "renditionMap" : {
+          "es" : "913bd5a7-f919-48f9-beea-c829495c86be",
+          "fr" : "fdc81e0d-339f-4d80-9ad6-a819c7ea232c"
+        },
+        "renditions" : [ {
+          "id" : "fdc81e0d-339f-4d80-9ad6-a819c7ea232c",
+          "renditionValue" : {
+            "regionLabel" : "Mes requêtes"
+          },
+          "type" : "renditionComponent"
+        }, {
+          "id" : "913bd5a7-f919-48f9-beea-c829495c86be",
+          "renditionValue" : {
+            "regionLabel" : "Mis Casos"
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "region"
+      } ],
+      "renderPriority" : "HIGH",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "fedf4806-01f6-41e7-b3e7-c7551069b530",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p><a href=\"register-product\" target=\"_self\"><img class=\"sfdcCbImage\" src=\"{!contentAsset.registerproducttile.1}\" style=\"width: 279.483px; height: 102.2px;\" /></a></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "d48a91df-f585-4ea9-83a6-49bb58c537c6",
+      "renderPriority" : "HIGHEST",
+      "renditionMap" : {
+        "fr" : "c8d20703-8ded-44c4-8edd-d33bf21c0311"
+      },
+      "renditions" : [ {
+        "id" : "c8d20703-8ded-44c4-8edd-d33bf21c0311",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<h1><a href=\"register-product\" target=\"_self\"><img class=\"sfdcCbImage\" src=\"{!contentAsset.icon.1}\" style=\"width: 111.812px; height: 102.953px;\" /></a><span style=\"font-size: 22px; font-family: helvetica; color: rgb(136, 136, 136);\">Enregistrer votre Produit</span></h1>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "display" : "KNOWLEDGE_POINTS",
+        "excludeInternalUsers" : true,
+        "knowledgeLabel" : "Knows about",
+        "numberOfUsers" : 5,
+        "showContextUser" : false,
+        "showTooltip" : true,
+        "showUserRank" : true,
+        "title" : "Community MVPS",
+        "tooltipText" : "Earn points and climb to new levels when you contribute in the community!"
+      },
+      "componentName" : "forceCommunity:reputationLeaderboard42",
+      "id" : "4bfa9905-fa01-490a-8500-83506b850464",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "es" : "fafed23a-d165-4757-8840-8c1704620a66",
+        "fr" : "e0802168-af5a-419e-bcf6-2505461ffb84"
+      },
+      "renditions" : [ {
+        "id" : "e0802168-af5a-419e-bcf6-2505461ffb84",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "knowledgeLabel" : "Compétences",
+            "title" : "MVPs de la communauté",
+            "tooltipText" : "Gagner de spoints et monter les échelons en contribuant à la communauté!"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "fafed23a-d165-4757-8840-8c1704620a66",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Miembros Expertos"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "f9e318e3-da3e-4e53-86b2-c8ca103b999b",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "askCommunityLabel" : "Ask A Question",
+        "buttonRadius" : 10,
+        "buttonTwoRadius" : 10,
+        "contactSupportLabel" : "Contact Support",
+        "headerLabel" : "Don't see what you're looking for?",
+        "showDetails" : true,
+        "showTopics" : true
+      },
+      "componentName" : "siteforce:napiliFooter",
+      "id" : "084b4dc8-6310-4b37-b87a-a61aaf802557",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "fr" : "3abc98c5-6e0f-4142-927c-0906eac2ff62"
+      },
+      "renditions" : [ {
+        "id" : "3abc98c5-6e0f-4142-927c-0906eac2ff62",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "askCommunityLabel" : "Poser une Question",
+            "contactSupportLabel" : "Contacter le Support",
+            "headerLabel" : "Vous ne trouvez pas ce que vous cherchez?"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "allowPrepopulatePrechatFields" : true,
+        "avatarImgURL" : "",
+        "defaultMinimizedText" : "Chat with an Expert",
+        "displayHelpButton" : true,
+        "eswConfigurationJSON" : {
+          "baseCoreURL" : "https://sdomaster2.my.salesforce.com",
+          "baseLiveAgentContentURL" : "https://c.la1-c1-iad.salesforceliveagent.com/content",
+          "baseLiveAgentURL" : "https://d.la1-c1-iad.salesforceliveagent.com/chat",
+          "buttonId" : "5731N0000008Xlo",
+          "deploymentId" : "5721N0000008Wv7",
+          "enabledFeatures" : [ "LiveAgent" ],
+          "entryFeature" : "LiveAgent",
+          "eswConfigDevName" : "Snap_ins_Live_Agent",
+          "eswConfigId" : "04I1N000000GmhUUAS",
+          "eswLiveAgentDevName" : "EmbeddedServiceLiveAgent_Parent04I1N000000000QUAQ_161f7756989",
+          "gslbBaseURL" : "https://service.force.com",
+          "isOfflineCasesEnabled" : "0",
+          "orgId" : "00D1N000000OQlC"
+        },
+        "externalScripts" : "",
+        "externalStyles" : "",
+        "fallbackRouting" : "",
+        "offlineSupportMinimizedText" : "Contact Us",
+        "offlineText" : "Agent Offline",
+        "onlineLoadingText" : "Loading",
+        "prechatBackgroundImgURL" : "",
+        "smallCompanyLogoImgURL" : "",
+        "snippetSettingsFile" : "snapinsSnippetSettingsFile_DE",
+        "waitingStateBackgroundImgURL" : ""
+      },
+      "componentName" : "forceCommunity:embeddedService",
+      "id" : "58e80fd1-3bdb-4b97-a3e5-fa69602ceaf6",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ca22ade3-947e-4b8e-a4ee-d1877ece371d",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "channel" : "DefaultChannel",
+        "title" : "Recommended for You"
+      },
+      "componentName" : "forceCommunity:recommendations",
+      "id" : "10421629-67ca-4dab-ac8a-e97f2e329b40",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "es" : "f839a998-ffe4-48c5-a9e5-165a1054bc44",
+        "fr" : "a06ce879-a77b-42ab-846a-3a779e11feb9"
+      },
+      "renditions" : [ {
+        "id" : "f839a998-ffe4-48c5-a9e5-165a1054bc44",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Recomendados para Ti"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "a06ce879-a77b-42ab-846a-3a779e11feb9",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Recommandé pour Vous"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "05079668-8ab0-48a9-a9c0-b9eb123cb15f",
+    "regionName" : "sidebarAlt",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "<meta name=\"keywords\" content=\"Energy, sustainability, wind, electricity, power generation\" />\n<meta name=\"generator\" content=\"Salesforce Community Cloud (http://salesforce.com)\" />",
+        "description" : "Welcome to Cirrus! Get help with our products, find experts, ask questions, and learn!",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "fa55233a-36a6-4540-b1eb-3f6cc2dd7852",
+      "renditionMap" : {
+        "de" : "dc4dcca5-b020-4f01-b36b-2aba9c30ae0c",
+        "fr" : "30aa2991-7db8-429f-a9fc-f56e6713b58f"
+      },
+      "renditions" : [ {
+        "id" : "dc4dcca5-b020-4f01-b36b-2aba9c30ae0c",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Home"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "30aa2991-7db8-429f-a9fc-f56e6713b58f",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Home"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "c819c691-33ba-4d18-a11d-d318af625550",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}

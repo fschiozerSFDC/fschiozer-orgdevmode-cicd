@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "4835a74f-0a04-4ed8-9ce2-0733af6709f5",
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "configurationTags" : [ ],
+  "id" : "1e96fda4-b277-49a5-8d2d-98ee49545109",
+  "label" : "Linked Journey Detail",
+  "objectApiName" : "mcdm_15__MarketingCloudLinkedJourney__c",
+  "routeType" : "detail-a73",
+  "type" : "route",
+  "urlPrefix" : "marketingcloudlinkedjourney"
+}

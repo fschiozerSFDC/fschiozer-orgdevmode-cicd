@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "4390e3d7-3abd-4cd5-82b1-3d0c22da875c",
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "configurationTags" : [ ],
+  "id" : "78b021d7-3b75-48e1-8d26-7c5697056616",
+  "label" : "CC Order Related List",
+  "objectApiName" : "ccrz__E_Order__c",
+  "routeType" : "relatedlist-a5W",
+  "type" : "route",
+  "urlPrefix" : "e-order"
+}

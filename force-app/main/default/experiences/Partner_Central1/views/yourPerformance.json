@@ -1,0 +1,129 @@
+{
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "fec7add5-ea28-44d9-8e8c-79e957bd9744",
+  "label" : "Your Performance",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h2><img class=\"sfdcCbImage\" src=\"{!contentAsset.chart.1}\" /> My Business Metrics</h2>\n<p>Key metrics for your sales, support, marketing, and ramp/learning.</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "f976cacb-a9fe-4e8a-b75a-961a5dec4f77",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "1abe4495-fb9d-4068-a9e1-bd35ec2e04ce",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "aba929c1-0daa-4074-a472-b9b8bf8c93d1",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "6fc344d7-675c-4c6e-8c9e-f5cc557c2e90",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Sales"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "aba929c1-0daa-4074-a472-b9b8bf8c93d1",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "height" : "750",
+            "recordId" : "01Z1N000000jHh7UAE"
+          },
+          "componentName" : "forceCommunity:dashboard",
+          "id" : "d611b0cd-5dd9-479b-9489-f1cae5b49d18",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "6fc344d7-675c-4c6e-8c9e-f5cc557c2e90",
+        "regionLabel" : "Sales",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "74e51397-cdd1-413d-adeb-98f0c2fec758",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "09d9b37e-0753-4ced-b8bd-8dc0105f8bd5",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "4df24411-e179-434b-bf7e-b83ce5445f3e",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Your Performance"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "23698cd0-cefd-4ac1-bed9-ba9cf345e784",
+      "renditionMap" : {
+        "de" : "94863043-1eb6-4ea3-822b-4f26aa5efe47",
+        "es" : "ff12fdcc-b9dd-48c6-a1fd-a6ea55b50cb1",
+        "fr" : "cb8c9f88-be4e-4533-8c2f-5a01a87c8e94",
+        "ja" : "c56f1330-eca4-43dc-876a-2227d2e159b6"
+      },
+      "renditions" : [ {
+        "id" : "94863043-1eb6-4ea3-822b-4f26aa5efe47",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Your Performance"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "cb8c9f88-be4e-4533-8c2f-5a01a87c8e94",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Your Performance"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "ff12fdcc-b9dd-48c6-a1fd-a6ea55b50cb1",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Your Performance"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "c56f1330-eca4-43dc-876a-2227d2e159b6",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Your Performance"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "9f909f1d-df1f-403c-af09-8b234b937c36",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-measure"
+}

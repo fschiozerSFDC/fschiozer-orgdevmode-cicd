@@ -1,0 +1,21 @@
+{
+  "definitionName" : "login:branding-login",
+  "id" : "717af19e-172d-4fff-b7e5-15a708543003",
+  "label" : null,
+  "type" : "brandingSet",
+  "values" : {
+    "ActionColor" : "#2574A9",
+    "BorderColor" : "#f4f4f4",
+    "CompanyLogo" : "/sfsites/assets/Images/spacer.gif",
+    "DetailTextColor" : "#696969",
+    "FooterColor" : "#444",
+    "HeaderFonts" : "Montserrat",
+    "HeaderImage" : "/sfsites/assets/Images/spacer.gif",
+    "OverlayTextColor" : "#FFFFFF",
+    "PrimaryFont" : "Lato",
+    "TextColor" : "#333",
+    "_ActionColorDarker" : "#135f91",
+    "_ActionColorTrans" : "rgba(25, 124, 190, 0.9)",
+    "_HoverColor" : "rgba(25, 124, 190, 0.1)"
+  }
+}

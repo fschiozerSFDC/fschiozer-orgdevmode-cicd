@@ -1,0 +1,78 @@
+{
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "6c16eb32-4724-4ad0-b02c-f1443f7f21b9",
+  "label" : "Project List",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h1>Your Projects</h1><p>Manage and monitory your projects here.</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "779af4f9-4751-4358-92e8-13b924d0db05",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "1d4abab1-5817-47c1-a942-d842514ffcfd",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "filterName" : "{!filterId}",
+        "layout" : "FULL",
+        "pageSize" : 25,
+        "scope" : "{!objectName}",
+        "showDisplay" : "showall"
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "e281f762-8127-4227-a37e-d0d0c415f6f6",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3209ffdf-1a38-4496-ab61-465a2b4999d1",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "avatarImgURL" : "",
+        "defaultMinimizedText" : "Chat with an Expert",
+        "displayHelpButton" : true,
+        "eswConfigurationJSON" : {
+          "availabilityEndpointUrl" : "https://d.la1-c1-ord.salesforceliveagent.com/chat/rest",
+          "baseLiveAgentContentUrl" : "https://c.la1-c1-ord.salesforceliveagent.com/content",
+          "baseLiveAgentUrl" : "https://d.la1-c1-ord.salesforceliveagent.com/chat",
+          "buttonId" : "573o0000000TUhU",
+          "chasitorJsUrl" : "https://c.la1-c1-ord.salesforceliveagent.com/content/g/js/40.0/chasitor.js",
+          "chasitorJsVersion" : "40.0",
+          "deploymentId" : "572o0000000TTUy",
+          "eswConfigDevName" : "Snap_ins_Chat_B2B",
+          "eswConfigId" : "04I1N0000000006UAA",
+          "eswLiveAgentDevName" : "EmbeddedServiceLiveAgent_Parent04I1N0000000006UAA_15c7792cd4f",
+          "orgId" : "00D300000007EfQ",
+          "releaseVersion" : "1.0"
+        },
+        "offlineText" : "Agent Offline",
+        "onlineLoadingText" : "Loading",
+        "prechatBackgroundImgURL" : "",
+        "smallCompanyLogoImgURL" : "",
+        "waitingStateBackgroundImgURL" : ""
+      },
+      "componentName" : "forceCommunity:embeddedService",
+      "id" : "6d0f7556-5a18-4202-b8e0-03e841fe1d15",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f83d2f8e-9819-483e-8762-0619683698eb",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list-a1V"
+}

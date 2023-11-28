@@ -1,0 +1,52 @@
+{
+  "appPageId" : "e4bd7437-87f9-492f-bb9b-cca60c9128dd",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "ca915a49-1b75-4c3d-9745-162a9a56ce54",
+  "label" : "Einstein Platform Survey",
+  "regions" : [ {
+    "id" : "a93dba75-de81-4315-9ca2-8ace33bb3204",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "intentModelId" : "LHECCAZPOKEVC4SBA4WPMHIHMI",
+        "modelId" : "YRPKU6X6OOW3TCE7W3L5TVKCIQ",
+        "question1" : "How was your ordering experience?",
+        "question2" : "How was your delivery experience?",
+        "surveyName" : "Retail Survey"
+      },
+      "componentName" : "c:EinsteiMultiStepSurvey",
+      "id" : "7a2b0ca2-4e7a-45b3-83f9-80eb1ce2a6fb",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f7e40486-2402-4761-85be-718ffdd4b329",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "fc9fa951-53e4-4f1b-ae6b-75ee38050d8d",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Einstein Platform Survey"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "853daf26-63f5-4437-9133-86dfffe93361",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f60db10a-5c64-4341-9b7a-b32067f15c06",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-einstein-platform-survey"
+}

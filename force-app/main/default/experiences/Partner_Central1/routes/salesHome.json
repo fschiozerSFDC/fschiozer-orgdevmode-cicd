@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "91ed3585-ee05-462d-a6ac-79d3ffe03b59",
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "configurationTags" : [ ],
+  "id" : "add5d8fb-fe6c-41b0-a847-431e1b30fc8f",
+  "label" : "Sales Home",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-sales-home",
+  "type" : "route",
+  "urlPrefix" : "sales-home"
+}

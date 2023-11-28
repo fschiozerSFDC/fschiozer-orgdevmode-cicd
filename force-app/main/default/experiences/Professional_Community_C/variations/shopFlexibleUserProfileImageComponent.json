@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "98e7aeba-0861-473f-b38e-64554f23c209",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "7479cb9c-04a6-4285-a15c-45f7dc3f0065",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Shop_Flexible_User_Profile_Image_Component",
+  "id" : "0c8bac04-1680-4244-a5e3-f602b1e17a45",
+  "type" : "experienceVariation"
+}

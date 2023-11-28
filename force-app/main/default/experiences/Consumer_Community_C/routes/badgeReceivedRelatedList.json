@@ -1,0 +1,10 @@
+{
+  "activeViewId" : "9764365d-a0cb-4d4b-a561-40b3286865e9",
+  "appPageId" : "e4bd7437-87f9-492f-bb9b-cca60c9128dd",
+  "configurationTags" : [ ],
+  "id" : "9e41b2e4-844e-4fa2-ba17-978b85088953",
+  "label" : "Badge Received Related List",
+  "routeType" : "relatedlist-0W2",
+  "type" : "route",
+  "urlPrefix" : "RecognitionBadge"
+}

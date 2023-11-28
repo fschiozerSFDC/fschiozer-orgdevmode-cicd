@@ -1,0 +1,109 @@
+{
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "a237cc67-7a7d-4902-8eb4-8d66e1a6b21c",
+  "label" : "Knowledge Base",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h1>Search the Knowledge Base</h1><p>Our comprehensive knowledge base contains our entire history of product experience. Need help getting started? Search and filter to find articles related to your topic of interest!</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "f2c6aab3-09f3-49f6-9903-b82437de16f0",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f6a6021c-f817-47f2-b320-c32d32149393",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "6db9425e-ca47-43b1-862b-86a08abaa0f0",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "e9ac07e0-0e57-459c-841c-bf86a2e3d6d2",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Search"
+          }, {
+            "UUID" : "ec1a134a-a754-4a81-99d8-97cb4444a035",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "Categories"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "6db9425e-ca47-43b1-862b-86a08abaa0f0",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "contactSupport" : true,
+            "searchPlaceholder" : "Search Knowledge Articles..."
+          },
+          "componentName" : "c:KnowledgeSearch",
+          "id" : "2e602d10-04fd-426e-acfe-9261c07ecb85",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "e9ac07e0-0e57-459c-841c-bf86a2e3d6d2",
+        "regionLabel" : "Search",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h1><span style=\"color: rgb(230, 0, 0);\">Salesforce SEs:</span></h1>\n<p>&nbsp;Replace this Rich Content component with a <b>Top Articles by Topic</b> component after you DOT a new SDO. Configure the component with several key topics, then publish.</p>\n<p><img class=\"sfdcCbImage\" src=\"{!contentAsset.Top_Articles_by_Topic.1}\" /></p>\n<p><br /></p>\n<p>Follow the <a href=\"https://sfdc.co/SDOCommSetup\" target=\"_blank\">SDO Community Setup Guide</a> (Aloha SSO required, internal Salesforce only) to complete other setup steps.</p>\n<p>&nbsp;</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "7f4dc0b2-175e-41ae-8bae-3fdd75a5f396",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "ec1a134a-a754-4a81-99d8-97cb4444a035",
+        "regionLabel" : "Categories",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "169b6bec-a4c8-417f-b7ba-ac7c65358c73",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "57e8320f-0a47-4adf-8eda-3b4d7a04bb2b",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Knowledge Base"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "21c5f11e-ab3c-438c-8e65-871a789fa079",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "48112f66-dce1-4598-815d-3885d27abcfc",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-knowledge-base"
+}

@@ -1,0 +1,14 @@
+{
+  "definitionName" : "login:branding-login",
+  "id" : "5f97d009-60e4-4dfa-9bcb-ba5bde7d6607",
+  "label" : null,
+  "type" : "brandingSet",
+  "values" : {
+    "IdentityBackgroundColor" : "#F0F1F2",
+    "IdentityFontColor" : "#647687",
+    "IdentityFontFamily" : "Open Sans",
+    "IdentityHeaderBackgroundColor" : "#FFFFFF",
+    "IdentityHeaderFontColor" : "#647687",
+    "IdentityHeaderFontFamily" : "Open Sans"
+  }
+}

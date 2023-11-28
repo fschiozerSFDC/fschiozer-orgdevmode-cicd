@@ -1,0 +1,10 @@
+{
+  "activeViewId" : "28c03b78-4ea2-43b2-a4fd-bb18c52a5593",
+  "appPageId" : "e4bd7437-87f9-492f-bb9b-cca60c9128dd",
+  "configurationTags" : [ ],
+  "id" : "6748efec-ff22-4d9b-82d1-026dc097a2e2",
+  "label" : "Service Resource List",
+  "routeType" : "list-0Hn",
+  "type" : "route",
+  "urlPrefix" : "serviceresource"
+}

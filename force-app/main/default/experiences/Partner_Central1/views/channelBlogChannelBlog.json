@@ -1,0 +1,50 @@
+{
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "198c5a74-e5b7-4d58-99be-4166fa892d7e",
+  "label" : "Channel_Blog-Channel_Blog",
+  "regions" : [ {
+    "id" : "ccc11879-5923-4882-8f36-c0370f5fe4ff",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "cmsJsonConfig" : {
+          "cmsConnectJsonPath" : "Blog_Item",
+          "cmsConnectSettingName" : "Channel_Blog",
+          "componentPathUrl" : "{!recordId}",
+          "contentLayoutAttributeProviderType" : "DesignFile",
+          "contentLayoutAttributes" : {
+            "author" : "@author/name",
+            "content" : "@content",
+            "imageSrc" : "@featured_image",
+            "publishedOn" : "@date",
+            "title" : "@title"
+          },
+          "contentLayoutName" : "forceCommunity:cmsContentItemDetailLayout",
+          "dataBindingProviderAttributes" : { },
+          "dataBindingProviderComponent" : "forceCommunity:cmsConnectJSONItemDataBindingProvider",
+          "dataProviderComponent" : "forceCommunity:cmsConnectJSONDataProvider",
+          "isSelectedCmsSiteConfigDisabled" : "true"
+        }
+      },
+      "componentName" : "forceCommunity:cmsContent",
+      "id" : "5bd420f1-327d-4c11-9af9-29b4743fc97e",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "10082ade-28f4-4f7f-809a-d435c2999d7e",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "17582888-3932-432e-9193-0b7f05d75f99",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "extdetail-cms-Channel_Blog-Channel_Blog"
+}

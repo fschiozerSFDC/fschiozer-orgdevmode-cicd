@@ -1,0 +1,156 @@
+{
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "b3eb797e-00d2-44f2-9d84-b81c133fa43a",
+  "label" : "User Profile",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "knowledgeableAboutTitle" : "Knowledgeable About",
+        "maxTopics" : 5,
+        "showKnowledgeableAbout" : true,
+        "showReputationInInfluenceCard" : true,
+        "showStats" : true,
+        "userId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:userProfileBody",
+      "id" : "279b6c24-e830-46ab-bb62-58a10c5662c5",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "5f3dec1a-5f1b-4b62-aaab-819e44552422",
+        "fr" : "be1d312d-c0e8-4cc9-902b-c44491fd7d3c"
+      },
+      "renditions" : [ {
+        "id" : "be1d312d-c0e8-4cc9-902b-c44491fd7d3c",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "knowledgeableAboutTitle" : "Knowledgeable About",
+            "maxTopics" : "5"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "5f3dec1a-5f1b-4b62-aaab-819e44552422",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "knowledgeableAboutTitle" : "Experte zu",
+            "maxTopics" : "5"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "caseCreateLabel" : "Create Case",
+        "casesTabLabel" : "Cases",
+        "feedTabLabel" : "Activity",
+        "filterName" : "My_Cases_Community",
+        "headerLabel" : "My Cases",
+        "showAllUpdates" : true,
+        "userId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:userProfileTabs",
+      "id" : "acf4de6f-5449-4b42-a08f-515ebd9ff4ca",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "fa2c1380-34bc-4b3a-ada0-f3b3de3b6d25",
+        "fr" : "74d476df-9b71-4347-9f09-0df4b3f8d5b8"
+      },
+      "renditions" : [ {
+        "id" : "74d476df-9b71-4347-9f09-0df4b3f8d5b8",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "caseCreateLabel" : "Nouvelle requête",
+            "casesTabLabel" : "Requêtes",
+            "feedTabLabel" : "Activités",
+            "headerLabel" : "Mes Requêtes"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "fa2c1380-34bc-4b3a-ada0-f3b3de3b6d25",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "caseCreateLabel" : "Einen Kundenvorgang erstellen",
+            "casesTabLabel" : "Kundenvorgänge",
+            "feedTabLabel" : "Aktivität",
+            "headerLabel" : "Meine Kundenvorgänge"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "880266d2-1151-4b6e-8f56-350ff3f4ffa2",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "22405591-5572-489a-b60a-d982ff27b141",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "label" : "Send Message",
+        "userId" : "{!recordId}"
+      },
+      "componentName" : "forceChatter:newMessageButton",
+      "id" : "072514df-bdc7-42a9-9cdf-1c6ddbb3769a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "buttonLabel" : "Give!",
+        "userBadgesTitle" : "Badges Awarded",
+        "userId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:userRecognitions",
+      "id" : "7ab3906c-1e0d-4cfd-9270-49f6ece523c1",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "knowledgeableAboutTitle" : "Knowledgeable About",
+        "maxTopics" : 5,
+        "userId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:userProfileKnowledgeableAbout",
+      "id" : "5c5c025b-80b1-4bbf-b724-9b0d001fae14",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "userId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:userRelatedList",
+      "id" : "247b51fe-4510-400d-8090-dbd83d3cfe4d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "7105864f-d4ee-415f-ac2a-bf01f398691a"
+      },
+      "renditions" : [ {
+        "id" : "7105864f-d4ee-415f-ac2a-bf01f398691a",
+        "renditionValue" : {
+          "componentAttributes" : { }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "0084d41a-bf0d-49a2-a08b-21e28bd41b85",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "889737af-3b91-4a95-af3f-2b44c6dfd1a5",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-005"
+}

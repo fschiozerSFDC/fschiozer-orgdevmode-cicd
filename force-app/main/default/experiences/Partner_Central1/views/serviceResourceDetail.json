@@ -1,0 +1,201 @@
+{
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "54bcc951-26a7-4e0c-b52b-705514b12084",
+  "label" : "Service Resource Detail",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "b1abfa7d-2264-4587-8f80-994e87675ff2",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "0fbedec3-b5c9-4127-a326-ba01ce9c3514",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "73fae146-a637-4428-bbb8-895749a992ee",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "0de7b104-f096-4fb1-ade8-fdc0aa53ef7f",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Details"
+          }, {
+            "UUID" : "01c6a003-2993-4ecd-aea6-741f35c9a38a",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "Skill Selector"
+          }, {
+            "UUID" : "a118bf25-12f9-4b9f-8f4a-b4c59e439ddc",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "3",
+            "tabName" : "Resource Calendar"
+          }, {
+            "UUID" : "9689a2df-74bf-41c0-b49b-8e7c7d7ff57d",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "8710c",
+            "tabName" : "Capacity Calendar"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "73fae146-a637-4428-bbb8-895749a992ee",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:recordDetail",
+          "id" : "f7252ab8-c6ee-494b-95c3-25d8287c155e",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "0de7b104-f096-4fb1-ade8-fdc0aa53ef7f",
+        "regionLabel" : "Details",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "height" : "650",
+            "pageName" : "FSL__vf034_Skill_Selector_V2_Resource_Page",
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:visualforcePage",
+          "id" : "f18b4f65-5eb1-4084-bc8f-1e87b17fcf07",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "01c6a003-2993-4ecd-aea6-741f35c9a38a",
+        "regionLabel" : "Skill Selector",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "height" : "650",
+            "pageName" : "FSL__vf079_ResourceCalendar",
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:visualforcePage",
+          "id" : "416eb98c-20de-4a26-972e-7d0fbe4b37f2",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "a118bf25-12f9-4b9f-8f4a-b4c59e439ddc",
+        "regionLabel" : "Resource Calendar",
+        "regionName" : "3",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "height" : "300",
+            "pageName" : "FSL__vf078_CapacityCalendar",
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:visualforcePage",
+          "id" : "bdd02c62-1ee9-4fb9-b9ae-c94402033eea",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "9689a2df-74bf-41c0-b49b-8e7c7d7ff57d",
+        "regionLabel" : "Capacity Calendar",
+        "regionName" : "8710c",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "71f64d4f-be69-42d5-b466-076b239c2255",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "e3ec6bd3-95b6-4ae0-9a04-bd2074050cba",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "ea630533-1481-48d7-8daf-732da13ba74b",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "1c401842-b4dd-430e-af05-004f7221df64",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "305d1d94-05a7-46dd-b137-da18a4cf644a",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "435e9e79-598f-4c5d-b2ad-d1903b09b27e",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Related"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "305d1d94-05a7-46dd-b137-da18a4cf644a",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}",
+            "width" : "MEDIUM"
+          },
+          "componentName" : "forceCommunity:relatedRecords",
+          "id" : "c0a2ffad-4c7c-4581-90a6-2e7dd002498c",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "435e9e79-598f-4c5d-b2ad-d1903b09b27e",
+        "regionLabel" : "Related",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "8b8e1e25-ca37-4c0a-8a9c-a6c43633c8d7",
+    "regionName" : "sidebar",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-0Hn"
+}

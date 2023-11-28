@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "b2dd1bad-604a-4879-9d33-3320a9de2265",
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "configurationTags" : [ ],
+  "id" : "f5174c43-a3c2-46dc-a0bb-d18a91edd6f6",
+  "label" : "Register Product",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-register-product",
+  "type" : "route",
+  "urlPrefix" : "register-product"
+}

@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "2f2843dc-b339-46db-8071-a42a29338581",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "7076a45d-f116-446d-97d6-31fe6c83f751",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Shop_Flexible_B2B_Commerce_Header_Component",
+  "id" : "e7fddcfa-ab14-4c54-b699-d4a57ea1da45",
+  "type" : "experienceVariation"
+}

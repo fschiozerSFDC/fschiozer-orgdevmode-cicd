@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "8ab80a67-31f0-48ef-bcc1-83d4779ea741",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "b83fbb68-1772-4bde-bd7e-dffc27045870",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Home_Partners_Lead_Inbox_Component",
+  "id" : "4479ea0c-7d4a-4667-9f96-4ac6ff61d51f",
+  "type" : "experienceVariation"
+}

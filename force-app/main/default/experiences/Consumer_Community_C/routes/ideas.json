@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "9738c793-7e12-412c-8667-01578f8613f6",
+  "appPageId" : "e4bd7437-87f9-492f-bb9b-cca60c9128dd",
+  "configurationTags" : [ ],
+  "id" : "63d9b899-039b-4a4b-ac7f-507d645802d5",
+  "label" : "Ideas",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-ideas",
+  "type" : "route",
+  "urlPrefix" : "ideas"
+}

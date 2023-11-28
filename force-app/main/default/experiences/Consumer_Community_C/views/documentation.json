@@ -1,0 +1,78 @@
+{
+  "appPageId" : "e4bd7437-87f9-492f-bb9b-cca60c9128dd",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "46a63140-549b-49b3-9696-3081c4a250ae",
+  "label" : "Documentation",
+  "regions" : [ {
+    "id" : "f27b5616-082d-4985-9c66-921056eb0eec",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "numberOfArticles" : 5,
+        "showTitle" : true,
+        "title" : "Top Articles",
+        "topicList" : [ {
+          "isPublic" : true,
+          "name" : "0TOo00000008RWPGA2"
+        }, {
+          "isPublic" : true,
+          "name" : "0TOo00000008RWOGA2"
+        }, {
+          "isPublic" : true,
+          "name" : "0TOo00000008SSWGA2"
+        }, {
+          "isPublic" : true,
+          "name" : "0TOo00000008RWRGA2"
+        } ]
+      },
+      "componentName" : "forceCommunity:topArticleList",
+      "id" : "25aad837-6183-449f-ad31-c578d9294399",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ad615047-9f1c-4f5a-a714-8173c7f212ad",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "channel" : "DefaultChannel",
+        "title" : ""
+      },
+      "componentName" : "forceCommunity:recommendations",
+      "id" : "ed9c2089-0337-4cf4-8355-59154c47029c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b70ab430-6170-4aeb-ae18-918bea4cde8d",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "9cc16386-6efa-4b42-b07d-a60bfb11adf9",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Documentation"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "bcf99627-f9ac-4e07-be5d-6f2afba1060c",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "40a7ef4f-cb37-432e-90db-aa6318fcecb0",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-documentation"
+}

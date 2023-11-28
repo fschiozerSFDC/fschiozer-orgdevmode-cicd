@@ -1,0 +1,58 @@
+{
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "b2dd1bad-604a-4879-9d33-3320a9de2265",
+  "label" : "Register Product",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h1><span style=\"font-size: 20px;\">Register Your Product</span></h1><p>Please take a moment to register your product with us. Registering provides you with faster support and issue resolution, proactive alerts, and an upgrade notifications.</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "9cb6f87e-97c4-49bf-a5f1-9113a869513c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c1d7f852-2d68-40c7-93c7-c44445fb2d51",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "flowName" : "Register_New_Product"
+      },
+      "componentName" : "forceCommunity:flowCommunity",
+      "id" : "ace60b40-2521-4200-8098-af1848e5ce1b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "54c39961-a8e8-4327-b7ac-f00da7ad8e92",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "beeafe3f-1b22-434b-bc38-f74efb7f8103",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "Sample page illustrating how to embed a flow on a community page. Allows a customer to register a new product, creating an asset on their Contact & Account records.",
+        "title" : "Register New Product"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "31891cd0-2033-4e6e-88b9-303f1399b01d",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "55759e39-7fbd-489d-816a-68349f1deee5",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-register-product"
+}

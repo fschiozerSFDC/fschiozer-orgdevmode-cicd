@@ -1,0 +1,26 @@
+{
+  "definitionName" : "login:branding-login",
+  "id" : "82088f98-ecad-4798-ab1b-41ecb540f1a9",
+  "label" : null,
+  "type" : "brandingSet",
+  "values" : {
+    "ActionColor" : "#2574A9",
+    "AltBgColor" : "#405973",
+    "CasesColor" : "#1e824c",
+    "HeaderColor" : "#ececec",
+    "HeaderFontColor" : "#444",
+    "HeaderFontFamily" : "Open Sans",
+    "HeaderFontSize" : "16px",
+    "PrimaryFontColor" : "#333333",
+    "PrimaryFontFamily" : "Open Sans",
+    "SecondaryFontColor" : "#696969",
+    "SecondaryFontFamily" : "Open Sans",
+    "_ActiveBtnBgColor" : "#133b55",
+    "_ActiveCaseBtnBgColor" : "#0b2f1c",
+    "_ActiveFilterBackgroundColor" : "rgba(25, 124, 190, 0.2)",
+    "_HoverBtnBgColor" : "#1c577f",
+    "_HoverCaseBtnBgColor" : "#145934",
+    "_OverlayTextColor" : "#FFFFFF",
+    "_PageInvertColor" : "#EFEFEF"
+  }
+}

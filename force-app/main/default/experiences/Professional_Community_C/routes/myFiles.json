@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "27239d7b-1405-4b1d-9605-63586371de67",
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "configurationTags" : [ ],
+  "id" : "d66b6dcf-64f1-437c-9611-d3396bcb1e7e",
+  "label" : "My Files",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-my-files",
+  "type" : "route",
+  "urlPrefix" : "my-files"
+}

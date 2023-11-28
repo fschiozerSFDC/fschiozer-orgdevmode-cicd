@@ -1,0 +1,34 @@
+{
+  "appPageId" : "e4bd7437-87f9-492f-bb9b-cca60c9128dd",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "8fb0df86-adc3-4727-bc56-80d5817ec846",
+  "label" : "Work Order Related List",
+  "regions" : [ {
+    "id" : "026a0a22-a91a-4465-ac31-25704a1eef6d",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "parentRecordId" : "{!parentRecordId}",
+        "relatedListName" : "{!relatedListName}"
+      },
+      "componentName" : "forceCommunity:relatedList",
+      "id" : "3cdeddd7-bc54-4b34-8a27-9ac16c0bdd16",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5e4b46a2-cf42-4923-ab8e-562051339335",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "bf85050c-984a-4d0e-9874-92e12819a735",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "relatedlist-0WO"
+}

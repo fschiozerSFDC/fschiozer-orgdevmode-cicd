@@ -1,0 +1,82 @@
+{
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "1dedc9d5-fc43-4fe8-a780-6ccd3b2b1732",
+  "label" : "Ideas",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h1><b>Community Ideas</b></h1><p>Use this page to browse product, community, and other ideas shared by community members, or to share an idea of your own!</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "1c0da3ad-ce04-469a-ac0c-59961b55403c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "1e300735-797b-48d0-b00d-62aff1888030",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "ideaDetailPath" : "idea/",
+        "ideaPostPath" : "post-idea/",
+        "ideasPerPage" : 20,
+        "listingTitle" : "Ideas",
+        "viewName" : "Popular"
+      },
+      "componentName" : "c:CommunityIdeaList",
+      "id" : "aebdc51c-f3d0-41f6-b518-9b948ff68c39",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "53c16099-201d-47a3-a08c-00b12953a8d9",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "8abd5eb9-560b-49ce-b048-92e42ad3b698",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Ideas"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "11a4842e-e130-4a0d-ac06-300a0f04ce20",
+      "renditionMap" : {
+        "de" : "dad9ee5f-aa73-4b30-8459-2de7603313eb",
+        "fr" : "8f67c8c6-4426-4b1d-b90e-172bca8e0da4"
+      },
+      "renditions" : [ {
+        "id" : "dad9ee5f-aa73-4b30-8459-2de7603313eb",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Ideas"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "8f67c8c6-4426-4b1d-b90e-172bca8e0da4",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Ideas"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "8872e7d3-6701-479d-a734-180a58eba782",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-ideas"
+}

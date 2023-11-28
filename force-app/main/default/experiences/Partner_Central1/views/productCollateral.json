@@ -1,0 +1,135 @@
+{
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "c2dd3e01-ab41-424e-80d1-cac5e825676d",
+  "label" : "Product Collateral",
+  "regions" : [ {
+    "id" : "c79de607-c631-4fdf-b939-489e77b94adb",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "5746d1d0-24df-4be0-ba8c-76ab585706b5",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "8fea944c-57bd-4f7d-8a0d-de27e2a8c721",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "c5180",
+            "tabName" : "Collateral"
+          }, {
+            "UUID" : "9ed9f051-f236-403c-978c-2371a34309a8",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "3",
+            "tabName" : "Articles"
+          }, {
+            "UUID" : "52be2ca2-a57d-4533-9bce-7021e78173c9",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "My Files"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "5746d1d0-24df-4be0-ba8c-76ab585706b5",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "librariesHeaderLabel" : "Collateral by Product"
+          },
+          "componentName" : "forceCommunity:workspacesList",
+          "id" : "076c960c-40d2-4aca-bf50-2aa891e3a53f",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "8fea944c-57bd-4f7d-8a0d-de27e2a8c721",
+        "regionLabel" : "Collateral",
+        "regionName" : "c5180",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "numberOfArticles" : 5,
+            "showTitle" : true,
+            "title" : "Top Articles",
+            "topicList" : [ {
+              "isPublic" : true,
+              "name" : "0TOo0000000Y7bqGAC"
+            }, {
+              "isPublic" : true,
+              "name" : "0TOo0000000Cz1OGAS"
+            }, {
+              "isPublic" : true,
+              "name" : "0TOo0000000CyjmGAC"
+            }, {
+              "isPublic" : true,
+              "name" : "0TOo0000000CyjrGAC"
+            } ]
+          },
+          "componentName" : "forceCommunity:topArticleList",
+          "id" : "996c6334-be8a-41a4-a939-6a7dec178018",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "9ed9f051-f236-403c-978c-2371a34309a8",
+        "regionLabel" : "Articles",
+        "regionName" : "3",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "pageSize" : 15
+          },
+          "componentName" : "forceCommunity:filesList",
+          "id" : "25eeec2c-f0ee-4bfd-a6a7-96ccadd0fe4b",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "52be2ca2-a57d-4533-9bce-7021e78173c9",
+        "regionLabel" : "My Files",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5534e90f-5e26-4bc6-8c4e-f3face621968",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "cc52ead8-4000-40e9-8290-b9266cf0e736",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "Get product collateral and content. Find files shared with you.",
+        "title" : "Product Collateral"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "41cc4a09-d2f1-4b7d-a537-0183fd194c50",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "fe336353-60b1-4788-b4a5-239c272d38a1",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-product-collateral"
+}

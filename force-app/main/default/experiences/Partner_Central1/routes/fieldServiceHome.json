@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "02cd284b-9059-4554-bb98-cf0235630b9e",
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "configurationTags" : [ ],
+  "id" : "2a56854e-bfa0-4635-9f04-d33767a49670",
+  "label" : "Field Service Home",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-field-service-home",
+  "type" : "route",
+  "urlPrefix" : "field-service-home"
+}

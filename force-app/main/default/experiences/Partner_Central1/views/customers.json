@@ -1,0 +1,168 @@
+{
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "e846bfc2-0efa-487e-a7ff-5e0f046a0d67",
+  "label" : "Customers",
+  "regions" : [ {
+    "id" : "dc19e24f-2a47-4391-a865-ed58474ac094",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h2>Your Customers and Contacts</h2>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "233994be-d219-40b0-b3fa-3aa654217514",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "2775830a-9698-4e69-b3d2-ac25d1ef5a95",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "c5197601-475f-4a6c-92cf-022454f4f6f8",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Companies"
+          }, {
+            "UUID" : "53d65d59-42e0-4f8a-8956-e3fb0d3ddb7b",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "Contacts"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "2775830a-9698-4e69-b3d2-ac25d1ef5a95",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "filterName" : "00B1N000008fdiyUAA",
+            "layout" : "FULL",
+            "pageSize" : 5,
+            "scope" : "Account",
+            "showDisplay" : "showall"
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "b93c2524-c21c-49a8-9c70-120824554c69",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "c5197601-475f-4a6c-92cf-022454f4f6f8",
+        "regionLabel" : "Companies",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "filterName" : "00B1N000008fdfFUAQ",
+            "layout" : "FULL",
+            "pageSize" : 10,
+            "scope" : "Contact",
+            "showDisplay" : "showall"
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "7b8b8a33-4736-47b9-a3b2-b2bcd212915e",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "53d65d59-42e0-4f8a-8956-e3fb0d3ddb7b",
+        "regionLabel" : "Contacts",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d29cbd7f-fad0-4412-a0a3-4b7ed2dfe852",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "channel" : "CustomChannel4",
+        "title" : "Account Whitespace"
+      },
+      "componentName" : "forceCommunity:recommendations",
+      "id" : "a2f498d3-4919-44d1-a38d-3079ff6f9df3",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "208f1489-33b2-47a4-a3cb-fbb57039fbfc",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "ae63e26a-7dd5-418c-9094-9f678b52af3a",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Customers"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "265719df-cb58-4e92-bfe5-e30b3adaf065",
+      "renditionMap" : {
+        "de" : "093faf5c-deaa-46fd-a023-763a58f524f0",
+        "es" : "3be999fc-463c-48f5-8792-6f9fe234e71a",
+        "fr" : "678ac5be-5f7e-4222-ba3e-882c6f3dd331",
+        "ja" : "9b7283e4-54c7-4e08-aaab-f8453df38c6a"
+      },
+      "renditions" : [ {
+        "id" : "093faf5c-deaa-46fd-a023-763a58f524f0",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Customers"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "678ac5be-5f7e-4222-ba3e-882c6f3dd331",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Customers"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "3be999fc-463c-48f5-8792-6f9fe234e71a",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Customers"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "9b7283e4-54c7-4e08-aaab-f8453df38c6a",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Customers"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "dca96599-27c9-43c7-9b74-2aa9e0bfb3b8",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-customers"
+}

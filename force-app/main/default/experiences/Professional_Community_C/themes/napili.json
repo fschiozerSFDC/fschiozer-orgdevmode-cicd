@@ -1,0 +1,464 @@
+{
+  "activeBrandingSetId" : "71db6e28-dca2-496a-9420-a0a48357f8d6",
+  "customCSS" : ".forceTopicFeaturedTopics .topicContent {\n    background-color: rgba(255,255,255,0) !important;\n}\n.forceTopicFeaturedTopics .topicLabel {\n    color: black !important;\n}",
+  "developerName" : "service",
+  "id" : "072b2dc8-c701-4b6c-b665-a7e2dc526642",
+  "label" : "Napili",
+  "layouts" : {
+    "Hero Image Home" : "7d86fd7c-a9c7-40af-8ae4-dcb8be5993bb",
+    "Home" : "f153de72-e47d-45e1-975b-a444eae8d838",
+    "Inner" : "4d6a80b3-a22e-444f-be13-92279b24cf28",
+    "Login" : "fe5ca922-499b-4d38-878a-d405272ea4bc",
+    "ServiceNotAvailable" : "f07a95d5-3056-455b-a554-30da2cfd52f7"
+  },
+  "type" : "theme",
+  "views" : [ {
+    "componentAttributes" : {
+      "IsDefaultHeaderHidden" : false,
+      "IsDefaultNotificationsHidden" : false
+    },
+    "componentName" : "siteforce:serviceBody",
+    "id" : "4d6a80b3-a22e-444f-be13-92279b24cf28",
+    "label" : "Default",
+    "regions" : [ {
+      "id" : "55da6a7b-0ffc-4a18-8b98-492815129cd9",
+      "regionName" : "customHeader",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "contineActionLabel" : "Ask a question",
+          "continueLabel" : "Don't see what you're looking for?",
+          "crossObjectTypeaheadApiNames" : [ {
+            "isPublic" : true,
+            "name" : "FeedItem"
+          }, {
+            "isPublic" : true,
+            "name" : "KnowledgeArticleVersion"
+          } ],
+          "enableAutocomplete" : true,
+          "maxNumberOfResults" : 6,
+          "placeholder" : "Got Questions?  Find your Answer!",
+          "questionResultsFirst" : false,
+          "showContinueAction" : true,
+          "signInActionLabel" : "Sign in to ask a question"
+        },
+        "componentName" : "forceCommunity:searchBox",
+        "id" : "5ad98400-229a-4622-8e16-2322aa61b636",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "bf16f2da-764f-4566-8c31-e71960ab0a06",
+      "regionName" : "search",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "communityBuilderLabel" : "Community Builder",
+          "communitySetupLabel" : "Community Setup",
+          "contactSupportLabel" : "Contact Support",
+          "filterName" : "MyCases",
+          "homeLabel" : "Home",
+          "includeContactSupport" : true,
+          "loginLabel" : "Login",
+          "logoutLabel" : "Logout",
+          "myAccountLabel" : "My Account",
+          "showUserSettings" : true,
+          "userSettingsLabel" : "My Settings",
+          "viewProfileLabel" : "My Profile"
+        },
+        "componentName" : "selfService:userProfileMenu",
+        "id" : "386f4460-606e-47b7-a34b-0155a0e62cac",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "5dc1c5e1-6323-454b-bb78-a94b3c80de55",
+      "regionName" : "profileMenu",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "NavigationMenuEditorRefresh" : "",
+          "hideHomeText" : true
+        },
+        "componentName" : "forceCommunity:globalNavigation",
+        "id" : "8cc356cc-3221-4436-a98f-ee7d20cf7a40",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "b9ba9d55-2f75-44d1-9209-06e642c797f3",
+      "regionName" : "navBar",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "pickerAlignment" : "Center"
+        },
+        "componentName" : "forceCommunity:languageSelector43",
+        "id" : "6a17785c-a67f-4f1a-ba96-e6e1a43aeaf6",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "ab68f2e9-39c3-41e7-a6c6-cc7516314865",
+      "regionName" : "customRegion",
+      "type" : "region"
+    }, {
+      "id" : "db6d1a1a-0eff-4b0a-9e5c-68a8dfc32858",
+      "regionName" : "footer",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : { },
+    "componentName" : "salesforceIdentity:loginBody2",
+    "id" : "fe5ca922-499b-4d38-878a-d405272ea4bc",
+    "label" : "Login",
+    "regions" : [ {
+      "id" : "6a8d6f0c-7857-46a5-9232-7d9120ae512e",
+      "regionName" : "header",
+      "type" : "region"
+    }, {
+      "id" : "ed2cb2ab-83fe-4b6a-9f7a-745eafdde926",
+      "regionName" : "content",
+      "type" : "region"
+    }, {
+      "id" : "b7334441-46e9-4bca-b02b-f208089a22bd",
+      "regionName" : "footer",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "backgroundUrl" : "",
+      "fixedNav" : true,
+      "fullWidthContentBackgroundColor" : "#FFFFFF",
+      "fullWidthFooterContainerBackgroundColor" : "#F6F6F6",
+      "fullWidthLayout" : false,
+      "headerImageHeight" : "600px",
+      "headerImagePosition" : "center",
+      "headerLayout" : "Type 1",
+      "logoHeight" : "60px",
+      "logoUrl" : "",
+      "mainContentAreaBackgroundColor" : "#FFFFFF",
+      "standardWidthContainerBackgroundColor" : "#F6F6F6",
+      "standardWidthFooterContainerBackgroundColor" : "#FFFFFF"
+    },
+    "componentName" : "dvuong_themes:OnoHomeTransition",
+    "id" : "7d86fd7c-a9c7-40af-8ae4-dcb8be5993bb",
+    "label" : "Hero Image Home",
+    "regions" : [ {
+      "id" : "20ddc3b4-02be-4af6-aa98-a473ad3a99ac",
+      "regionName" : "customHeader",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "contineActionLabel" : "Ask a question",
+          "continueLabel" : "Don't see what you're looking for?",
+          "crossObjectTypeaheadApiNames" : [ {
+            "isPublic" : true,
+            "name" : "FeedItem"
+          }, {
+            "isPublic" : true,
+            "name" : "KnowledgeArticleVersion"
+          } ],
+          "enableAutocomplete" : true,
+          "maxNumberOfResults" : 6,
+          "placeholder" : "Got Questions?  Find your Answer!",
+          "questionResultsFirst" : false,
+          "showContinueAction" : true,
+          "signInActionLabel" : "Sign in to ask a question"
+        },
+        "componentName" : "forceCommunity:searchBox",
+        "id" : "ccca91cc-9d30-41a5-9d1e-8e599c61cc5a",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "a16fc594-d709-4cc8-b685-9a83cd326d7c",
+      "regionName" : "search",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "communityBuilderLabel" : "Community Builder",
+          "communitySetupLabel" : "Community Setup",
+          "contactSupportLabel" : "Contact Support",
+          "filterName" : "MyCases",
+          "homeLabel" : "Home",
+          "includeContactSupport" : true,
+          "loginLabel" : "Login",
+          "logoutLabel" : "Logout",
+          "myAccountLabel" : "My Account",
+          "showUserSettings" : true,
+          "userSettingsLabel" : "My Settings",
+          "viewProfileLabel" : "My Profile"
+        },
+        "componentName" : "selfService:userProfileMenu",
+        "id" : "e6b5e468-9696-433d-8052-5d42b197fa68",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "c4980146-50fa-468f-adbf-caf25dba3b79",
+      "regionName" : "profileMenu",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "NavigationMenuEditorRefresh" : ""
+        },
+        "componentName" : "forceCommunity:globalNavigation",
+        "id" : "3927f0fe-6290-41bb-a5d5-045ac5cddcaa",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "1faa208d-901d-4d73-ac9d-6bae81db3b48",
+      "regionName" : "navBar",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "pickerAlignment" : "Center"
+        },
+        "componentName" : "forceCommunity:languageSelector43",
+        "id" : "fae12ae0-61fa-4351-aabe-c0792be5077a",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "6d91d1b4-90c3-4dc5-b5bd-d33ab79601d8",
+      "regionName" : "customRegion",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "avatarImgURL" : "",
+          "defaultMinimizedText" : "Chat with an Expert",
+          "displayHelpButton" : true,
+          "eswConfigurationJSON" : {
+            "availabilityEndpointUrl" : "https://d.la1-c1-ord.salesforceliveagent.com/chat/rest",
+            "baseLiveAgentContentUrl" : "https://c.la1-c1-ord.salesforceliveagent.com/content",
+            "baseLiveAgentUrl" : "https://d.la1-c1-ord.salesforceliveagent.com/chat",
+            "buttonId" : "573o0000000TUhU",
+            "chasitorJsUrl" : "https://c.la1-c1-ord.salesforceliveagent.com/content/g/js/40.0/chasitor.js",
+            "chasitorJsVersion" : "40.0",
+            "deploymentId" : "572o0000000TTUy",
+            "eswConfigDevName" : "Snap_ins_Chat_B2B",
+            "eswConfigId" : "04I1N0000000006UAA",
+            "eswLiveAgentDevName" : "EmbeddedServiceLiveAgent_Parent04I1N0000000006UAA_15c7792cd4f",
+            "orgId" : "00D300000007EfQ",
+            "releaseVersion" : "1.0"
+          },
+          "offlineText" : "Chat Offline",
+          "onlineLoadingText" : "Loading",
+          "prechatBackgroundImgURL" : "",
+          "smallCompanyLogoImgURL" : "",
+          "waitingStateBackgroundImgURL" : ""
+        },
+        "componentName" : "forceCommunity:embeddedService",
+        "id" : "cf9fd7d6-5a98-4002-aade-f33c34cd9e41",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "00f8beb1-b149-4243-baed-ccf33f6fd67a",
+      "regionName" : "footer",
+      "type" : "region"
+    }, {
+      "id" : "f701410f-e1b7-4fc9-986e-0bd98a20c95d",
+      "regionName" : "topRegion",
+      "type" : "region"
+    }, {
+      "id" : "8e7e1d0a-5c1b-41db-84aa-d908222fe711",
+      "regionName" : "bottomRegion",
+      "type" : "region"
+    }, {
+      "id" : "8cf91bef-186b-4156-b63d-101f6d0feacc",
+      "regionName" : "lowerHeader",
+      "type" : "region"
+    }, {
+      "id" : "96c210c0-49e2-4677-9437-83520576a9a9",
+      "regionName" : "fullWidthContent",
+      "type" : "region"
+    }, {
+      "id" : "62fc220f-fe8f-43d9-91a0-012a43b6e3cd",
+      "regionName" : "standardWidthContent",
+      "type" : "region"
+    }, {
+      "id" : "bc26d363-dde9-4a1c-8ddc-3e8158041484",
+      "regionName" : "fullWidthFooter",
+      "type" : "region"
+    }, {
+      "id" : "34ad44f6-dc73-48c5-abb9-def5d1ee96af",
+      "regionName" : "standardWidthFooterContent",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "IsDefaultHeaderHidden" : false,
+      "IsDefaultNotificationsHidden" : false
+    },
+    "componentName" : "siteforce:serviceBody",
+    "id" : "f153de72-e47d-45e1-975b-a444eae8d838",
+    "label" : "Home",
+    "regions" : [ {
+      "id" : "6ddbdaab-32f6-4981-bcff-aad20c4c7b68",
+      "regionName" : "customHeader",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "contineActionLabel" : "Ask a question",
+          "continueLabel" : "Don't see what you're looking for?",
+          "crossObjectTypeaheadApiNames" : [ {
+            "isPublic" : true,
+            "name" : "FeedItem"
+          }, {
+            "isPublic" : true,
+            "name" : "KnowledgeArticleVersion"
+          } ],
+          "enableAutocomplete" : true,
+          "maxNumberOfResults" : 6,
+          "placeholder" : "Got Questions?  Find your Answer!",
+          "questionResultsFirst" : false,
+          "showContinueAction" : true,
+          "signInActionLabel" : "Sign in to ask a question"
+        },
+        "componentName" : "forceCommunity:searchBox",
+        "id" : "4110b6c4-52e4-470b-8765-4fef0863ac6f",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "8260a8da-b68a-4b92-b03a-b41639c09d05",
+      "regionName" : "search",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "communityBuilderLabel" : "Community Builder",
+          "communitySetupLabel" : "Community Setup",
+          "contactSupportLabel" : "Contact Support",
+          "filterName" : "MyCases",
+          "homeLabel" : "Home",
+          "includeContactSupport" : true,
+          "loginLabel" : "Login",
+          "logoutLabel" : "Logout",
+          "myAccountLabel" : "My Account",
+          "showUserSettings" : true,
+          "userSettingsLabel" : "My Settings",
+          "viewProfileLabel" : "My Profile"
+        },
+        "componentName" : "selfService:userProfileMenu",
+        "id" : "8db9ca11-ebc3-4546-8798-2000f79254c0",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "6eb646a4-2b78-4735-ae0e-5c4179161c2c",
+      "regionName" : "profileMenu",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "NavigationMenuEditorRefresh" : "",
+          "hideHomeText" : true
+        },
+        "componentName" : "forceCommunity:globalNavigation",
+        "id" : "118ba854-0791-415d-9c39-9acd05afbb2b",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "27b24ac8-35bb-438f-8fb7-d9834baa05ae",
+      "regionName" : "navBar",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "pickerAlignment" : "Center"
+        },
+        "componentName" : "forceCommunity:languageSelector43",
+        "id" : "945dad72-67a5-4c66-9b08-d01f64ec2356",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "e156ab57-cf77-44eb-abf6-9a628e94d18d",
+      "regionName" : "customRegion",
+      "type" : "region"
+    }, {
+      "components" : [ {
+        "componentAttributes" : {
+          "avatarImgURL" : "",
+          "defaultMinimizedText" : "Chat with an Expert",
+          "displayHelpButton" : true,
+          "eswConfigurationJSON" : {
+            "baseCoreURL" : "https://sdomaster.my.salesforce.com",
+            "baseLiveAgentContentURL" : "https://c.la1-c1-ord.salesforceliveagent.com/content",
+            "baseLiveAgentURL" : "https://d.la1-c1-ord.salesforceliveagent.com/chat",
+            "buttonId" : "573o0000000TUhU",
+            "deploymentId" : "572o0000000TTUy",
+            "enabledFeatures" : [ "LiveAgent" ],
+            "entryFeature" : "LiveAgent",
+            "eswConfigDevName" : "Snap_ins_Live_Agent",
+            "eswConfigId" : "04I1N000000000QUAQ",
+            "eswLiveAgentDevName" : "EmbeddedServiceLiveAgent_Parent04I1N000000000QUAQ_161f7756989",
+            "gslbBaseURL" : "https://service.force.com",
+            "orgId" : "00D300000007EfQ"
+          },
+          "offlineText" : "SEs EDIT THIS BUTTON - Chat Offline",
+          "onlineLoadingText" : "Loading",
+          "prechatBackgroundImgURL" : "",
+          "smallCompanyLogoImgURL" : "",
+          "waitingStateBackgroundImgURL" : ""
+        },
+        "componentName" : "forceCommunity:embeddedService",
+        "id" : "9e89a270-2c10-487d-ba74-7b55c58d510c",
+        "renditionMap" : { },
+        "type" : "component"
+      } ],
+      "id" : "00b9ab31-9281-4c80-b34f-414e9f11f96b",
+      "regionName" : "footer",
+      "type" : "region"
+    }, {
+      "id" : "c23d4ca1-465b-4847-9817-1bdb353b5449",
+      "regionName" : "lowerHeader",
+      "type" : "region"
+    }, {
+      "id" : "ea798d66-54f9-4882-a422-d45db4178cde",
+      "regionName" : "fullWidthContent",
+      "type" : "region"
+    }, {
+      "id" : "cdfd6003-04b3-41a0-8ef0-81ced4ba83ba",
+      "regionName" : "standardWidthContent",
+      "type" : "region"
+    }, {
+      "id" : "81782318-0d0d-4318-86b4-e9b50892253a",
+      "regionName" : "fullWidthFooter",
+      "type" : "region"
+    }, {
+      "id" : "c9379dc7-2828-4ed1-8b43-c34b6be4dfc7",
+      "regionName" : "standardWidthFooterContent",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "fixedPageWidth" : 1170,
+      "headerBgColor" : "rgba(0, 0, 0, 0)",
+      "isHeaderPinned" : false,
+      "isHeroUnderHeader" : false,
+      "isPageWidthFixed" : true,
+      "showHeader" : true,
+      "showHero" : true
+    },
+    "componentName" : "siteforce:themeLayoutStarter",
+    "id" : "f07a95d5-3056-455b-a554-30da2cfd52f7",
+    "label" : "ServiceNotAvailable",
+    "regions" : [ {
+      "id" : "114f428d-40af-463d-9f14-2e81cfe28981",
+      "regionName" : "themeHeader",
+      "type" : "region"
+    }, {
+      "id" : "a7286268-0f70-426a-900d-006bb5c1fbbf",
+      "regionName" : "themeFooter",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  } ]
+}

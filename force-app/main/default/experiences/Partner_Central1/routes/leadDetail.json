@@ -1,0 +1,10 @@
+{
+  "activeViewId" : null,
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "configurationTags" : [ ],
+  "id" : "93418bff-ca06-4de9-b2ec-abff1f3e69be",
+  "label" : "Lead Detail",
+  "routeType" : "detail-00Q",
+  "type" : "route",
+  "urlPrefix" : "lead"
+}

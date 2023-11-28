@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "0f2f85b0-4ded-45e0-9c51-95396c488c4a",
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "configurationTags" : [ ],
+  "id" : "7e9d6b45-73db-4247-a08d-aace660508c5",
+  "label" : "Flex! Detail",
+  "pageAccess" : "UseParent",
+  "routeType" : "managed-content-flexContent",
+  "type" : "route",
+  "urlPrefix" : "flexcontent"
+}

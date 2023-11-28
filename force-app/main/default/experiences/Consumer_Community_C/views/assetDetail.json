@@ -1,0 +1,66 @@
+{
+  "appPageId" : "e4bd7437-87f9-492f-bb9b-cca60c9128dd",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "cb4d41cc-8eb4-4b50-b914-49b87ed1b9d3",
+  "label" : "Asset Detail",
+  "regions" : [ {
+    "id" : "f570492b-caf3-45af-98b5-0f1adb758fe9",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "74e8899d-eff5-4c1b-9efc-7ddb9c111a34",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "c:FSLBookAppointment",
+      "id" : "b010ae1d-821a-4048-8eb4-17e315128b7a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:relatedRecords",
+      "id" : "0ed1b453-510e-419c-ab8b-852ce912ae1b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "8fc8a263-280b-4bce-b476-215d02cde91e",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "3db64653-726e-41e9-95df-626793dcab4f",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "e014ba18-691b-49e2-b2f5-2bc0511044ab",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6e9cd0cd-42ea-4d99-bd00-2d035776d7a1",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-02i"
+}

@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "2e2f4287-c93f-4c5f-8e9f-ad9a61d37f89",
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "configurationTags" : [ ],
+  "id" : "c1282949-6e8c-401c-8175-6f76c27fe984",
+  "label" : "CC Order Detail",
+  "objectApiName" : "ccrz__E_Order__c",
+  "routeType" : "detail-a5W",
+  "type" : "route",
+  "urlPrefix" : "e-order"
+}

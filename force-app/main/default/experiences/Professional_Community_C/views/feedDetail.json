@@ -1,0 +1,76 @@
+{
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "6c5aefa8-e469-4b92-8d4f-9f4e611e75c4",
+  "label" : "Feed Detail",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "id" : "{!feedItemId}"
+      },
+      "componentName" : "forceCommunity:feedItemDetail",
+      "id" : "f6e3d913-a79a-413e-b124-d225a3521edc",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "6b0a5737-eb31-4025-8378-3cd9755bb4b7",
+        "fr" : "f3516d2f-950b-4004-b07c-e7c382d2867f"
+      },
+      "renditions" : [ {
+        "id" : "f3516d2f-950b-4004-b07c-e7c382d2867f",
+        "renditionValue" : {
+          "componentAttributes" : { }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "6b0a5737-eb31-4025-8378-3cd9755bb4b7",
+        "renditionValue" : {
+          "componentAttributes" : { }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "060c0182-2be4-4509-a8d4-6396ec5847b8",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "e2a1f303-3166-4d25-95cf-d6e83b41a7aa",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "numberOfTopicsToDisplay" : 10,
+        "searchHint" : "Type a topic name and press Enter.",
+        "title" : "Topics"
+      },
+      "componentName" : "forceCommunity:topicsOnRecordWrapper",
+      "id" : "69e3e1fd-1fa8-4a1e-9944-24d3d7bf73c4",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "thisFeedItem" : "{!feedItemId}",
+        "title" : "People who may know",
+        "usersPerPage" : 3
+      },
+      "componentName" : "c:KnowledgeableAbout",
+      "id" : "ed3c497c-1db2-4b1d-aa00-24aa505e916c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d752db34-db70-4163-ab32-685f0c5b4e70",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "83aa7de8-fffe-4879-82fd-6d86e0386c6b",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "feeditem-generic"
+}

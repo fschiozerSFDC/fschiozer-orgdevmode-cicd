@@ -1,0 +1,468 @@
+{
+  "appPageId" : "e4bd7437-87f9-492f-bb9b-cca60c9128dd",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "ae84bb0d-9a07-48f2-91df-1bcb1aff0e86",
+  "label" : "Home (Employees)",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "config" : {
+          "collectionLayoutDefinition" : {
+            "attributes" : {
+              "collectionTitle" : "",
+              "collectionTitleHeadingTag" : "h2",
+              "columns" : "4",
+              "rows" : "1",
+              "showCollectionTitle" : true,
+              "showViewMoreButton" : true,
+              "spacing" : "small",
+              "viewMoreButtonBackgroundColor" : "",
+              "viewMoreButtonBackgroundColorHover" : "",
+              "viewMoreButtonBorderColor" : "",
+              "viewMoreButtonBorderColorHover" : "",
+              "viewMoreButtonLabel" : "More News",
+              "viewMoreButtonPlacement" : "center",
+              "viewMoreButtonRadius" : "20",
+              "viewMoreButtonTextColor" : "",
+              "viewMoreButtonTextColorHover" : ""
+            },
+            "componentName" : "forceCommunity:dynamicCollectionGrid"
+          },
+          "dataProviderDefinition" : {
+            "attributes" : {
+              "dataProviderInfo" : {
+                "apiName" : "Home_News2"
+              },
+              "dataProviderType" : "NamedCollection"
+            },
+            "componentName" : "forceCommunity:managedContentCollectionDataProvider"
+          },
+          "itemLayoutDefinition" : {
+            "attributes" : {
+              "backgroundPosition" : "center center",
+              "backgroundSize" : "cover",
+              "bannerHeight" : "349",
+              "bannerSubTitleTextColor" : "#ffffff",
+              "bannerTitleTextColor" : "#ffffff",
+              "callToActionButtonBackgroundColor" : "",
+              "callToActionButtonBackgroundColorHover" : "",
+              "callToActionButtonBorderColor" : "",
+              "callToActionButtonBorderColorHover" : "",
+              "callToActionButtonRadius" : "4",
+              "callToActionButtonTextColor" : "",
+              "callToActionButtonTextColorHover" : "",
+              "callToActionLabel" : "View",
+              "contentWidth" : 80,
+              "imageAltText" : "",
+              "imageUrl" : "@bannerImage/url",
+              "overlayBackgroundColor" : "rgba(0, 0, 0, 0.4)",
+              "showButton" : false,
+              "showCaption" : true,
+              "subTitle" : "@excerpt",
+              "subTitleFontSize" : "regular",
+              "textAlignment" : "center center",
+              "title" : "@Name",
+              "titleFontSize" : "large",
+              "titleHeadingTag" : "p"
+            },
+            "componentName" : "forceCommunity:bannerImageLayout"
+          },
+          "schemaVersion" : "V1.0"
+        }
+      },
+      "componentName" : "forceCommunity:dynamicCollection",
+      "id" : "5e65ec34-b405-4686-a5aa-39748047eb79",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "adc6d8a6-e327-4c5e-b1b6-a99c8988e3dc",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "56ef5eaf-2fb0-4511-a3da-82dce93295f1",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "d2f77e9d-812a-4363-9920-f169e5a25e4f",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Discussions du moment"
+          }, {
+            "UUID" : "f1857210-7513-4eda-9fc0-977936cb20f0",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "Questions"
+          }, {
+            "UUID" : "589bee06-f146-4a1b-b69e-83fa8a610c6c",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "c8aea",
+            "tabName" : "Idées géniales"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "56ef5eaf-2fb0-4511-a3da-82dce93295f1",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "overlayColor" : "rgba(0, 0, 0, 0)",
+            "overlayHoverColor" : "rgba(150, 101, 101, 0.32)",
+            "showTitle" : false,
+            "textColor" : "rgb(0, 0, 0)",
+            "textPosition" : "bottom center",
+            "title" : "Featured Topics"
+          },
+          "componentName" : "forceTopic:featuredTopics",
+          "id" : "e856d612-fc32-44d7-934a-dbaebc4a0b98",
+          "renditionMap" : {
+            "fr" : "e272fdb5-0371-497f-9761-a535ef36b916"
+          },
+          "renditions" : [ {
+            "id" : "e272fdb5-0371-497f-9761-a535ef36b916",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "showTitle" : "false"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "bgcolor" : "#0070D2",
+            "filter" : "",
+            "publicOnly" : false
+          },
+          "componentName" : "c:ChatterGroupTiles",
+          "id" : "f2bd5c55-4a1a-4e0d-87db-7e70542d1b77",
+          "renditionMap" : {
+            "fr" : "13e742d0-d240-418f-bf79-cec9092cec62"
+          },
+          "renditions" : [ {
+            "id" : "13e742d0-d240-418f-bf79-cec9092cec62",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "bgcolor" : "#6b4cb0"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        } ],
+        "id" : "d2f77e9d-812a-4363-9920-f169e5a25e4f",
+        "regionLabel" : "Discussions",
+        "regionName" : "1",
+        "renditionMap" : {
+          "es" : "49706ac5-965d-4f16-a8f0-d0a722557cbe",
+          "fr" : "4cbb6a04-9e82-4aed-b0eb-935a10015747"
+        },
+        "renditions" : [ {
+          "id" : "4cbb6a04-9e82-4aed-b0eb-935a10015747",
+          "renditionValue" : {
+            "regionLabel" : "Discussions du moment"
+          },
+          "type" : "renditionComponent"
+        }, {
+          "id" : "49706ac5-965d-4f16-a8f0-d0a722557cbe",
+          "renditionValue" : {
+            "regionLabel" : "Discusiones"
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "numberOfItems" : 5,
+            "showViewCounts" : true,
+            "title" : "Do you have the answer?"
+          },
+          "componentName" : "forceChatter:unansweredQuestions",
+          "id" : "5108ec0a-f973-4836-9978-a0c996f97201",
+          "renditionMap" : {
+            "fr" : "6bebd6ca-572a-4ded-9afe-21b0bbceb834"
+          },
+          "renditions" : [ {
+            "id" : "6bebd6ca-572a-4ded-9afe-21b0bbceb834",
+            "renditionValue" : {
+              "componentAttributes" : {
+                "title" : "Avez-vous la réponse?"
+              }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        } ],
+        "id" : "f1857210-7513-4eda-9fc0-977936cb20f0",
+        "regionLabel" : "Questions",
+        "regionName" : "2",
+        "renditionMap" : {
+          "es" : "2e9453a5-2b6d-4d2f-ae81-634a95e13b60",
+          "fr" : "974ce3a4-f6c8-41cd-ba97-d1cd764d91c5"
+        },
+        "renditions" : [ {
+          "id" : "974ce3a4-f6c8-41cd-ba97-d1cd764d91c5",
+          "renditionValue" : {
+            "regionLabel" : "Questions"
+          },
+          "type" : "renditionComponent"
+        }, {
+          "id" : "2e9453a5-2b6d-4d2f-ae81-634a95e13b60",
+          "renditionValue" : {
+            "regionLabel" : "Mis Casos"
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "ideaDetailPath" : "idea/",
+            "ideaPostPath" : "postidea/",
+            "ideasPerPage" : 3,
+            "listingTitle" : "Ideas",
+            "viewName" : "Popular"
+          },
+          "componentName" : "c:CommunityIdeaList",
+          "id" : "abcf6a55-6675-4a26-82cd-d3e4cb6a3faa",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "589bee06-f146-4a1b-b69e-83fa8a610c6c",
+        "regionLabel" : "Popular Ideas",
+        "regionName" : "c8aea",
+        "renditionMap" : {
+          "es" : "ab519483-af44-4710-8eb8-7028b378fa9f",
+          "fr" : "0a797385-df44-44fe-89b8-e71a05d1bf1b"
+        },
+        "renditions" : [ {
+          "id" : "0a797385-df44-44fe-89b8-e71a05d1bf1b",
+          "renditionValue" : {
+            "regionLabel" : "Idées géniales"
+          },
+          "type" : "renditionComponent"
+        }, {
+          "id" : "ab519483-af44-4710-8eb8-7028b378fa9f",
+          "renditionValue" : {
+            "regionLabel" : "Ideas Populares"
+          },
+          "type" : "renditionComponent"
+        } ],
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "eca29adf-8cf6-46ce-ab86-4287ee223f64",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "channel" : "DefaultChannel",
+        "title" : "Recommended for You"
+      },
+      "componentName" : "forceCommunity:recommendations",
+      "id" : "34a4d739-09f0-4acd-8cb8-5b0b913de364",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "es" : "c7d26194-f8e2-400c-9e6f-792be5f8b95f",
+        "fr" : "1a8b4d35-7d65-4e4b-a825-c56b5eab5db3"
+      },
+      "renditions" : [ {
+        "id" : "c7d26194-f8e2-400c-9e6f-792be5f8b95f",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Recomendados para Ti"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "1a8b4d35-7d65-4e4b-a825-c56b5eab5db3",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Recommandé pour Vous"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "display" : "KNOWLEDGE_POINTS",
+        "excludeInternalUsers" : true,
+        "knowledgeLabel" : "Knows about",
+        "numberOfUsers" : 5,
+        "showContextUser" : false,
+        "showTooltip" : true,
+        "showUserRank" : true,
+        "title" : "Community MVPS",
+        "tooltipText" : "Earn points and climb to new levels when you contribute in the community!"
+      },
+      "componentName" : "forceCommunity:reputationLeaderboard42",
+      "id" : "a25d1064-a3bb-4989-b1a9-fbc49f884471",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "es" : "56da261a-1070-4943-a376-03503b93350b",
+        "fr" : "f68db68c-faf0-4c30-9912-43d7d504c688"
+      },
+      "renditions" : [ {
+        "id" : "f68db68c-faf0-4c30-9912-43d7d504c688",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "knowledgeLabel" : "Compétences",
+            "title" : "MVPs de la communauté",
+            "tooltipText" : "Gagner de spoints et monter les échelons en contribuant à la communauté!"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "56da261a-1070-4943-a376-03503b93350b",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Miembros Expertos"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "numberOfArticles" : 3,
+        "title" : "Trending Articles",
+        "topicId" : ""
+      },
+      "componentName" : "selfService:topicTrendingArticles42",
+      "id" : "528b02f3-3686-450b-a28b-b18a7f4eb99a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "fr" : "b55988c7-49b1-48aa-9daa-4e3bd19046f9"
+      },
+      "renditions" : [ {
+        "id" : "b55988c7-49b1-48aa-9daa-4e3bd19046f9",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Articles populaires"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "title" : "Tweets",
+        "username" : "salesforce"
+      },
+      "componentName" : "c:TMcTwitterFeed",
+      "id" : "f34c0017-f551-4829-89ab-a8795ad9f4e7",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ef80bc18-3db3-4258-aee9-24662dfe2af2",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "allowPrepopulatePrechatFields" : true,
+        "avatarImgURL" : "",
+        "defaultMinimizedText" : "Chat with an Expert",
+        "displayHelpButton" : true,
+        "eswConfigurationJSON" : {
+          "baseCoreURL" : "https://sdomaster2.my.salesforce.com",
+          "baseLiveAgentContentURL" : "https://c.la1-c1-iad.salesforceliveagent.com/content",
+          "baseLiveAgentURL" : "https://d.la1-c1-iad.salesforceliveagent.com/chat",
+          "buttonId" : "5731N0000008Xlo",
+          "deploymentId" : "5721N0000008Wv7",
+          "enabledFeatures" : [ "LiveAgent" ],
+          "entryFeature" : "LiveAgent",
+          "eswConfigDevName" : "Snap_ins_Live_Agent",
+          "eswConfigId" : "04I1N000000GmhUUAS",
+          "eswLiveAgentDevName" : "EmbeddedServiceLiveAgent_Parent04I1N000000000QUAQ_161f7756989",
+          "isOfflineCasesEnabled" : "0",
+          "orgId" : "00D1N000000OQlC"
+        },
+        "offlineSupportMinimizedText" : "Text me back",
+        "offlineText" : "SEs EDIT THIS BUTTON - Experts are Offline",
+        "onlineLoadingText" : "Loading",
+        "prechatBackgroundImgURL" : "",
+        "smallCompanyLogoImgURL" : "",
+        "snippetSettingsFile" : "snapinsSnippetSettingsFile_DE",
+        "waitingStateBackgroundImgURL" : ""
+      },
+      "componentName" : "forceCommunity:embeddedService",
+      "id" : "a3230ed5-fe3c-476c-a8bb-926f4fe062f6",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "fr" : "76b5ffcf-ded3-4ac1-83db-25cf97ce4a4a"
+      },
+      "renditions" : [ {
+        "id" : "76b5ffcf-ded3-4ac1-83db-25cf97ce4a4a",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "defaultMinimizedText" : "Chat avec un Expert",
+            "offlineSupportMinimizedText" : "Nous contacter",
+            "offlineText" : "SEs EDIT THIS BUTTON - Experts non disponibles",
+            "onlineLoadingText" : "Chargement"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "67edc648-b674-4887-9c7b-93ca0524a3dc",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "<meta name=\"keywords\" content=\"Energy, sustainability, wind, electricity, power generation\" />\n<meta name=\"generator\" content=\"Salesforce Community Cloud (http://salesforce.com)\" />",
+        "description" : "Welcome to Cirrus! Get help with our products, find experts, ask questions, and learn!",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "3d65b42a-075d-43ad-8a18-7035b974af95",
+      "renditionMap" : {
+        "de" : "3882e534-1a3c-4a02-b6ba-6c125c17069e",
+        "fr" : "f4ce1a34-0703-4d4a-970a-315360759011"
+      },
+      "renditions" : [ {
+        "id" : "3882e534-1a3c-4a02-b6ba-6c125c17069e",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Home"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "f4ce1a34-0703-4d4a-970a-315360759011",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Home"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "adfa7fe7-ff7f-4c22-b434-e8eb31515eee",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}

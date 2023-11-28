@@ -1,0 +1,115 @@
+{
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "c3fc4d44-1334-40fd-9e3c-1145d0c797b3",
+  "label" : "Group List",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h1><b>Community Groups</b></h1><p>Groups provide a place for people with shared interests to collaborate, or to get the latest updates on our products, your practice, and top provide direct feedback. Browse our featured groups, or use the group list to find the right groups to join!</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "40ef87f7-c363-4ba0-9f19-7f440223fa71",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "4083872a-0a56-4266-baf8-e0ba39576c6a",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "3d38363f-bf30-4687-9160-fa239f418e4b",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "5a908e26-a8dc-4606-ade5-8acb2b7d7bcc",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Featured"
+          }, {
+            "UUID" : "2a3cbbb4-700b-41dd-aa31-55a7663b0289",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "All"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "3d38363f-bf30-4687-9160-fa239f418e4b",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "bgcolor" : "#0070D2",
+            "filter" : "",
+            "publicOnly" : false
+          },
+          "componentName" : "c:ChatterGroupTiles",
+          "id" : "46b55811-fc34-4eca-9483-89ea2b14d430",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "5a908e26-a8dc-4606-ade5-8acb2b7d7bcc",
+        "regionLabel" : "Featured",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "forceCommunity:groupObjectHome",
+          "id" : "7cd79ad8-8022-4913-b137-0fd1cb75d7b1",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "2a3cbbb4-700b-41dd-aa31-55a7663b0289",
+        "regionLabel" : "All",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3c77db32-e882-41ce-80f7-4cc5c34c1b98",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "e39efa24-d9dd-435f-b374-c3bca75b9b5f",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "display" : "LEVELS_POINTS",
+        "excludeInternalUsers" : true,
+        "knowledgeLabel" : "Knows about",
+        "numberOfUsers" : 5,
+        "showContextUser" : true,
+        "showTooltip" : true,
+        "showUserRank" : true,
+        "title" : "Leaderboard",
+        "tooltipText" : "Earn points and climb to new levels when you contribute in the community!"
+      },
+      "componentName" : "forceCommunity:reputationLeaderboard42",
+      "id" : "6e4a2e63-7e1a-4e00-8284-e17479402016",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "57a1d7d7-cd88-4a16-bccc-ccfd2a70a5dd",
+    "regionName" : "sidebar",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list-0F9"
+}

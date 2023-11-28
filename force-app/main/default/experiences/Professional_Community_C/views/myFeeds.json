@@ -1,0 +1,169 @@
+{
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "da4f6c4b-ddb2-46e9-91a1-0ebf9e8f6e16",
+  "label" : "My Feeds",
+  "regions" : [ {
+    "id" : "7bcc35d5-df1e-44e5-8d35-aa89b92260c8",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "c37ae308-9c8b-412e-81d0-7a86aae7fc05",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "be28e63f-64c9-4ab8-bd88-5515f68e514e",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "76540df4-d015-41c8-9fcb-e4f48c340c74",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "My Feed"
+          }, {
+            "UUID" : "da7d06d2-3200-45cf-8d58-27612dc79de3",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "All Community"
+          }, {
+            "UUID" : "c0743e58-57dd-430d-b640-18abf3387a4c",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "3",
+            "tabName" : "Unanswered"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "be28e63f-64c9-4ab8-bd88-5515f68e514e",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h3>Your Feed</h3><p>Posts and updates from everyone and everything you follow in the community. These are updates tailored just for YOU!</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "1c29e01b-e97b-4a5a-b91f-3c00df58f45f",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "canChangeSorting" : true,
+            "defaultFilter" : "",
+            "defaultSortOrderHomeFeed" : "Relevance",
+            "defaultSortOrderTopicsFeed" : "Relevance",
+            "feedDesign" : "BROWSE",
+            "hasFeedSearch" : true,
+            "subjectId" : "{!recordId}",
+            "type" : "News"
+          },
+          "componentName" : "forceCommunity:forceCommunityFeed",
+          "id" : "2f7cffa4-584e-40dc-bd14-2f0dc7490cd3",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "76540df4-d015-41c8-9fcb-e4f48c340c74",
+        "regionLabel" : "My Feed",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h3>Top Community Updates</h3><p>Trending and active posts from the community. Use this feed to learn, meet others, and keep up with the latest updates you might not be aware of!</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "1fbc5b83-600d-42ab-a19d-10ce1758c4cc",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "canChangeSorting" : true,
+            "defaultFilter" : "",
+            "defaultSortOrderHomeFeed" : "Relevance",
+            "defaultSortOrderTopicsFeed" : "Relevance",
+            "feedDesign" : "BROWSE",
+            "hasFeedSearch" : true,
+            "subjectId" : "{!recordId}",
+            "type" : "Home"
+          },
+          "componentName" : "forceCommunity:forceCommunityFeed",
+          "id" : "ca94d712-d21e-4bb2-86f8-b277ec0e9a3a",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "da7d06d2-3200-45cf-8d58-27612dc79de3",
+        "regionLabel" : "All Community",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h3>Unanswered</h3><p>These questions are just waiting for your expertise! See a question you can answer? Chime in today and bump your reputation level!</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "330ca071-3e40-4ba9-9419-557ef96d9801",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "canChangeSorting" : true,
+            "defaultFilter" : "UnansweredQuestions",
+            "defaultSortOrderHomeFeed" : "LastModifiedDateDesc",
+            "defaultSortOrderTopicsFeed" : "Relevance",
+            "feedDesign" : "BROWSE",
+            "hasFeedSearch" : true,
+            "subjectId" : "{!recordId}",
+            "type" : "Home"
+          },
+          "componentName" : "forceCommunity:forceCommunityFeed",
+          "id" : "3c41377e-78ed-473d-82cd-c34c8e0ba34a",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "c0743e58-57dd-430d-b640-18abf3387a4c",
+        "regionLabel" : "Unanswered",
+        "regionName" : "3",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f5dae48f-99b0-4fc5-95f3-519b13da6976",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "94acceec-2ed4-4538-8ba3-dc68fb654c6d",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "My Feeds"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "842d3774-0fb2-44b4-9ac1-52ee88734a4d",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3ad9e255-3a53-44ad-b30d-6dddc94ae00a",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-my-feeds"
+}

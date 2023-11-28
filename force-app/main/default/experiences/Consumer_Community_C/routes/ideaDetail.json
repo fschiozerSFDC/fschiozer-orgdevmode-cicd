@@ -1,0 +1,10 @@
+{
+  "activeViewId" : "637b5152-6726-4e73-916c-9258ddb6fc92",
+  "appPageId" : "e4bd7437-87f9-492f-bb9b-cca60c9128dd",
+  "configurationTags" : [ ],
+  "id" : "6beb6b19-7930-4640-9bfa-c441c7d99c7e",
+  "label" : "Idea Detail",
+  "routeType" : "detail-087",
+  "type" : "route",
+  "urlPrefix" : "idea"
+}

@@ -1,0 +1,218 @@
+{
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "70fb4eb9-0c8e-4237-9b21-477d98b5e1f7",
+  "label" : "Marketing Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "forceCommunity:managedContent",
+      "id" : "b8e99b28-780f-4529-818e-21c11ce9a7c1",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "4835c520-7cd6-420a-9d1c-8bd0c4bffef2",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "cdad5a5f-7614-4d49-a763-215b306ae3a7",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "d2b88c7e-07f8-41f5-b561-ae18e20cc499",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Channel Plans"
+          }, {
+            "UUID" : "16eaf4e7-5d1c-4731-be05-ee3157e1ef12",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "Fund Requests"
+          }, {
+            "UUID" : "9ab83601-ea49-4f53-a441-a31434663ca3",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "d5124",
+            "tabName" : "Fund Claims"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "cdad5a5f-7614-4d49-a763-215b306ae3a7",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "filterName" : "00B1N000008fddBUAQ",
+            "layout" : "FULL",
+            "pageSize" : 5,
+            "scope" : "SFDC_Channel_Account_Plan__c",
+            "showDisplay" : "showall"
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "c99b99d5-a846-4fac-a6bf-40dc41e9f2a9",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "d2b88c7e-07f8-41f5-b561-ae18e20cc499",
+        "regionLabel" : "Channel Plans",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "filterName" : "00B1N000008fdiEUAQ",
+            "layout" : "FULL",
+            "pageSize" : 5,
+            "scope" : "PartnerFundRequest",
+            "showDisplay" : "showall"
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "a2ed6d5a-fabc-4c04-90d0-acb043fa3174",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "16eaf4e7-5d1c-4731-be05-ee3157e1ef12",
+        "regionLabel" : "Fund Requests",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "filterName" : "00B1N000008fdiDUAQ",
+            "layout" : "FULL",
+            "pageSize" : 25,
+            "scope" : "PartnerFundClaim",
+            "showDisplay" : "showall"
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "864b0682-e777-412d-9151-08d5467e6d1b",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "9ab83601-ea49-4f53-a441-a31434663ca3",
+        "regionLabel" : "Fund Claims",
+        "regionName" : "d5124",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "71bae06d-3b62-482a-afd9-22f6ac4816eb",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "actions" : [ {
+          "isPublic" : false,
+          "name" : "Request_Funds"
+        }, {
+          "isPublic" : false,
+          "name" : "Claim_Funds"
+        } ],
+        "label" : "Get Paid!"
+      },
+      "componentName" : "forceCommunity:createRecordButton",
+      "id" : "2d20db1b-26bd-4cea-a1bd-1ac3353ce4c3",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "channel" : "CustomChannel2",
+        "title" : "Planning & Marketing Content"
+      },
+      "componentName" : "forceCommunity:recommendations",
+      "id" : "2ce5b315-2785-4e6c-9450-36cb4fdf843a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"sfdcCbVideoContainer\"><iframe class=\"sfdcCbVideo\" allowfullscreen=\"true\" frameborder=\"0\" width=\"100%\" src=\"https://www.youtube.com/embed/ZcAccJEp--E\"></iframe></div><p> </p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "b004648d-ff18-48f1-844a-cb8868390e4b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "05b12359-59ea-4fae-aa23-0759a144de99",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "2273d62e-ea86-4e2b-8520-d1ad7746601e",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Marketing Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "f7e08a75-6e75-4fed-a7a5-db8e69a59cf7",
+      "renditionMap" : {
+        "de" : "8bff47eb-5953-444b-bc38-3c55cec764eb",
+        "es" : "70511963-acde-43c8-bdff-f3fd85b26d72",
+        "fr" : "1a569622-b50b-46d3-8d91-ad4cdb3f011c",
+        "ja" : "bf3ddcd6-219c-4268-b3da-af1161116bb3"
+      },
+      "renditions" : [ {
+        "id" : "8bff47eb-5953-444b-bc38-3c55cec764eb",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Marketing Home"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "1a569622-b50b-46d3-8d91-ad4cdb3f011c",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Marketing Home"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "70511963-acde-43c8-bdff-f3fd85b26d72",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Marketing Home"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "bf3ddcd6-219c-4268-b3da-af1161116bb3",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Marketing Home"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "0f790a5d-239f-448a-91c2-439f36739a0c",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-marketing-home"
+}
