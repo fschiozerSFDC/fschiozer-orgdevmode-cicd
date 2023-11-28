@@ -15,7 +15,11 @@ on:
 # Jobs to be executed
 jobs:
   build-deploy:
+<<<<<<< HEAD
     runs-on: ubuntu-latest
+=======
+    runs-on: Professiona-Services-LATAM-Ubuntu
+>>>>>>> b7d8470 (Initialize develop)
     container: tnascimento013/latam_salesforcedx_industries_orgdevmodebuilds:latest
     environment: ${{ inputs.environment }}
     steps:
@@ -23,7 +27,11 @@ jobs:
         run: echo "y" | sf plugins install sf-orgdevmode-builds
 
       - name: Download Artifact
+<<<<<<< HEAD
         uses: actions/fetch-gh-release-asset@v1.1.1
+=======
+        uses: Professiona-Services-LATAM/fetch-gh-release-asset@v1.1.1
+>>>>>>> b7d8470 (Initialize develop)
         with:
           token: ${{ secrets.SVC_CLI_BOT_GITHUB_TOKEN }}
           version: tags/${{ inputs.tag }}
