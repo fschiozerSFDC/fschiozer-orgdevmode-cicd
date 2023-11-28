@@ -19,11 +19,7 @@ on:
 # Jobs to be executed
 jobs:
   build-deploy:
-<<<<<<< HEAD
     runs-on: ubuntu-latest
-=======
-    runs-on: Professiona-Services-LATAM-Ubuntu
->>>>>>> b7d8470 (Initialize develop)
     container: tnascimento013/latam_salesforcedx_industries_orgdevmodebuilds:latest
     environment: ${{ inputs.environment }}
     steps:
@@ -31,11 +27,7 @@ jobs:
         run: echo "y" | sf plugins install sf-orgdevmode-builds
 
       - name: "Checkout source code"
-<<<<<<< HEAD
         uses: actions/checkout@v3
-=======
-        uses: Professiona-Services-LATAM/checkout@v3
->>>>>>> b7d8470 (Initialize develop)
         with:
           ref: ${{ inputs.ref }}
 
@@ -52,11 +44,7 @@ jobs:
         run: git archive -o ${{ github.event.repository.name }}-${{ inputs.tag }}.zip HEAD
 
       - name: Create tag
-<<<<<<< HEAD
         uses: actions/github-script@v6.4.1
-=======
-        uses: Professiona-Services-LATAM/github-script@v6.4.1
->>>>>>> b7d8470 (Initialize develop)
         with:
           script: |
             github.rest.git.createRef({
@@ -67,11 +55,7 @@ jobs:
             })
 
       - name: Upload Assets
-<<<<<<< HEAD
         uses: actions/action-gh-release@v0.1.15
-=======
-        uses: Professiona-Services-LATAM/action-gh-release@v0.1.15
->>>>>>> b7d8470 (Initialize develop)
         env:
           GITHUB_TOKEN: ${{ secrets.SVC_CLI_BOT_GITHUB_TOKEN }}
         with:
