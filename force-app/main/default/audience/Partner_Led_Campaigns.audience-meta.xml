@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>Partner-Led Campaigns</audienceName>
+    <container>Partner Central</container>
+    <criteria>
+        <criterion>
+            <criterionValue>
+                <entityField>RecordType.Id</entityField>
+                <entityType>Campaign</entityType>
+                <fieldValue>Campaign.Partner_Led_Campaign</fieldValue>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>FieldBased</type>
+        </criterion>
+    </criteria>
+    <formulaFilterType>AllCriteriaMatch</formulaFilterType>
+    <isDefaultAudience>false</isDefaultAudience>
+    <targets>
+        <target>
+            <groupName>dd43a66c-86d9-4524-8469-581e7fc61b73</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Campaign_Detail_Partner_Campaign_Page</targetValue>
+        </target>
+    </targets>
+</Audience>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>System Administrators</audienceName>
+    <container>Partner Central</container>
+    <criteria>
+        <criterion>
+            <criterionValue>
+                <profile>admin</profile>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>Profile</type>
+        </criterion>
+    </criteria>
+    <formulaFilterType>AllCriteriaMatch</formulaFilterType>
+    <isDefaultAudience>false</isDefaultAudience>
+    <targets>
+        <target>
+            <groupName>8738b186-acae-47fd-af8a-5ceb6da54d95$#$9f8b3c62-6daf-4db0-854f-6118f28bfaa5</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Guest_Users_Rich_Content_Editor_Component</targetValue>
+        </target>
+        <target>
+            <groupName>f458d845-0dfb-4d9a-9dfa-f198c2f0c889$#$376bd7f2-6d97-4430-9509-ffbe19fecf78</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Partner_Campaign_Rich_Content_Editor_Component</targetValue>
+        </target>
+        <target>
+            <groupName>73427aad-7f4d-427c-a728-3ee1640148b6$#$4ceacba9-84aa-426b-9a80-c90950db3ce9</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Resources_Rich_Content_Editor_Component</targetValue>
+        </target>
+        <target>
+            <groupName>8dd9d266-1031-4f3a-a20f-42c42fae080e$#$0149f527-000e-45cd-9714-20858caf103d</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Contact_Detail_Rich_Content_Editor_Component</targetValue>
+        </target>
+    </targets>
+</Audience>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>Authenticated Users</audienceName>
+    <container>Professional Community</container>
+    <criteria>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <entityField>Profile.UserType</entityField>
+                <entityType>User</entityType>
+                <fieldValue>Guest</fieldValue>
+            </criterionValue>
+            <operator>NotEqual</operator>
+            <type>FieldBased</type>
+        </criterion>
+    </criteria>
+    <formulaFilterType>AllCriteriaMatch</formulaFilterType>
+    <isDefaultAudience>false</isDefaultAudience>
+    <targets>
+        <target>
+            <groupName>292d8438-fc7a-4d50-9424-843535ecd489$#$cedda91e-0030-4235-a376-876478fa3160</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Rich_Content_Editor_2_Component</targetValue>
+        </target>
+        <target>
+            <groupName>292d8438-fc7a-4d50-9424-843535ecd489$#$cf594a51-2869-4fd7-9e66-3cde66ee06b8</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Rich_Content_Editor_4_Component</targetValue>
+        </target>
+        <target>
+            <groupName>97a9324c-7309-4e27-8008-c2db8e39a2cd$#$e406132d-ebfc-46df-9fcb-9b26be1af373</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Alternate_Rich_Content_Editor_1_Component</targetValue>
+        </target>
+    </targets>
+</Audience>

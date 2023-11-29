@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#CE1BB0</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Marketing Cloud KV</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Marketing Cloud KV</label>
+    <navType>Standard</navType>
+    <tabs>mcdm_15__Distributed_Marketing_Administration</tabs>
+    <tabs>mcdm_15__Distributed_Marketing_Personalization_Settings</tabs>
+    <tabs>et4ae5__ExactTargetPhoenix</tabs>
+    <tabs>mcdm_15__LinkedBusinessUnit__c</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>standard-Lead</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>standard-Campaign</tabs>
+    <tabs>TesteParmito__x</tabs>
+    <tabs>MaisCoisa__x</tabs>
+    <tabs>Employee__c</tabs>
+    <tabs>Treinamento__c</tabs>
+    <tabs>Visita__c</tabs>
+    <tabs>Visita2__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Marketing_Cloud_KV_UtilityBar</utilityBar>
+</CustomApplication>

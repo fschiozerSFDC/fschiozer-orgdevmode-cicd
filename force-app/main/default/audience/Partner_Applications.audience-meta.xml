@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>Partner Applications</audienceName>
+    <container>Partner Central</container>
+    <criteria>
+        <criterion>
+            <criterionValue>
+                <entityField>RecordType.Id</entityField>
+                <entityType>Lead</entityType>
+                <fieldValue>Lead.Partner_Application</fieldValue>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>FieldBased</type>
+        </criterion>
+    </criteria>
+    <formulaFilterType>AllCriteriaMatch</formulaFilterType>
+    <isDefaultAudience>false</isDefaultAudience>
+    <targets>
+        <target>
+            <groupName>93418bff-ca06-4de9-b2ec-abff1f3e69be</groupName>
+            <priority>2</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Lead_Detail_Lead_Detail_Partner_Signup_Results_Page</targetValue>
+        </target>
+    </targets>
+</Audience>
