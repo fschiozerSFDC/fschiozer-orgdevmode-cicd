@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>7</activeVersionNumber>
+    <description>B2B Commerce - updates the Account credit limit when an order is submitted.</description>
+    <masterLabel>CKZ Update Credit Limit (Order)</masterLabel>
+</FlowDefinition>

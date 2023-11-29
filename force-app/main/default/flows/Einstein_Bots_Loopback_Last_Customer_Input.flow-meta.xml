@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <name>Loopback_Last_Customer_Input</name>
+        <label>Loopback Last Customer Input</label>
+        <locationX>191</locationX>
+        <locationY>50</locationY>
+        <assignmentItems>
+            <assignToReference>varLastCustomerInput</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varLastCustomerInput</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>Simple loopback flow to allow Bot to capture Last Customer Input to a variable</description>
+    <interviewLabel>Einstein Bots {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Einstein Bots - Loopback Last Customer Input</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <startElementReference>Loopback_Last_Customer_Input</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>varLastCustomerInput</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

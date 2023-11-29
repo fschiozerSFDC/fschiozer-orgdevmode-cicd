@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>4</activeVersionNumber>
+    <description>Checks to see whether the user wants to work with the bot on an existing Case or something new</description>
+    <masterLabel>Einstein Bots - New or Existing Case?</masterLabel>
+</FlowDefinition>

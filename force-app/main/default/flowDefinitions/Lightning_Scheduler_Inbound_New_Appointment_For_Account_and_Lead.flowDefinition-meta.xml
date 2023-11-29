@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>1</activeVersionNumber>
+    <description>Flow launched from Account and Lead. Custom flow that by passes territory selection screen if Virtual is selected as appointment type.</description>
+    <masterLabel>Lightning Scheduler Inbound New Appointment - For Account and Lead</masterLabel>
+</FlowDefinition>
