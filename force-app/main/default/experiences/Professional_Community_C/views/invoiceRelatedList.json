@@ -1,0 +1,65 @@
+{
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "9c83cf5f-6137-4996-82e6-2f181efb3caa",
+  "label" : "Invoice Related List",
+  "regions" : [ {
+    "id" : "36e24632-b0fe-41ab-9edf-cee541fa8416",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "parentRecordId" : "{!parentRecordId}",
+        "relatedListName" : "{!relatedListName}"
+      },
+      "componentName" : "forceCommunity:relatedList",
+      "id" : "3bebd724-1319-40dd-948f-3f9d88ed072b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2a40795b-c385-4919-a6c7-dd3f28ac3d64",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "avatarImgURL" : "",
+        "defaultMinimizedText" : "Chat with an Expert",
+        "displayHelpButton" : true,
+        "eswConfigurationJSON" : {
+          "availabilityEndpointUrl" : "https://d.la1-c1-ord.salesforceliveagent.com/chat/rest",
+          "baseLiveAgentContentUrl" : "https://c.la1-c1-ord.salesforceliveagent.com/content",
+          "baseLiveAgentUrl" : "https://d.la1-c1-ord.salesforceliveagent.com/chat",
+          "buttonId" : "573o0000000TUhU",
+          "chasitorJsUrl" : "https://c.la1-c1-ord.salesforceliveagent.com/content/g/js/40.0/chasitor.js",
+          "chasitorJsVersion" : "40.0",
+          "deploymentId" : "572o0000000TTUy",
+          "eswConfigDevName" : "Snap_ins_Chat_B2B",
+          "eswConfigId" : "04I1N0000000006UAA",
+          "eswLiveAgentDevName" : "EmbeddedServiceLiveAgent_Parent04I1N0000000006UAA_15c7792cd4f",
+          "orgId" : "00D300000007EfQ",
+          "releaseVersion" : "1.0"
+        },
+        "offlineText" : "Agent Offline",
+        "onlineLoadingText" : "Loading",
+        "prechatBackgroundImgURL" : "",
+        "smallCompanyLogoImgURL" : "",
+        "waitingStateBackgroundImgURL" : ""
+      },
+      "componentName" : "forceCommunity:embeddedService",
+      "id" : "a0cb97fe-90c1-4807-9518-b41e3190ff02",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a04bd673-ed6a-4fe8-aa04-af93ac05b4ba",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "relatedlist-a02"
+}

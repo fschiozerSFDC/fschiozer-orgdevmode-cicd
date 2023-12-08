@@ -1,0 +1,72 @@
+{
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "586fa348-61ea-4535-afb2-0df74aef7cab",
+  "label" : "Lead Detail (Partner Signup Results)",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h6 style=\"text-align: center;\"><b style=\"font-size: 24px;\">Thank you for submitting your partner application</b></h6>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "2f264443-2e18-4899-b29b-df4ec73eb72f",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b9e9dfc8-1663-4a0a-9a72-8369910fcab9",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\"><span style=\"color: rgb(91, 91, 91); font-size: 15px; background-color: rgb(250, 250, 251);\">We will review your application and will be in touch within the next 48 hours.&nbsp;In the mean time why not check out our learning centre for videos, white papers and case studies.</span></p><p><br></p><p> </p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "66d514ec-62ce-4027-abd9-a26f9fb36ad3",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6993e7d6-69fb-4018-a8aa-0c87c7ce3de9",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"sfdcCbVideoContainer\"><iframe class=\"sfdcCbVideo\" allowfullscreen=\"true\" frameborder=\"0\" width=\"100%\" src=\"https://www.youtube.com/embed/a9Ad-0hAzz0\"></iframe></div><p> </p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "7dcb2495-2d7f-4621-b930-ead433489297",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7980d023-4249-4488-abdc-ddf8f57d23ee",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "d89cec91-73db-481a-83ce-c9128da2d741",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "c8fe0612-8f23-4d83-bcf2-1b54ae31d9b9",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "38468ed4-c48f-4b95-ac98-fa61967db84f",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-00Q"
+}

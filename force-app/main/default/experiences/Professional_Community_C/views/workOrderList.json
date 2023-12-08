@@ -1,0 +1,62 @@
+{
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "adec4323-4344-4137-86aa-551d22d7d880",
+  "label" : "Work Order List",
+  "regions" : [ {
+    "id" : "180d03a0-4a15-4f58-b227-758f9eeb7056",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "filterName" : "{!filterId}",
+        "layout" : "STANDARD",
+        "pageSize" : 25,
+        "scope" : "{!objectName}",
+        "showDisplay" : "showall"
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "050b110a-1b35-4d96-8915-5611b5ab03b5",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "61104ad2-77a1-4451-8e7f-f98361430a6f",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "1ae12a65-3ba9-4bd5-ae12-9be4ab976f98",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "defaultMinimizedText" : "Book Appointment",
+        "eswConfigurationJSON" : {
+          "baseCoreURL" : "https://sdomaster.my.salesforce.com",
+          "enabledFeatures" : [ "FieldService" ],
+          "entryFeature" : "FieldService",
+          "eswConfigDevName" : "Appointment_Booking",
+          "eswConfigId" : "04I1N000000000fUAA",
+          "gslbBaseURL" : "https://service.force.com",
+          "orgId" : "00D300000007EfQ"
+        },
+        "onlineLoadingText" : "Loading...",
+        "unauthenticatedText" : "Log In and Book Appointment"
+      },
+      "componentName" : "forceCommunity:embeddedServiceFieldService",
+      "id" : "432c8f94-6272-4743-a2e5-dd1fb25e0c39",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b57bb095-d55e-4bbb-9c79-62c325858ec4",
+    "regionName" : "sidebar",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list-0WO"
+}

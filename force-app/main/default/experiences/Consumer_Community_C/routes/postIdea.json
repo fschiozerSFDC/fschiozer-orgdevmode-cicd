@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "c7b145f5-5d23-4a0f-a202-0093019ff908",
+  "appPageId" : "e4bd7437-87f9-492f-bb9b-cca60c9128dd",
+  "configurationTags" : [ ],
+  "id" : "d35709cd-4902-47e2-9146-d1a12206813d",
+  "label" : "Post Idea",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-post-idea",
+  "type" : "route",
+  "urlPrefix" : "post-idea"
+}

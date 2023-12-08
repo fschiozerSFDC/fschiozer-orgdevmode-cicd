@@ -1,0 +1,255 @@
+{
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "8738b186-acae-47fd-af8a-5ceb6da54d95",
+  "label" : "Home: Guest Users",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p><img class=\"sfdcCbImage\" src=\"{!contentAsset.Banner_Reseller_Registration.1}\" /></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "18a74e7b-5f1b-4eae-b34a-aded2d049177",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f886e3c3-a64c-4464-8553-196f2130d96f",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h1><b style=\"color: rgb(230, 0, 0); font-size: 18px;\">SEs: START HERE</b></h1><p><b style=\"font-size: 14px;\">This community requires some setup before your demo.</b></p><ol><li><span style=\"font-size: 14px;\">Perform </span><a href=\"https://sfdc.co/SDOCommSetup\" target=\"_blank\" style=\"font-size: 14px;\">Community Setup Steps</a> (Aloha SSO Required, internal Salesforce only)<span style=\"font-size: 14px;\">.</span></li><li><span style=\"font-size: 14px;\">Review the </span><a href=\"https://sfdc.co/SDOPartnerCentralScript\" target=\"_blank\" style=\"font-size: 14px;\">Partner Central Demo Script</a> (Aloha SSO required, internal Salesforce only)<span style=\"font-size: 14px; background-color: transparent;\">.</span></li><li>Looking to demo Distributed Marketing? Read <a href=\"https://sfdc.co/DistMarketingSetup\" target=\"_blank\">this document</a> for latest status (Aloha SSO required, internal Salesforce only)</li><li><span style=\"color: rgb(0, 0, 0); font-size: 14px;\">OPTIONAL: Remove this component from the page layout and republish the community.</span></li></ol><p>&nbsp;</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "9f8b3c62-6daf-4db0-854f-6118f28bfaa5",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "actions" : [ {
+          "isPublic" : true,
+          "name" : "PRM_Partner_Application"
+        } ],
+        "label" : "Apply to become a partner!"
+      },
+      "componentName" : "forceCommunity:createRecordButton",
+      "id" : "117ef00d-49d7-4080-a7d4-0001f0db05f5",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p><br></p><div class=\"sfdcCbVideoContainer\"><iframe class=\"sfdcCbVideo\" allowfullscreen=\"true\" title=\"Video from https://www.youtube.com/embed/L6LpXqALToQ\" src=\"https://www.youtube.com/embed/L6LpXqALToQ\" width=\"100%\"></iframe></div><p>&nbsp;</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "47b56cf9-f9da-4b13-9d83-b9341df69608",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b3e40fd5-ecb8-481d-adb9-ce0052c91a4a",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "cmsJsonConfig" : {
+          "cmsConnectJsonPath" : "Blog_List",
+          "cmsConnectSettingName" : "Channel_Blog",
+          "componentPathUrl" : "",
+          "contentCollectionLayoutAttributes" : {
+            "itemsPerPage" : "2",
+            "largeDeviceSize" : "2"
+          },
+          "contentCollectionLayoutName" : "forceCommunity:cmsContentGridLayout",
+          "contentLayoutAttributeProviderType" : "DesignFile",
+          "contentLayoutAttributes" : {
+            "author" : "@author/name",
+            "content" : "@content",
+            "imageSrc" : "@featured_image",
+            "navLink" : {
+              "externalURL" : "http://",
+              "linkLabel" : "Read More",
+              "navigationType" : "Community_Standard_Page",
+              "pageId" : "b8c4f25f-8fe4-4da9-a57f-52072d79303f",
+              "pageName" : "Channel_Blog-Channel_Blog",
+              "queryParamList" : [ {
+                "paramName" : "recordId",
+                "paramValue" : "@ID"
+              }, {
+                "paramName" : "cmsSourceName",
+                "paramValue" : "Channel_Blog"
+              }, {
+                "paramName" : "cmsTypeName",
+                "paramValue" : "Channel_Blog"
+              }, {
+                "paramName" : "recordName",
+                "paramValue" : "@title"
+              } ],
+              "routeType" : "extdetail-cms-Channel_Blog-Channel_Blog"
+            },
+            "publishedOn" : "@date",
+            "title" : "@title"
+          },
+          "contentLayoutName" : "forceCommunity:cmsContentCardLayout",
+          "dataBindingProviderAttributes" : {
+            "collectionStartNode" : "@posts"
+          },
+          "dataBindingProviderComponent" : "forceCommunity:cmsConnectJSONCollectionDataBindingProvider",
+          "dataProviderComponent" : "forceCommunity:cmsConnectJSONDataProvider",
+          "isSelectedCmsSiteConfigDisabled" : ""
+        }
+      },
+      "componentName" : "forceCommunity:cmsContent",
+      "id" : "778729e2-c4ad-42f5-a3c3-41440d2721e3",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<h2><br></h2><h2><span style=\"font-size: 28px;\">Become a Partner</span></h2><p><br></p><p><span style=\"font-size: 18px;\">Our new partner program offers unparallelled benefits from tiered discounts and rebates to in-depth product training. Our partners drive the majority of our customer success and innovation. Among the benefits:</span></p><ul><li><span style=\"font-size: 18px;\">Co-marketing funds</span></li><li><span style=\"font-size: 18px;\">Quality leads distributed to you</span></li><li><span style=\"font-size: 18px;\">Easy deal registration</span></li><li><span style=\"font-size: 18px;\">Self-service quoting</span></li><li><span style=\"font-size: 18px;\">Direct collaboration with our staff</span></li></ul><p><span style=\"font-size: 18px; font-family: sans-serif;\">&nbsp;</span></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "c3352f1f-13d7-4e2d-8e46-6f8c39bb6d13",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "32d5bfec-5d84-4ffe-adf8-72309a5d60c5",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p><img class=\"sfdcCbImage\" src=\"{!contentAsset.PC_Recruitment_Banner1.1}\" /></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "fe76b66a-be32-4070-aa43-487aa177eca6",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p><a href=\"/partnercentral/s/partner-registration\" target=\"_self\"><img class=\"sfdcCbImage\" src=\"{!contentAsset.PC_Register_Banner.1}\" /></a></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "59124034-022e-44ca-9569-fa134a1be4b8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "allowPrepopulatePrechatFields" : true,
+        "avatarImgURL" : "",
+        "defaultMinimizedText" : "Chat with an Expert",
+        "displayHelpButton" : true,
+        "eswConfigurationJSON" : {
+          "baseCoreURL" : "https://sdomaster2.my.salesforce.com",
+          "baseLiveAgentContentURL" : "https://c.la1-c1-iad.salesforceliveagent.com/content",
+          "baseLiveAgentURL" : "https://d.la1-c1-iad.salesforceliveagent.com/chat",
+          "buttonId" : "5731N0000008Xlo",
+          "deploymentId" : "5721N0000008Wv7",
+          "enabledFeatures" : [ "LiveAgent" ],
+          "entryFeature" : "LiveAgent",
+          "eswConfigDevName" : "Snap_ins_Live_Agent",
+          "eswConfigId" : "04I1N000000GmhUUAS",
+          "eswLiveAgentDevName" : "EmbeddedServiceLiveAgent_Parent04I1N000000000QUAQ_161f7756989",
+          "isOfflineCasesEnabled" : "0",
+          "orgId" : "00D1N000000OQlC"
+        },
+        "externalScripts" : "",
+        "externalStyles" : "",
+        "fallbackRouting" : "",
+        "offlineSupportMinimizedText" : "Contact Us",
+        "offlineText" : "Agent Offline",
+        "onlineLoadingText" : "Loading",
+        "prechatBackgroundImgURL" : "",
+        "smallCompanyLogoImgURL" : "",
+        "snippetSettingsFile" : "snapinsSnippetSettingsFile_DE",
+        "waitingStateBackgroundImgURL" : ""
+      },
+      "componentName" : "forceCommunity:embeddedService",
+      "id" : "41b3ecfb-c2b7-4ef8-9dfd-26e316e1d59b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "44423a68-9df1-40b6-b3bd-dbd6f4e91ac2",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h2 style=\"text-align: center;\">Channel Program Overview</h2><div class=\"sfdcCbVideoContainer\"><iframe class=\"sfdcCbVideo\" allowfullscreen=\"true\" frameborder=\"0\" width=\"100%\" src=\"https://www.youtube.com/embed/a9Ad-0hAzz0\"></iframe></div><p>&nbsp;</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "ff4baf25-2229-4b2f-a1c0-1debc778c20e",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "63a9789e-8e9f-4a75-a5e7-73b5c6f727d4",
+    "regionName" : "featured",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "Our partner tools home page.",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "b3abf41d-2f9e-46d0-99ef-0e0e25d39e21",
+      "renditionMap" : {
+        "de" : "41532b39-1392-4092-bcee-97e704fe763c",
+        "es" : "c1b191d5-1a81-49a2-8be7-738062fe6034",
+        "fr" : "1705f497-6e4d-40af-aa97-0caf6ead7463",
+        "ja" : "e1c95baa-f909-402b-a902-4c130968538e"
+      },
+      "renditions" : [ {
+        "id" : "41532b39-1392-4092-bcee-97e704fe763c",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Home: Guest Users"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "1705f497-6e4d-40af-aa97-0caf6ead7463",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Home: Guest Users"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "c1b191d5-1a81-49a2-8be7-738062fe6034",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Home: Guest Users"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "e1c95baa-f909-402b-a902-4c130968538e",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Home: Guest Users"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "5761e396-0561-41fd-86eb-fbbe2a2d1e0c",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

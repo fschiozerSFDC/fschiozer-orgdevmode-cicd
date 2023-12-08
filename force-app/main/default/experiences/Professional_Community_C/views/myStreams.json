@@ -1,0 +1,32 @@
+{
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "c6c82b39-3939-403d-9c07-0feec6b9e456",
+  "label" : "My Streams",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h1><b>Community Streams</b></h1><p>Streams allow you to easily keep up with what's new in the areas of the community most relevant to YOU. Create a stream, and configure it to follow posts on key Groups, Topics, People, Cases, or other community Content.</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "3f1f8628-6fd1-4b17-ad74-17411cc893c4",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "forceCommunity:streamList",
+      "id" : "ff98eb92-0bb4-4bb1-89d7-6cb7e3abc9ec",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a596b92e-0e1e-4c3c-bdf8-702a0bebc173",
+    "regionName" : "content",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list-0Fq"
+}

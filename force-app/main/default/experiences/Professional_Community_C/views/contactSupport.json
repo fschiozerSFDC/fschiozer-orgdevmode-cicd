@@ -1,0 +1,138 @@
+{
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "componentName" : "siteforce:sldsTwoCol66Layout",
+  "dataProviders" : [ ],
+  "id" : "e0198bda-10f0-4a20-9ff6-d3888bfab21d",
+  "label" : "Contact Support",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "attachFiles" : true,
+        "authenticatedActionName" : "New_Case_CustomerCommunity",
+        "confirmationMessageDescription" : "We’re working to get back to you with an answer as quickly as possible, and no longer than 1 business day.",
+        "confirmationMessageTitle" : "Thank you for submitting your request!",
+        "deflectionCategoryGroupName" : "[{!DataCategoryGroupName}]",
+        "deflectionNotHelpful" : "Didn't find what you're looking for?",
+        "deflectionNumberOfArticles" : 4,
+        "deflectionParentCategory" : "[{!TopLevelCategory}]",
+        "deflectionSubHeader" : "Check out these articles...",
+        "deflectionTitle" : "Need Answers Fast?",
+        "hasDeflection" : false,
+        "headerTitle" : "Contact Customer Support",
+        "isReCaptchaEnabled" : false,
+        "reCaptchaPrivateKey" : "",
+        "reCaptchaPublicKey" : "",
+        "unauthenticatedActionName" : "NewCaseUnauthenticated"
+      },
+      "componentName" : "selfService:caseCreate",
+      "id" : "0e008f98-b766-429a-91a2-af621ea6daf4",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "1f1b6b36-8d93-4ae3-975e-74e76d3c6f0a",
+        "fr" : "eecc7601-b974-4332-a004-f9c01f15bc2c"
+      },
+      "renditions" : [ {
+        "id" : "eecc7601-b974-4332-a004-f9c01f15bc2c",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "confirmationMessageDescription" : "Nous reviendrons vers vous rapidement.",
+            "confirmationMessageTitle" : "Votre requête a bien été soumise.",
+            "deflectionNotHelpful" : "Vous n'avez pas trouvé ce que vous cherchiez?",
+            "deflectionSubHeader" : "Regardez ces articles...",
+            "deflectionTitle" : "Besoin d'une réponse rapide?",
+            "headerTitle" : "Contacter le Service Client"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "1f1b6b36-8d93-4ae3-975e-74e76d3c6f0a",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "confirmationMessageDescription" : "Wir arbeiten an einer schnellstmöglichen Antwort. Diese sollte nicht länger als einen Geschäftstag benötigen.",
+            "confirmationMessageTitle" : "Danke für Ihre Anfrage",
+            "deflectionNotHelpful" : "Sie finden nicht wonach Sie suchen?",
+            "deflectionSubHeader" : "Schauen Sie sich diese Artikel an...",
+            "deflectionTitle" : "Sie brauchen eine schnelle Antwort?",
+            "headerTitle" : "Kundensupport kontaktieren"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "41672d8c-fb17-43ea-80d8-cf49bdd65aad",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Contact Support"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "2361e9f8-3714-4648-894f-a2a310fb2b83",
+      "renditionMap" : {
+        "de" : "33c839c1-439a-40b9-8ade-ae5442ce8a4f",
+        "fr" : "4f4d33ec-ac46-4b7e-afa5-8157ca928e53"
+      },
+      "renditions" : [ {
+        "id" : "33c839c1-439a-40b9-8ade-ae5442ce8a4f",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Contact Support"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "4f4d33ec-ac46-4b7e-afa5-8157ca928e53",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Contact Support"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "25713c57-9f22-444f-a147-0f8b520e5a6c",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "id" : "98d4a6e2-82ca-4814-82f4-13990264708a",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "askConfirmationQuestion" : true,
+        "confirmationMessageLabel" : "Got it!",
+        "deflectionSubtitle" : "Find what you need here.",
+        "deflectionTitle" : "Need Answers Fast?",
+        "firstQuestion" : "Did the content help solve your issue?",
+        "maxResults" : 6,
+        "measureDeflection" : true,
+        "redirectUrl" : "",
+        "secondQuestion" : "Stop creating your case?",
+        "showArticles" : true,
+        "showDiscussions" : true,
+        "topicId" : ""
+      },
+      "componentName" : "forceCommunity:caseDeflection",
+      "id" : "589b4125-559d-4904-b0e7-e24a24d24205",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "abc9fabf-8e5e-422f-bcb7-939526e28c1f",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "778d65ab-4cab-4ba6-a753-18d1e19d447a",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "contactsupport"
+}

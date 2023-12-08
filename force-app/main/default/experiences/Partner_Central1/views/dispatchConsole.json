@@ -1,0 +1,50 @@
+{
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "9fbcbf8f-467f-4770-b449-75634d76ce6f",
+  "label" : "Dispatch Console",
+  "regions" : [ {
+    "id" : "24a8f3a8-fc4a-417b-bbac-1c538e49c674",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "height" : "1300",
+        "pageName" : "FSL__vf001_ServiceExpert",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:visualforcePage",
+      "id" : "032d9ecd-81b1-405b-8ae2-92be236ae9d8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "245f7aea-30fa-4662-a520-927c0a0cc83e",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "bf6b93c4-8f5f-4db6-88c4-22c49db39770",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Dispatch Console"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "6e878675-ef1b-406c-86d4-c6a2403eddcb",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "af7ec15e-366b-495d-932d-41ae024b03e4",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-dispatch-console"
+}

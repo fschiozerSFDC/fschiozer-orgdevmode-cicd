@@ -1,0 +1,28 @@
+{
+  "definitionName" : "webster:branding-webster",
+  "id" : "9fc3bd0d-8629-40ed-accd-ccd429281e6a",
+  "label" : "Webster",
+  "type" : "brandingSet",
+  "values" : {
+    "ActionColor" : "rgb(55, 71, 133)",
+    "BorderColor" : "#D4D4D4",
+    "CardBackgroundColor" : "rgba(255, 255, 255, 0)",
+    "CompanyLogo" : "/file-asset/Consumer_Community_Logo?v=1",
+    "DetailTextColor" : "rgba(104, 104, 104, 0.96)",
+    "ErrorFontColor" : "#ff9e9e",
+    "HeaderFonts" : "Raleway",
+    "LinkColor" : "rgb(55, 71, 133)",
+    "LoginBackgroundColor" : "#F4F4F4",
+    "LoginBackgroundImage" : "/file-asset/heroconsumerwalkway?v=1",
+    "OverlayTextColor" : "#FFFFFF",
+    "PageBackgroundColor" : "#FFFFFF",
+    "PrimaryFont" : "Raleway",
+    "TextColor" : "rgba(0, 0, 0, 0.8)",
+    "TextTransformStyle" : "none",
+    "_ActionColorDarker" : "#283461",
+    "_ActionColorTrans" : "rgba(55, 71, 133, 0.9)",
+    "_HoverColor" : "rgba(55, 71, 133, 0.05)",
+    "_LinkColorDarker" : "#2b3868",
+    "_OverlayTextColorShadow" : "#000000"
+  }
+}

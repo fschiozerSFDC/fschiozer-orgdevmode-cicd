@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "e846bfc2-0efa-487e-a7ff-5e0f046a0d67",
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "configurationTags" : [ ],
+  "id" : "5f8219b6-4b5f-488a-908c-a1443282087b",
+  "label" : "Customers",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-customers",
+  "type" : "route",
+  "urlPrefix" : "customers"
+}

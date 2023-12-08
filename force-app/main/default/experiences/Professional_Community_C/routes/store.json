@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "858bed85-4a8f-488b-a9aa-c2cd3e4e8617",
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "configurationTags" : [ ],
+  "id" : "cd9fb518-2b58-4257-b378-3b0ad92a1049",
+  "label" : "Store",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-store",
+  "type" : "route",
+  "urlPrefix" : "store"
+}

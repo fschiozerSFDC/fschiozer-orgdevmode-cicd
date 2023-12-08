@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "bbf2063a-752b-41ed-b168-fefcd0a5c13e",
+  "appPageId" : "e4bd7437-87f9-492f-bb9b-cca60c9128dd",
+  "configurationTags" : [ ],
+  "id" : "3afb67d0-2dd5-4b4e-9865-132b5cf0fa06",
+  "label" : "cirrus_SDO-Corporate_Blog",
+  "pageAccess" : "UseParent",
+  "routeType" : "extdetail-cms-cirrus_SDO-Corporate_Blog",
+  "type" : "route",
+  "urlPrefix" : "cirrus-sdo-corporate-blog"
+}

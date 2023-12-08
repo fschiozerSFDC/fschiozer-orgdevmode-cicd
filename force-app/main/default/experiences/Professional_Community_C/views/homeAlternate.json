@@ -1,0 +1,458 @@
+{
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "97a9324c-7309-4e27-8008-c2db8e39a2cd",
+  "label" : "Home (Alternate)",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgb(255,255,255)",
+        "backgroundOverlay" : "rgba(255,255,255,0.7)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "6b94d08a-e700-4d30-af32-3d7a4b0eaa95",
+          "columns" : [ {
+            "UUID" : "4a756ef5-391c-4f18-bfc3-72433b0c201c",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "8",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "06d0043a-3c06-4935-bc82-c233849c9a3b",
+            "columnKey" : "187f3",
+            "columnName" : "Column 2",
+            "columnWidth" : "4",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "6b94d08a-e700-4d30-af32-3d7a4b0eaa95",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h1><img class=\"sfdcCbImage\" src=\"{!contentAsset.AstroTrailheadXSmall.1}\" style=\"width: 57.7969px; height: 75.0625px;\" /> <b style=\"color: rgb(230, 0, 0);\">Sales Engineers: START HERE</b></h1>\n<p><b>To demo this community, follow these instructions:</b></p>\n<ol>\n <li>Follow the <a href=\"https://sfdc.co/SDOCommSetup\" target=\"_blank\">SDO Community Setup Guide</a> (Aloha SSO required)</li>\n <li>Re-select the &quot;Snap_Ins_Live_Agent&quot; Snap-ins Deployment in the Chat component.</li>\n <li>Review <a href=\"https://docs.google.com/presentation/d/1HRR8qn_i3gRM6ZeGIF7E1vy4fnBMFetA6c3d1eWQWJM/edit#slide=id.p4\" target=\"_blank\" style=\"color: rgb(46, 130, 133);\">branding instructions for this community</a> (Aloha SSO required)</li>\n <li>Review the <a href=\"https://sfdc.co/SDOProCommScript\" target=\"_blank\">Professional Community Demo Script</a> (Aloha SSO required)</li>\n <li>Learn about <a href=\"https://sfdc.co/SDOCommunityMobile\" target=\"_blank\">Mobile Publisher</a> options! (Aloha SSO required)</li>\n <li>Remove this component from the page layout.</li>\n</ol>\n<p>&nbsp;</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "a9e3bc61-4b95-4eb9-b92f-0ff613bd77f4",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "tabsetConfig" : {
+              "UUID" : "4c016b89-683c-4875-8d6f-832eb486e353",
+              "activeTab" : "",
+              "tabs" : [ {
+                "UUID" : "2dd9f6cf-75a8-45fd-ac04-7d599de67d56",
+                "allowGuestUser" : true,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "1",
+                "tabName" : "News"
+              }, {
+                "UUID" : "9eb955bc-d9b3-4f78-913e-69433de77fdd",
+                "allowGuestUser" : true,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "2",
+                "tabName" : "Videos"
+              }, {
+                "UUID" : "f00be3ac-1386-4384-82e3-768d37249e58",
+                "allowGuestUser" : true,
+                "locked" : false,
+                "seedComponents" : [ ],
+                "tabKey" : "3",
+                "tabName" : "Topics"
+              } ],
+              "useOverflowMenu" : false
+            }
+          },
+          "componentName" : "forceCommunity:tabset",
+          "id" : "4c016b89-683c-4875-8d6f-832eb486e353",
+          "regions" : [ {
+            "components" : [ {
+              "componentAttributes" : {
+                "config" : {
+                  "collectionLayoutDefinition" : {
+                    "attributes" : {
+                      "collectionTitle" : "Latest News",
+                      "collectionTitleHeadingTag" : "h2",
+                      "columns" : "2",
+                      "rows" : 2,
+                      "showCollectionTitle" : true,
+                      "showViewMoreButton" : true,
+                      "spacing" : "medium",
+                      "viewMoreButtonBackgroundColor" : "",
+                      "viewMoreButtonBackgroundColorHover" : "",
+                      "viewMoreButtonBorderColor" : "",
+                      "viewMoreButtonBorderColorHover" : "",
+                      "viewMoreButtonLabel" : "More News",
+                      "viewMoreButtonPlacement" : "center",
+                      "viewMoreButtonRadius" : "20",
+                      "viewMoreButtonTextColor" : "",
+                      "viewMoreButtonTextColorHover" : ""
+                    },
+                    "componentName" : "forceCommunity:dynamicCollectionGrid"
+                  },
+                  "dataProviderDefinition" : {
+                    "attributes" : {
+                      "dataProviderInfo" : {
+                        "apiName" : "Home_News1"
+                      },
+                      "dataProviderType" : "NamedCollection"
+                    },
+                    "componentName" : "forceCommunity:managedContentCollectionDataProvider"
+                  },
+                  "itemLayoutDefinition" : {
+                    "attributes" : {
+                      "additionalLinks" : "{}",
+                      "backgroundPosition" : "center center",
+                      "backgroundSize" : "cover",
+                      "borderColor" : "",
+                      "componentBorderStyles" : "",
+                      "componentHoverEffect" : "imageZoomIn",
+                      "componentPadding" : "none",
+                      "contentBackgroundColor" : "#ffffff",
+                      "contentOffset" : "0",
+                      "contentOffsetBackgroundColor" : "#ffffff",
+                      "contentOffsetPadding" : "medium",
+                      "contentPosition" : "center",
+                      "contentWidth" : 100,
+                      "defaultLinksOverrides" : "{}",
+                      "eyebrowFontSize" : "regular",
+                      "eyebrowHighlightColor" : "",
+                      "eyebrowText" : "",
+                      "eyebrowTextColor" : "",
+                      "eyebrowTextDecoration" : "",
+                      "flagAlignment" : "top left",
+                      "flagBackgroundColor" : "#ff0000",
+                      "flagBorderColor" : "#ffffff",
+                      "flagBorderStyles" : "{\"borderTopLeftRadius\":{\"value\":\"0\"},\"borderTopRightRadius\":{\"value\":\"0\"},\"borderBottomRightRadius\":{\"value\":\"0\"},\"borderBottomLeftRadius\":{\"value\":\"0\"}}",
+                      "flagConstraints" : "media",
+                      "flagRotation" : 0,
+                      "flagSpacing" : "medium",
+                      "flagText" : "",
+                      "flagTextColor" : "#ffffff",
+                      "flagTextDecoration" : "",
+                      "imageAlignment" : "top",
+                      "imageAltText" : "{!CurrentItem.excerpt}",
+                      "imageBorderColor" : "#ffffff",
+                      "imageBorderStyles" : "",
+                      "imageUrl" : "{!CurrentItem.bannerImage.url}",
+                      "mediaAspectRatio" : "16:9",
+                      "mediaHeight" : "271",
+                      "metadata1HighlightColor" : "",
+                      "metadata1Text" : "",
+                      "metadata2HighlightColor" : "",
+                      "metadata2Text" : "",
+                      "metadataFontSize" : "regular",
+                      "metadataTextColor" : "",
+                      "metadataTextDecoration" : "",
+                      "showExcerpt" : true,
+                      "showEyebrow" : true,
+                      "showEyebrowHighlight" : false,
+                      "showFeaturedMedia" : true,
+                      "showFlag" : true,
+                      "showMetadata1" : true,
+                      "showMetadata1Highlight" : false,
+                      "showMetadata2" : true,
+                      "showMetadata2Highlight" : false,
+                      "showTitle" : true,
+                      "showTitleHighlight" : true,
+                      "subTitle" : "{!CurrentItem.excerpt}",
+                      "subTitleFontSize" : "regular",
+                      "subTitleTextColor" : "",
+                      "textAlignment" : "left",
+                      "title" : "{!CurrentItem.title}",
+                      "titleFontSize" : "medium",
+                      "titleHeadingTag" : "p",
+                      "titleHighlightColor" : "",
+                      "titleTextColor" : "",
+                      "titleTextDecoration" : "{\"textTransform\":\"capitalize\"}",
+                      "useAspectRatio" : false,
+                      "videoUrl" : ""
+                    },
+                    "componentName" : "forceCommunity:flexTileLayout"
+                  },
+                  "schemaVersion" : "V2.0"
+                }
+              },
+              "componentName" : "forceCommunity:dynamicCollection",
+              "id" : "35793e2a-0d30-42e6-8b82-7e3b9ba5ef8f",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "2dd9f6cf-75a8-45fd-ac04-7d599de67d56",
+            "regionLabel" : "News",
+            "regionName" : "1",
+            "renditionMap" : { },
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "richTextValue" : "<h2>Latest Videos</h2>"
+              },
+              "componentName" : "forceCommunity:richTextInline",
+              "id" : "1cc8ba01-f92e-4c7c-a47e-446546d79a23",
+              "renditionMap" : { },
+              "type" : "component"
+            }, {
+              "componentAttributes" : {
+                "config" : {
+                  "collectionLayoutDefinition" : {
+                    "attributes" : {
+                      "contentIndicatorSpacing" : "medium",
+                      "limitItems" : 5,
+                      "numberThumbnailRow" : 7,
+                      "showProgressArrows" : true,
+                      "showProgressIndicator" : true,
+                      "thumbnailHeight" : 30,
+                      "thumbnailUrls" : "{!CurrentItem.image.url}",
+                      "transitionSpeed" : 600,
+                      "transitionType" : "slide"
+                    },
+                    "componentName" : "forceCommunity:dynamicCollectionCarouselSlideshow"
+                  },
+                  "dataProviderDefinition" : {
+                    "attributes" : {
+                      "dataProviderInfo" : {
+                        "apiName" : "Video_Home"
+                      },
+                      "dataProviderType" : "NamedCollection"
+                    },
+                    "componentName" : "forceCommunity:managedContentCollectionDataProvider"
+                  },
+                  "itemLayoutDefinition" : {
+                    "attributes" : {
+                      "additionalLinks" : "{\"links\":[],\"alignment\":\"vertical\"}",
+                      "backgroundPosition" : "center center",
+                      "backgroundSize" : "cover",
+                      "bannerAspectRatio" : "16:9",
+                      "bannerHeight" : "400",
+                      "bannerSubTitleTextColor" : "#ffffff",
+                      "bannerTitleTextColor" : "#ffffff",
+                      "callToActionButtonBackgroundColor" : "",
+                      "callToActionButtonBackgroundColorHover" : "",
+                      "callToActionButtonBorderColor" : "",
+                      "callToActionButtonBorderColorHover" : "",
+                      "callToActionButtonBorderStyles" : "{\"borderTopLeftRadius\":{\"value\":\"31\",\"isPx\":true},\"borderTopRightRadius\":{\"value\":\"31\",\"isPx\":true},\"borderBottomRightRadius\":{\"value\":\"31\",\"isPx\":true},\"borderBottomLeftRadius\":{\"value\":\"31\",\"isPx\":true}}",
+                      "callToActionButtonTextColor" : "",
+                      "callToActionButtonTextColorHover" : "",
+                      "callToActionLabel" : "Watch",
+                      "componentHoverEffect" : "none",
+                      "contentWidth" : 80,
+                      "defaultLinksOverrides" : "{}",
+                      "eyebrowFontSize" : "regular",
+                      "eyebrowHighlightColor" : "",
+                      "eyebrowText" : "{!CurrentItem.eyebrow}",
+                      "eyebrowTextColor" : "#ffffff",
+                      "eyebrowTextDecoration" : "",
+                      "flagAlignment" : "top left",
+                      "flagBackgroundColor" : "rgb(53, 167, 86)",
+                      "flagBorderColor" : "#ffffff",
+                      "flagBorderStyles" : "{\"borderTopLeftRadius\":{\"value\":\"28\",\"isPx\":true},\"borderTopRightRadius\":{\"value\":\"28\",\"isPx\":true},\"borderBottomRightRadius\":{\"value\":\"28\",\"isPx\":true},\"borderBottomLeftRadius\":{\"value\":\"28\",\"isPx\":true}}",
+                      "flagRotation" : 20,
+                      "flagSpacing" : "medium",
+                      "flagText" : "{!CurrentItem.flag}",
+                      "flagTextColor" : "#ffffff",
+                      "flagTextDecoration" : "{\"textTransform\":\"uppercase\",\"bold\":true}",
+                      "hideTextElementsForVideo" : false,
+                      "imageAltText" : "{!CurrentItem.title}",
+                      "imageUrl" : "{!CurrentItem.image.url}",
+                      "metadata1HighlightColor" : "",
+                      "metadata1Text" : "{!CurrentItem.metadata1}",
+                      "metadata2HighlightColor" : "",
+                      "metadata2Text" : "{!CurrentItem.metadata2}",
+                      "metadataFontSize" : "regular",
+                      "metadataTextColor" : "#ffffff",
+                      "metadataTextDecoration" : "",
+                      "overlayBackgroundColor" : "rgba(0, 0, 0, 0.4)",
+                      "showButton" : true,
+                      "showCaption" : true,
+                      "showEyebrow" : true,
+                      "showEyebrowHighlight" : false,
+                      "showFlag" : true,
+                      "showMetadata1" : true,
+                      "showMetadata1Highlight" : false,
+                      "showMetadata2" : true,
+                      "showMetadata2Highlight" : false,
+                      "showTitle" : true,
+                      "showTitleHighlight" : false,
+                      "subTitle" : "{!CurrentItem.excerpt}",
+                      "subTitleFontSize" : "regular",
+                      "textAlignment" : "center center",
+                      "title" : "{!CurrentItem.title}",
+                      "titleFontSize" : "large",
+                      "titleHeadingTag" : "h1",
+                      "titleHighlightColor" : "",
+                      "titleTextDecoration" : "{\"bold\":true}",
+                      "useAspectRatio" : false,
+                      "videoUrl" : "{!CurrentItem.videoURL}"
+                    },
+                    "componentName" : "forceCommunity:bannerLayout"
+                  },
+                  "schemaVersion" : "V2.0"
+                }
+              },
+              "componentName" : "forceCommunity:dynamicCollection",
+              "id" : "cb6a3406-1b7d-46e0-afe3-d9d67b21579e",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "9eb955bc-d9b3-4f78-913e-69433de77fdd",
+            "regionLabel" : "Videos",
+            "regionName" : "2",
+            "renditionMap" : { },
+            "type" : "region"
+          }, {
+            "components" : [ {
+              "componentAttributes" : {
+                "maxWidth" : 100,
+                "overlayColor" : "rgba(0, 0, 0, 0)",
+                "overlayHoverColor" : "",
+                "radius" : 0,
+                "showTitle" : true,
+                "textAlignment" : "center",
+                "textBgColor" : "rgba(0,0,0,0)",
+                "textBgHoverColor" : "rgba(0,0,0,0)",
+                "textColor" : "rgb(0, 0, 0)",
+                "textHoverColor" : "",
+                "textPosition" : "bottom center",
+                "title" : "Featured Topics"
+              },
+              "componentName" : "forceTopic:featuredTopics",
+              "id" : "cb125a49-6096-43ea-84b1-7f795e720742",
+              "renditionMap" : { },
+              "type" : "component"
+            }, {
+              "componentAttributes" : { },
+              "componentName" : "forceCommunity:topicCatalog",
+              "id" : "3bf7f55d-07c3-443b-a825-09d75745c7df",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "f00be3ac-1386-4384-82e3-768d37249e58",
+            "regionLabel" : "Topics",
+            "regionName" : "3",
+            "renditionMap" : { },
+            "type" : "region"
+          } ],
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "4a756ef5-391c-4f18-bfc3-72433b0c201c",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h1>Welcome {!CurrentUser.firstName}<span style=\"color: rgb(51, 51, 51);\">!</span></h1><p> </p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "e406132d-ebfc-46df-9fcb-9b26be1af373",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<h1>Join Today!</h1><p>Our community thrives with YOUR expertise! Join our network of enthusiastic community members! You'll get exclusive access to a network of fellow experts, lightning fast product support, and tools to speed your success.</p><p><br></p><p><a href=\"https://sdomaster2.livepreview.salesforce-communities.com/professional/s/login/SelfRegister\" target=\"_self\">Register Today</a>!</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "92f62781-bf70-48ad-9b11-184edbf57332",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "askCommunityLabel" : "Ask the Community",
+            "buttonBgColor" : "",
+            "buttonBgHoverColor" : "",
+            "buttonBorderColor" : "",
+            "buttonRadius" : 50,
+            "buttonTextColor" : "",
+            "buttonTextHoverColor" : "",
+            "buttonTwoBgColor" : "",
+            "buttonTwoBgHoverColor" : "",
+            "buttonTwoBorderColor" : "",
+            "buttonTwoRadius" : 50,
+            "buttonTwoTextColor" : "",
+            "buttonTwoTextHoverColor" : "",
+            "confirmationMessage" : "Got it!",
+            "contactSupportLabel" : "Contact Us",
+            "followUpPromptLabel" : "Can we close your question?",
+            "headerLabel" : "Don't see what you're looking for?",
+            "isAskFollowPromptEnabled" : true,
+            "isIncludeArticlesEnabled" : true,
+            "isIncludeDiscussionsEnabled" : true,
+            "isInitialSatisfactionPromptEnabled" : true,
+            "isPublisherDeflectionEnabled" : true,
+            "maxSuggestions" : 5,
+            "satisfactionPromptLabel" : "Did we help to answer your question?",
+            "showDetails" : true,
+            "showTopics" : true
+          },
+          "componentName" : "siteforce:napiliFooter",
+          "id" : "5666fe59-e0c3-4386-9eaa-a6d165a41894",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "06d0043a-3c06-4935-bc82-c233849c9a3b",
+        "regionLabel" : "Column 2",
+        "regionName" : "187f3",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "1e9eac38-2093-4f0d-a89a-74df77521238",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "072e4ce9-05b3-41a8-91ca-b37392bb6fb7",
+      "renditionMap" : {
+        "de" : "73964994-0eab-42d9-865b-bd7ed53503b1",
+        "fr" : "1522d0c8-efee-4dd0-9256-7b3fc29446a6"
+      },
+      "renditions" : [ {
+        "id" : "73964994-0eab-42d9-865b-bd7ed53503b1",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Home"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "1522d0c8-efee-4dd0-9256-7b3fc29446a6",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Home"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "d3f6460b-f1ab-42f6-b4d4-70d343ea852c",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}

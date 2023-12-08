@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "53bb5d09-1270-45c8-bb01-2ab45825266c",
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "configurationTags" : [ ],
+  "id" : "e104ee68-0763-425b-8cc9-d67c10191fa7",
+  "label" : "Quote List",
+  "objectApiName" : "SBQQ__Quote__c",
+  "routeType" : "list-a2d",
+  "type" : "route",
+  "urlPrefix" : "quote"
+}

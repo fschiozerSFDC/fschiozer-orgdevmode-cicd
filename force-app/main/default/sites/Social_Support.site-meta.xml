@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomSite xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <allowGuestPaymentsApi>false</allowGuestPaymentsApi>
+    <allowHomePage>false</allowHomePage>
+    <allowStandardAnswersPages>false</allowStandardAnswersPages>
+    <allowStandardIdeasPages>false</allowStandardIdeasPages>
+    <allowStandardLookups>false</allowStandardLookups>
+    <allowStandardPortalPages>true</allowStandardPortalPages>
+    <allowStandardSearch>false</allowStandardSearch>
+    <authorizationRequiredPage>Unauthorized</authorizationRequiredPage>
+    <bandwidthExceededPage>BandwidthExceeded</bandwidthExceededPage>
+    <browserXssProtection>false</browserXssProtection>
+    <cachePublicVisualforcePagesInProxyServers>true</cachePublicVisualforcePagesInProxyServers>
+    <changePasswordPage>ChatterAnswersChangePassword</changePasswordPage>
+    <clickjackProtectionLevel>AllowAllFraming</clickjackProtectionLevel>
+    <contentSniffingProtection>false</contentSniffingProtection>
+    <description>This site is the former Chatter Answers portal and is no longer used.</description>
+    <enableAuraRequests>false</enableAuraRequests>
+    <fileNotFoundPage>FileNotFound</fileNotFoundPage>
+    <genericErrorPage>Exception</genericErrorPage>
+    <inMaintenancePage>InMaintenance</inMaintenancePage>
+    <inactiveIndexPage>InMaintenance</inactiveIndexPage>
+    <indexPage>ChatterAnswersCommunitiesHome</indexPage>
+    <masterLabel>Ω - Social Support</masterLabel>
+    <portal>Knowledge Portal</portal>
+    <redirectToCustomDomain>false</redirectToCustomDomain>
+    <referrerPolicyOriginWhenCrossOrigin>false</referrerPolicyOriginWhenCrossOrigin>
+    <robotsTxtPage>robotstxt</robotsTxtPage>
+    <siteAdmin>fschiozer@mashandthebear.corp</siteAdmin>
+    <siteTemplate>SiteTemplate</siteTemplate>
+    <siteType>Visualforce</siteType>
+    <subdomain>sdo-demo-main-166ce2cf6b6-16f672c9555</subdomain>
+    <urlPathPrefix>SocialSupport</urlPathPrefix>
+</CustomSite>

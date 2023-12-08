@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>2</activeVersionNumber>
+    <description>Provides a 10% discount to customers. Used for Next Best Action as part of the Case layout.</description>
+    <masterLabel>NBA-Offer 10 Percent Discount</masterLabel>
+</FlowDefinition>

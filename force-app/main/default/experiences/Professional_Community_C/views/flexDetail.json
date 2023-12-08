@@ -1,0 +1,147 @@
+{
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "0f2f85b0-4ded-45e0-9c51-95396c488c4a",
+  "label" : "Flex! Detail",
+  "regions" : [ {
+    "id" : "58ca367c-5d49-4293-9c6c-5bbad687b267",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "config" : {
+          "layoutDefinition" : {
+            "attributes" : {
+              "featuredContent" : "{!CurrentItem.body}",
+              "featuredImageHeight" : "450",
+              "featuredImageLayout" : "cover",
+              "featuredImagePosition" : "center center",
+              "featuredImageUrl" : "{!CurrentItem.image.url}",
+              "featuredImageWidth" : 100,
+              "featuredVideoAspectRatio" : "16:9",
+              "featuredVideoHeight" : 450,
+              "featuredVideoUrl" : "",
+              "featuredVideoUseAspectRatio" : false,
+              "footerMetadata1Text" : "",
+              "footerMetadata2Text" : "",
+              "footerMetadata3Text" : "",
+              "footerMetadataFontSize" : "regular",
+              "footerMetadataTextColor" : "",
+              "footerMetadataTextDecoration" : "",
+              "headerMetadata1Text" : "{!CurrentItem.metadata1}",
+              "headerMetadata2Text" : "{!CurrentItem.metadata2}",
+              "headerMetadata3Text" : "",
+              "headerMetadataFontSize" : "regular",
+              "headerMetadataTextColor" : "",
+              "headerMetadataTextDecoration" : "",
+              "headerTextAlignment" : "center",
+              "section1Content" : "",
+              "section1ImageAlignment" : "center",
+              "section1ImageBorderColor" : "#ffffff",
+              "section1ImageBorderStyles" : "",
+              "section1ImageHeight" : "450",
+              "section1ImageLayout" : "cover",
+              "section1ImageOffset" : "medium",
+              "section1ImagePosition" : "center center",
+              "section1ImageUrl" : "",
+              "section1ImageWidth" : 50,
+              "section1Title" : "",
+              "section1TitleFontSize" : "regular",
+              "section1TitleTextColor" : "",
+              "section1TitleTextDecoration" : "",
+              "section2Content" : "",
+              "section2ImageAlignment" : "center",
+              "section2ImageBorderColor" : "#ffffff",
+              "section2ImageBorderStyles" : "",
+              "section2ImageHeight" : "450",
+              "section2ImageLayout" : "cover",
+              "section2ImageOffset" : "medium",
+              "section2ImagePosition" : "center center",
+              "section2ImageUrl" : "",
+              "section2ImageWidth" : 50,
+              "section2Title" : "",
+              "section2TitleFontSize" : "regular",
+              "section2TitleTextColor" : "",
+              "section2TitleTextDecoration" : "",
+              "showFeaturedContent" : true,
+              "showFeaturedImage" : true,
+              "showFeaturedSection" : true,
+              "showFeaturedVideo" : true,
+              "showFooterMetadata" : false,
+              "showHeaderMetadata" : true,
+              "showSection1" : false,
+              "showSection1Content" : true,
+              "showSection1Image" : true,
+              "showSection1Title" : true,
+              "showSection2" : false,
+              "showSection2Content" : true,
+              "showSection2Image" : true,
+              "showSection2Title" : true,
+              "showSubTitle" : true,
+              "showTitle" : true,
+              "subTitle" : "{!CurrentItem.excerpt}",
+              "subTitleFontSize" : "regular",
+              "subTitleTextColor" : "",
+              "subTitleTextDecoration" : "",
+              "title" : "{!CurrentItem.title}",
+              "titleFontSize" : "large",
+              "titleHeadingTag" : "h2",
+              "titleTextColor" : "",
+              "titleTextDecoration" : ""
+            },
+            "componentName" : "forceCommunity:detailLayoutWithSections"
+          },
+          "schemaVersion" : "V2.0"
+        }
+      },
+      "componentName" : "forceCommunity:managedContentDetail",
+      "id" : "02131c02-cb3e-4527-9b87-5233ace57659",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6f02c7c4-ebb2-424d-a582-845908662aa6",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "7e3a16eb-b8d4-473e-b7d8-4ea15fa34d44",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : ""
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "5d9b001f-a1ff-48eb-a976-68f727f64402",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "84e3662c-8971-47c9-9605-121e8c8b625a",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "numberOfTopics" : 5,
+        "showTopicsMetric" : true,
+        "title" : "Trending Topics"
+      },
+      "componentName" : "forceCommunity:trendingTopics",
+      "id" : "14bdd6d4-f827-4711-9dc7-882f00daa5ab",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "4d05d7c7-a230-4786-a3a9-56fa4ae53940",
+    "regionName" : "sidebar",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "managed-content-flexContent"
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <name>Assign_Contact_to_Case</name>
+        <label>Assign Contact to Case</label>
+        <locationX>233</locationX>
+        <locationY>50</locationY>
+        <assignmentItems>
+            <assignToReference>rvarCase.ContactId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>rvarContact.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Case</targetReference>
+        </connector>
+    </assignments>
+    <description>Add the correct Contact record to the auto-created Case for SMS sessions</description>
+    <interviewLabel>Einstein Bots - Attach Contact to SMS Case {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Einstein Bots - Attach Contact to SMS Case</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Case</name>
+        <label>Update Case</label>
+        <locationX>451</locationX>
+        <locationY>50</locationY>
+        <inputReference>rvarCase</inputReference>
+    </recordUpdates>
+    <startElementReference>Assign_Contact_to_Case</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>rvarCase</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Case</objectType>
+    </variables>
+    <variables>
+        <name>rvarContact</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Contact</objectType>
+    </variables>
+</Flow>

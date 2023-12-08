@@ -1,0 +1,15 @@
+{
+  "cmsSettings" : {
+    "footerName" : "",
+    "footerPersonalization" : false,
+    "footerUrl" : ""
+  },
+  "currentThemeId" : "5f536e00-c8e8-405b-b0f8-9cb9ad03b00f",
+  "headMarkup" : "",
+  "id" : "e4bd7437-87f9-492f-bb9b-cca60c9128dd",
+  "isLockerServiceEnabled" : true,
+  "isRelaxedCSPLevel" : true,
+  "label" : "main",
+  "templateName" : "Service Community Template",
+  "type" : "appPage"
+}

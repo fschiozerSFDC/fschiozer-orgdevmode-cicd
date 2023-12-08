@@ -1,0 +1,73 @@
+{
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "840da54b-a75f-49bb-9ad4-cb6d9568200a",
+  "label" : "Partner Registration",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p><img class=\"sfdcCbImage\" src=\"{!contentAsset.PC_Banner_Questionnaire.1}\" />&nbsp;</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "9f0cc45d-e695-4276-8e76-cd3029ba2f89",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3482328d-affc-4462-a033-2751b9f9ca63",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h2><span style=\"font-size: 28px;\">Apply to be a Partner</span></h2><p><br></p><p><span style=\"font-size: 18px;\">Simply fill out your details and your company email address and we will get back to you shortly!</span></p><p><span style=\"font-size: 18px; font-family: sans-serif;\">&nbsp;</span></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "fa4b7dde-f495-47f3-bb05-f72a2c13fa2d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "035af934-dd51-4902-b8f7-bb167e87beb5",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "flowArguments" : "",
+        "flowName" : "Partner_Registration"
+      },
+      "componentName" : "forceCommunity:flowCommunity",
+      "id" : "e9bb8b90-d9bc-4271-b6a1-7d1aa2a9fcaf",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6b7b2a07-5042-4647-8b75-041c8394cace",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "5b243d1d-1809-4a7f-b6ec-df4f642f3546",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Partner Registration"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "aea0972a-49e6-4889-86ad-83af9dc0d027",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "18293f33-bfd1-4b42-a2ae-81817e5ce607",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-partner-registration"
+}

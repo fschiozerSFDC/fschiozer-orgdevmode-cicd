@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomSite xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowGuestPaymentsApi>false</allowGuestPaymentsApi>
+    <allowHomePage>false</allowHomePage>
+    <allowStandardAnswersPages>false</allowStandardAnswersPages>
+    <allowStandardIdeasPages>false</allowStandardIdeasPages>
+    <allowStandardLookups>false</allowStandardLookups>
+    <allowStandardPortalPages>true</allowStandardPortalPages>
+    <allowStandardSearch>false</allowStandardSearch>
+    <authorizationRequiredPage>ccrz__CCSiteLogin</authorizationRequiredPage>
+    <bandwidthExceededPage>ccrz__CCBandwidthExceeded</bandwidthExceededPage>
+    <browserXssProtection>false</browserXssProtection>
+    <cachePublicVisualforcePagesInProxyServers>true</cachePublicVisualforcePagesInProxyServers>
+    <changePasswordPage>ccrz__CCChangePassword</changePasswordPage>
+    <clickjackProtectionLevel>SameOriginOnly</clickjackProtectionLevel>
+    <contentSniffingProtection>false</contentSniffingProtection>
+    <enableAuraRequests>true</enableAuraRequests>
+    <fileNotFoundPage>ccrz__CCFileNotFound</fileNotFoundPage>
+    <forgotPasswordPage>ccrz__CCForgotPassword</forgotPasswordPage>
+    <genericErrorPage>ccrz__CCException</genericErrorPage>
+    <inMaintenancePage>ccrz__CCInMaintenance</inMaintenancePage>
+    <inactiveIndexPage>ccrz__CCInMaintenance</inactiveIndexPage>
+    <indexPage>ccrz__HomePage</indexPage>
+    <masterLabel>B2B Commerce Storefront</masterLabel>
+    <redirectToCustomDomain>false</redirectToCustomDomain>
+    <referrerPolicyOriginWhenCrossOrigin>false</referrerPolicyOriginWhenCrossOrigin>
+    <selfRegPage>ccrz__CCSiteRegister</selfRegPage>
+    <siteAdmin>fschiozer@mashandthebear.corp</siteAdmin>
+    <siteGuestRecordDefaultOwner>fschiozer@mashandthebear.corp</siteGuestRecordDefaultOwner>
+    <siteType>ChatterNetwork</siteType>
+    <subdomain>sdodemo-main-166ce2cf6b6-16f672c9555</subdomain>
+    <urlPathPrefix>DefaultStore</urlPathPrefix>
+</CustomSite>

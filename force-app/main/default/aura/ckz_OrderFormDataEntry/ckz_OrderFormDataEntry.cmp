@@ -1,0 +1,334 @@
+<aura:component description="ckz_OrderFormDataEntry" controller="ckz_OrderEntryController">
+
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+
+    <aura:registerEvent name="renderPanel" type="c:ckz_OrderFormRenderPanelEvent"/>
+
+    <aura:handler name="updateRemoveItems" event="c:ckz_UpdateRemoveItems" action="{!c.handleUpdateRemoveItems}"/>
+
+    <aura:handler name="updateChangeItems" event="c:ckz_UpdateChangeItems" action="{!c.handleUpdateChangeItems}"/>
+
+    <aura:handler event="aura:waiting" action="{!c.waiting}" phase="capture"/>
+    <aura:handler event="aura:doneWaiting" action="{!c.doneWaiting}" phase="capture"/>
+    <aura:attribute name="showSpinner" type="Boolean" default="false"/>
+
+    <!-- 2019-09-20  msobczak: added -->
+    <aura:attribute name="useCardLayout" type="Boolean" default="false"/>
+
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="userId" type="String" access="global"/>
+    <aura:attribute name="contactId" type="String" access="global"/>
+    <aura:attribute name="accountId" type="String" access="global"/>
+    <aura:attribute name="locale" type="String" access="global"/>
+    <aura:attribute name="currencyCode" type="String" access="global" default="USD"/>
+    <aura:attribute name="selectedStorefront" type="String" access="global"/>
+    <aura:attribute name="orderType" type="String" access="global"/>
+    <aura:attribute name="selectedOrder" type="String" access="global"/>
+    <aura:attribute name="selectedOrderId" type="String" access="global"/>
+    <aura:attribute name="cartId" type="String" access="global"/>
+    <aura:attribute name="cartEncryptedId" type="String" access="global"/>
+    <aura:attribute name="selectedObjectName" type="String" access="global" default=""/>
+    <aura:attribute name="cartStatus" type="String" access="global" default=""/>
+    <aura:attribute name="accountGroupName" type="String"/>
+    <aura:attribute name="userName" type="String"/>
+    <aura:attribute name="accountName" type="String"/>
+
+    <aura:attribute name="quoteId" type="String" access="global" default=""/>
+
+    <aura:attribute name="orderItems" type="List" access="global" default="[]"/>
+
+    <!-- updated via event -->
+    <aura:attribute name="removeItems" type="Map" default="{}"/>
+
+    <aura:attribute name="changeItems" type="Map" default="{}"/>
+
+    <!-- updated when the cart is updated -->
+    <aura:attribute name="pageMessages" type="List" default="[]"/>
+
+    <aura:attribute name="isTypeaheadEnabled" type="Boolean" default="true"/>
+
+
+    <aura:renderIf isTrue="{!v.showSpinner}">
+        <div class="slds-spinner--brand slds-spinner slds-spinner--large" role="alert">
+            <span class="slds-assistive-text">Loading, Please Wait...</span>
+            <div class="slds-spinner__dot-a"></div>
+            <div class="slds-spinner__dot-b"></div>
+        </div>
+    </aura:renderIf>
+
+    <div class="slds-grid slds-gutters slds-wrap">
+        <div class="slds-col slds-size_12-of-12">
+            <article class="slds-card slds-m-around_small">
+                <div class="slds-card__header slds-grid">
+                    <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                        <div class="slds-media__figure">
+                            <!-- Order -->
+                            <aura:if isTrue="{!(v.orderType == 'order') &amp;&amp; (v.selectedObjectName != null)}">
+                                <span class="slds-icon_container slds-icon-standard-orders" title="orders">
+                                    <lightning:icon iconName="standard:orders" alternativeText="Order"/>
+                                    <span class="slds-assistive-text">orders</span>
+                                </span>
+                            </aura:if>
+
+                            <!-- Cart -->
+                            <aura:if isTrue="{!(v.orderType == 'cart') &amp;&amp; (v.selectedObjectName != null)}">
+                                <span class="slds-icon_container slds-icon-standard-carts" title="carts">
+                                    <lightning:icon iconName="utility:cart" alternativeText="Cart"/>
+                                    <span class="slds-assistive-text">carts</span>
+                                </span>
+                            </aura:if>
+                        </div>
+                        <div class="slds-media__body">
+                            <!-- Order -->
+                            <aura:if isTrue="{!(v.orderType == 'order') &amp;&amp; (v.selectedObjectName != null)}">
+                                <h2 class="slds-card__header-title">
+                                    <a href="javascript:void(0);" class="slds-card__header-link slds-truncate" title="{! 'Selected Order ' + v.selectedOrder}">
+                                        <span>{!'Selected Order: ' + v.selectedOrder}</span>
+                                        <span class="slds-badge slds-float_right">{!v.selectedStorefront}</span>
+                                    </a>
+                                </h2>
+                            </aura:if>
+
+                            <!-- Cart -->
+                            <aura:if isTrue="{!(v.orderType == 'cart') &amp;&amp; (v.selectedObjectName != null)}">
+                                <h2 class="slds-card__header-title">
+                                    <a href="javascript:void(0);" class="slds-card__header-link slds-truncate" title="{! 'Selected Cart ' + v.selectedObjectName}">
+                                        <span>{!'Selected Cart: ' + v.selectedObjectName}</span>
+                                        <span class="slds-badge slds-float_right">{!v.selectedStorefront}</span>
+                                    </a>
+                                </h2>
+                            </aura:if>
+
+                        </div>
+                    </header>
+                </div>
+
+                <div class="slds-card__body slds-card__body_inner">
+                    <div class="pageMessages">
+
+                        <aura:if isTrue="{!(v.pageMessages.length > 0)}">
+                            <ul>
+                                <aura:iteration items="{!v.pageMessages}" var="msg">
+                                    <li>
+                                        <c:ckzMessageDisplay severity="{!msg.severity}" message="{!msg.message}"/>
+                                    </li>
+                                </aura:iteration>
+                            </ul>
+                        </aura:if>
+
+                    </div>
+
+                    <form class="slds-form__stacked">
+                        <c:ckz_OrderItemsTable
+                                orderItems="{!v.orderItems}"
+                                storefront="{!v.selectedStorefront}"
+                                locale="{!v.locale}"
+                                enableTypeahead="{!v.isTypeaheadEnabled}"
+                                cartStatus="{!v.cartStatus}"
+                                userId="{!v.userId}"
+                                accountId="{!v.accountId}"
+                                currencyCode="{!v.currencyCode}"
+                                useCardLayout="{!v.useCardLayout}"
+                        />
+                    </form>
+
+                </div>
+
+                <!-- Table View -->
+                <aura:if isTrue="{! $Browser.formFactor == 'DESKTOP' &amp;&amp; (v.useCardLayout == false) }">
+                    <footer class="slds-card__footer">
+
+                        <div class="slds-grid slds-gutters slds-wrap">
+                            <div class="slds-col slds-size_1-of-12 slds-text-align_center">
+                                <lightning:button aura:id="doPrevious"
+                                                  label="Previous"
+                                                  class="slds-m-around_small"
+                                                  variant="neutral"
+                                                  disabled="{! v.cartStatus == 'Closed'}"
+                                                  onclick="{!c.handleNavigatePrev}"
+                                />
+                            </div>
+
+                            <div class="slds-col"/>
+
+                            <div class="slds-col slds-size_7-of-12 slds-text-align_center">
+
+                                <aura:if isTrue="{! $Browser.formFactor == 'DESKTOP' &amp;&amp; (v.useCardLayout == false)}">
+
+                                    <lightning:button label="Add More"
+                                                      class="slds-m-top--medium"
+                                                      variant="brand"
+                                                      disabled="{! v.cartStatus == 'Closed'}"
+                                                      onclick="{!c.handleAddMoreOrderItems}"
+                                    />
+                                </aura:if>
+
+                                <!-- Create a new cart if not editing an existing cart. -->
+                                <aura:if isTrue="{!(v.cartEncryptedId == null) || (v.cartEncryptedId == '')}">
+
+                                    <lightning:button aura:id="createCart"
+                                                      label="Create Cart"
+                                                      class="slds-m-top--medium"
+                                                      variant="brand"
+                                                      onclick="{!c.createCart}"/>
+
+                                </aura:if>
+
+                                <!-- Update an existing cart -->
+                                <!-- Create a new cart if not editing an existing cart. -->
+                                <aura:if isTrue="{!(v.cartEncryptedId != null) &amp;&amp; (v.cartEncryptedId != '')}">
+
+                                    <lightning:button aura:id="updateCart"
+                                                      label="Update Cart"
+                                                      class="slds-m-top--medium"
+                                                      variant="brand"
+                                                      disabled="{! v.cartStatus == 'Closed'}"
+                                                      onclick="{!c.updateCart}"/>
+
+
+                                    <aura:if isTrue="{!(v.pageMessages.length > 0)}">
+
+                                        <lightning:button aura:id="clearMessages"
+                                                          label="Clear Messages"
+                                                          class="slds-m-top--medium"
+                                                          variant="brand"
+                                                          disabled="{! v.cartStatus == 'Closed'}"
+                                                          onclick="{!c.clearMessages}"/>
+
+                                    </aura:if>
+
+                                    <lightning:button aura:id="updateCart"
+                                                      label="Reload Cart"
+                                                      class="slds-m-top--medium"
+                                                      variant="brand"
+                                                      disabled="{! v.cartStatus == 'Closed'}"
+                                                      onclick="{!c.reloadCart}"/>
+
+
+                                </aura:if>
+
+                                <lightning:button aura:id="typeaheadButton"
+                                                  label="{! v.isTypeaheadEnabled ? 'Disable Typeahead' : 'Enable Typeahead' }"
+                                                  class="slds-m-top--medium"
+                                                  variant="brand"
+                                                  disabled="{! v.cartStatus == 'Closed'}"
+                                                  onclick="{!c.handleTypeaheadButtonClick}"/>
+
+                            </div>
+
+                            <div class="slds-col"/>
+
+                            <div class="slds-col slds-size_1-of-12 slds-text-align_center">
+                                <lightning:button aura:id="doNext"
+                                                  label="Next"
+                                                  class="slds-m-around_small"
+                                                  variant="neutral"
+                                                  disabled="{! v.cartStatus == 'Closed'}"
+                                                  onclick="{!c.handleNavigateNext}"
+                                />
+                            </div>
+
+                        </div>
+
+                    </footer>
+                </aura:if>
+
+                <!-- Card View -->
+                <aura:if isTrue="{! $Browser.formFactor != 'DESKTOP' || (v.useCardLayout == true) }">
+
+                    <div class="slds-grid slds-gutters slds-wrap">
+                        <div class="slds-col slds-size_12-of-12 slds-text-align_center">
+                            <!-- Desktop buttons -->
+                            <aura:if isTrue="{! $Browser.formFactor == 'DESKTOP' &amp;&amp; (v.useCardLayout == false)}">
+                                <lightning:button label="Add More"
+                                                  class="slds-m-around--medium"
+                                                  variant="brand"
+                                                  disabled="{! v.cartStatus == 'Closed'}"
+                                                  onclick="{!c.handleAddMoreOrderItems}"
+                                />
+                            </aura:if>
+
+                            <!-- Mobile buttons -->
+                            <aura:if isTrue="{! $Browser.formFactor != 'DESKTOP' || (v.useCardLayout == true) }">
+                                <lightning:button label="Add Item"
+                                                  class="slds-m-around--medium"
+                                                  variant="brand"
+                                                  disabled="{! v.cartStatus == 'Closed'}"
+                                                  onclick="{!c.handleAddItem}"
+                                />
+                            </aura:if>
+                        </div>
+                    </div>
+
+                    <footer class="slds-card__footer">
+                        <!-- Create a new cart if not editing an existing cart. -->
+                        <aura:if isTrue="{!(v.cartEncryptedId == null) || (v.cartEncryptedId == '')}">
+                            <lightning:button aura:id="createCart"
+                                    label="Create Cart"
+                                    class="slds-m-top--medium"
+                                    variant="brand"
+                                    onclick="{!c.createCart}"/>
+                        </aura:if>
+
+                        <!-- Update an existing cart -->
+                        <!-- Create a new cart if not editing an existing cart. -->
+                        <aura:if isTrue="{!(v.cartEncryptedId != null) &amp;&amp; (v.cartEncryptedId != '')}">
+                            <lightning:button aura:id="updateCart"
+                                    label="Update Cart"
+                                    class="slds-m-top--medium"
+                                    variant="brand"
+                                    disabled="{! v.cartStatus == 'Closed'}"
+                                    onclick="{!c.updateCart}"/>
+
+                            <aura:if isTrue="{!(v.pageMessages.length > 0)}">
+                                <lightning:button aura:id="clearMessages"
+                                        label="Clear Messages"
+                                        class="slds-m-top--medium"
+                                        variant="brand"
+                                        disabled="{! v.cartStatus == 'Closed'}"
+                                        onclick="{!c.clearMessages}"/>
+                            </aura:if>
+
+                            <lightning:button aura:id="updateCart"
+                                    label="Reload Cart"
+                                    class="slds-m-top--medium"
+                                    variant="brand"
+                                    disabled="{! v.cartStatus == 'Closed'}"
+                                    onclick="{!c.reloadCart}"/>
+
+                        </aura:if>
+
+                        <div class="slds-grid slds-gutters slds-wrap">
+
+                            <div class="slds-col slds-size_12-of-12 slds-text-align_right">
+                                <div class="action-footer slds-clearfix">
+                                    <lightning:button aura:id="doPrevious"
+                                                      label="Previous"
+                                                      class="slds-m-around_small"
+                                                      variant="neutral"
+                                                      disabled="{! v.cartStatus == 'Closed'}"
+                                                      onclick="{!c.handleNavigatePrev}"
+                                    />
+
+                                    <lightning:button aura:id="doNext"
+                                                      label="Next"
+                                                      class="slds-m-around_small"
+                                                      variant="neutral"
+                                                      disabled="{! v.cartStatus == 'Closed'}"
+                                                      onclick="{!c.handleNavigateNext}"
+                                    />
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </footer>
+                </aura:if>
+            </article>
+        </div>
+    </div>
+
+
+
+
+</aura:component>

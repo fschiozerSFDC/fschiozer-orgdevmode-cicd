@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "b138e492-eb7d-43e2-be9d-d7ee858542ee",
+  "appPageId" : "e4bd7437-87f9-492f-bb9b-cca60c9128dd",
+  "configurationTags" : [ ],
+  "id" : "1f220abb-38c2-4615-b01e-1958278ac91b",
+  "label" : "Wordpress_Blog-Cirrus_Blog",
+  "pageAccess" : "UseParent",
+  "routeType" : "extdetail-cms-Wordpress_Blog-Cirrus_Blog",
+  "type" : "route",
+  "urlPrefix" : "wordpress-blog-cirrus-blog"
+}

@@ -1,0 +1,227 @@
+{
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "da4482cf-a2eb-4254-8fad-1b6ad680a9a8",
+  "label" : "Work Order Detail",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "94f3216e-c705-4b40-9cdb-dcc434741079",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c526932d-0278-43de-a2c5-2e41e43a5bb2",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "8e07b011-9bfd-4df4-b332-ac70b6ec69e8",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "55e1e3fd-cb4a-4258-b217-04d05a27ee5d",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Details"
+          }, {
+            "UUID" : "bb63fc14-342a-4ffa-8e58-9f18151a03e4",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "Book Appointment"
+          }, {
+            "UUID" : "92bed26b-2ec8-4316-bcd5-40cd5f038bf5",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "3",
+            "tabName" : "Get Candidates"
+          }, {
+            "UUID" : "8c69fe7f-16b3-47f8-ab17-850cb89398ea",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "d9e1b",
+            "tabName" : "Emergency Booking"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "8e07b011-9bfd-4df4-b332-ac70b6ec69e8",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:recordDetail",
+          "id" : "4ef2d19d-89e1-4295-ba5e-786198776fb2",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "55e1e3fd-cb4a-4258-b217-04d05a27ee5d",
+        "regionLabel" : "Details",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "height" : "650",
+            "pageName" : "FSL__AppointmentBookingVf",
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:visualforcePage",
+          "id" : "f764d55a-a2cf-4489-add3-51e4d1d697e7",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "bb63fc14-342a-4ffa-8e58-9f18151a03e4",
+        "regionLabel" : "Book Appointment",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "height" : "650",
+            "pageName" : "FSL__GetCandidates",
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:visualforcePage",
+          "id" : "f74966b2-94a2-4dc5-8bac-52b48545baae",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "92bed26b-2ec8-4316-bcd5-40cd5f038bf5",
+        "regionLabel" : "Get Candidates",
+        "regionName" : "3",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "height" : "650",
+            "pageName" : "FSL__EmergencyWizard",
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:visualforcePage",
+          "id" : "13416f41-654a-482e-897c-e32bb5f39532",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "8c69fe7f-16b3-47f8-ab17-850cb89398ea",
+        "regionLabel" : "Emergency Booking",
+        "regionName" : "d9e1b",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a70ff8b7-6d9b-4b17-85a6-a4cd617fe707",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "72e9b1c3-e02b-4809-b2da-c68eb7709900",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "74554746-a7e9-4fc0-965a-194f01ec813f",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "2b859e15-dd93-44aa-ad4f-63f3efc28e8e",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "Related"
+          }, {
+            "UUID" : "cad6c837-3d6f-480c-b800-62735c01c424",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Feed"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "74554746-a7e9-4fc0-965a-194f01ec813f",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:relatedRecords",
+          "id" : "6e15ef16-8f54-4972-b339-dd9d5bd0b431",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "2b859e15-dd93-44aa-ad4f-63f3efc28e8e",
+        "regionLabel" : "Related",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "canChangeSorting" : true,
+            "defaultFilter" : "",
+            "feedDesign" : "DEFAULT",
+            "hasFeedSearch" : true,
+            "subjectId" : "{!recordId}",
+            "type" : "Record"
+          },
+          "componentName" : "forceCommunity:forceCommunityFeed",
+          "id" : "ce4b3713-e4b3-4674-a488-d6eef5883f71",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "cad6c837-3d6f-480c-b800-62735c01c424",
+        "regionLabel" : "Feed",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "4e79d488-952a-4260-8fb0-4b0c4929b719",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "9e757860-4d8b-4799-98a1-2dba4ca75e31",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5803febd-4406-470f-ab2d-cdf1e5bf926a",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "detail-0WO"
+}

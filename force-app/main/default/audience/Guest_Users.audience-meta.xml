@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audience xmlns="http://soap.sforce.com/2006/04/metadata">
+    <audienceName>Guest Users</audienceName>
+    <container>Professional Community</container>
+    <criteria>
+        <criterion>
+            <criteriaNumber>1</criteriaNumber>
+            <criterionValue>
+                <entityField>UserType</entityField>
+                <entityType>User</entityType>
+                <fieldValue>Guest</fieldValue>
+            </criterionValue>
+            <operator>Equal</operator>
+            <type>FieldBased</type>
+        </criterion>
+    </criteria>
+    <formulaFilterType>AllCriteriaMatch</formulaFilterType>
+    <isDefaultAudience>false</isDefaultAudience>
+    <targets>
+        <target>
+            <groupName>858bed85-4a8f-488b-a9aa-c2cd3e4e8617$#$7076a45d-f116-446d-97d6-31fe6c83f751</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Shop_Flexible_B2B_Commerce_Header_Component</targetValue>
+        </target>
+        <target>
+            <groupName>292d8438-fc7a-4d50-9424-843535ecd489$#$82c5d161-6498-4370-b73d-ce43483a2bd6</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Rich_Content_Editor_1_Component</targetValue>
+        </target>
+        <target>
+            <groupName>97a9324c-7309-4e27-8008-c2db8e39a2cd$#$92f62781-bf70-48ad-9b11-184edbf57332</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Home_Alternate_Rich_Content_Editor_2_Component</targetValue>
+        </target>
+        <target>
+            <groupName>858bed85-4a8f-488b-a9aa-c2cd3e4e8617$#$1667d73d-58b4-4a14-ae48-2f759d5eebb6</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Shop_Flexible_CMS_Collection_1_Component</targetValue>
+        </target>
+    </targets>
+</Audience>

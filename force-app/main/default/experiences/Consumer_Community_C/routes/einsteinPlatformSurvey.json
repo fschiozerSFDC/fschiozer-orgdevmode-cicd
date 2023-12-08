@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "ca915a49-1b75-4c3d-9745-162a9a56ce54",
+  "appPageId" : "e4bd7437-87f9-492f-bb9b-cca60c9128dd",
+  "configurationTags" : [ ],
+  "id" : "627e5a1a-98a6-4e99-acfd-49e4743882e5",
+  "label" : "Einstein Platform Survey",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-einstein-platform-survey",
+  "type" : "route",
+  "urlPrefix" : "einstein-platform-survey"
+}

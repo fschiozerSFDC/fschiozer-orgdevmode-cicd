@@ -1,0 +1,66 @@
+{
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "0746a8b9-528f-4814-b331-45c01be39fff",
+  "label" : "Milestone Detail",
+  "regions" : [ {
+    "id" : "5f75c41a-03dd-4fe5-ab8d-0ac3a03d2762",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "27e452ff-8b84-4d84-9f3d-d98a72c05099",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:pathAssistant",
+      "id" : "d6772ddb-1acf-4449-82ae-aa9da6ecd3c0",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordDetail",
+      "id" : "9f09e03c-74a4-46aa-9f49-98d1460b819a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "49972d4f-9857-46ef-85ff-1d1bd5355e27",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "a5ac1197-6904-48ab-aab2-99f606e64c39",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "2d697300-8793-413c-ab19-54b261652022",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f8be1540-a438-4731-b6ca-12d970d3064b",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-a1U"
+}

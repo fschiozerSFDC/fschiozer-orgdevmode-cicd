@@ -1,0 +1,131 @@
+{
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "b939ac91-f442-4041-9a0d-68ec60d07fed",
+  "label" : "Asset Detail",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "2726a49d-ff0e-459b-9fac-c2a0945d6361",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "4139a1f8-82ec-4a11-9933-37a28c508387",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "5b1f8df8-09bd-401d-8943-defbff2825c3",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Details"
+          }, {
+            "UUID" : "fd928c8c-a31b-4b59-8aa6-d2b284e63ba6",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "Related"
+          }, {
+            "UUID" : "f2a2fab1-f286-4734-b507-9521e641ab44",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "3",
+            "tabName" : "Book Appointment"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "4139a1f8-82ec-4a11-9933-37a28c508387",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:recordDetail",
+          "id" : "2590fbf0-c68e-425a-8e4f-ef0b428f0016",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "5b1f8df8-09bd-401d-8943-defbff2825c3",
+        "regionLabel" : "Details",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:relatedRecords",
+          "id" : "57bf6bc2-0222-41d6-921a-22275a98422d",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "fd928c8c-a31b-4b59-8aa6-d2b284e63ba6",
+        "regionLabel" : "Related",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "height" : "300",
+            "pageName" : "FSL__AppointmentBookingCommunitiesVf",
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:visualforcePage",
+          "id" : "37ef21ee-ff94-4616-9580-27b5a5b83fd9",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "f2a2fab1-f286-4734-b507-9521e641ab44",
+        "regionLabel" : "Book Appointment",
+        "regionName" : "3",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7fdadf5d-ea72-4df7-a052-9999ec29d4a5",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "0df89922-4ff2-4485-a766-076c97c6d3af",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "3430f940-485c-40dc-97a3-252b397e45d7",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "d0d77aba-6120-4af8-8e0e-e7298036c4b1",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "49a97629-4e51-4334-93ee-0fd803005810",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-02i"
+}

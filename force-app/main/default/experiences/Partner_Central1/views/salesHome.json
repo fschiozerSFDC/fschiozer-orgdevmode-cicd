@@ -1,0 +1,361 @@
+{
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "91ed3585-ee05-462d-a6ac-79d3ffe03b59",
+  "label" : "Sales Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h2><img class=\"sfdcCbImage\" src=\"{!contentAsset.Dollars.1}\" /> Pipeline and Deal Registration</h2>\n<p>&nbsp;Use this page to register a new deal, track approval status of deals you've registered, and to collaborate on deals with our staff.&nbsp;&nbsp;</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "700373c9-fbd7-4d44-a891-3504aee3ef74",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "74676d09-506f-4111-8f83-4cd62d8106ae",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "91337147-6a07-4f87-a5e5-19882b3a5c55",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "efb0dad8-2f8a-4bea-aa0b-b671a17d1f52",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "My Sales"
+          }, {
+            "UUID" : "4d5cbdfa-0955-40f5-9366-9d22582aa49a",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "Registered"
+          }, {
+            "UUID" : "d6fdf948-d55e-4017-a4e4-dcbfac26b9b3",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "3",
+            "tabName" : "Approved"
+          }, {
+            "UUID" : "4d810543-e4c6-4090-b863-d7cf722ab9f9",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "f87dc",
+            "tabName" : "Rejected"
+          }, {
+            "UUID" : "c3f9362b-33c1-4601-a888-53da67c20e53",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "6b63e",
+            "tabName" : "My Company"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "91337147-6a07-4f87-a5e5-19882b3a5c55",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<p>&nbsp;Deals you've closed this year. Includes only your personal deals.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "483504cc-0523-45da-bff1-db549a10ac75",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "cacheAge" : 1440,
+            "filterName" : "",
+            "reportId" : "00O1N000008zFEw",
+            "showRefreshButton" : false,
+            "showTitle" : false
+          },
+          "componentName" : "forceCommunity:reportChart",
+          "id" : "6064b32d-c6e2-4cc4-8db7-771aa1c8e784",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "richTextValue" : "<p>Want to close more? Bigger pipeline? Expand your product knowledge! <a href=\"javascript:void(0);\" target=\"null\">Click here</a> to register for training, or to browse product materials.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "e3e0bf54-ca56-4883-9abf-e42ef77314ea",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "efb0dad8-2f8a-4bea-aa0b-b671a17d1f52",
+        "regionLabel" : "My Sales",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<p>Deals you've registered with us, but are still awaiting approval.</p>"
+          },
+          "componentName" : "forceCommunity:richText",
+          "id" : "13f8e546-06bc-4aba-9d74-69fd8b72d357",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "filterName" : "00B1N000008fdiCUAQ",
+            "layout" : "FULL",
+            "pageSize" : 25,
+            "scope" : "Lead",
+            "showDisplay" : "showall"
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "0430c8f4-691b-4663-937e-da82d99ac07b",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "4d5cbdfa-0955-40f5-9366-9d22582aa49a",
+        "regionLabel" : "Registered",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<p>Deals we've approved for you to work. Use the filters to select open deals, closed deals, or others.</p>"
+          },
+          "componentName" : "forceCommunity:richText",
+          "id" : "dc7574bb-397c-41a6-a212-e30f3c77fc9d",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "filterName" : "00B1N000008fddQUAQ",
+            "layout" : "FULL",
+            "pageSize" : 25,
+            "scope" : "Opportunity",
+            "showDisplay" : "showall"
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "f8673d68-0006-4e4e-905c-695c784e4cd2",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "d6fdf948-d55e-4017-a4e4-dcbfac26b9b3",
+        "regionLabel" : "Approved",
+        "regionName" : "3",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<p>Deals you've registered, but we've rejected due to a conflict or other reason.</p>"
+          },
+          "componentName" : "forceCommunity:richText",
+          "id" : "61854966-797d-4e3c-a922-a001aa798d83",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "filterName" : "00B1N000008fdx1UAA",
+            "layout" : "FULL",
+            "pageSize" : 25,
+            "scope" : "Lead",
+            "showDisplay" : "showall"
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "4784144a-223c-4f6c-a4e4-9b6bcca86756",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "4d810543-e4c6-4090-b863-d7cf722ab9f9",
+        "regionLabel" : "Rejected",
+        "regionName" : "f87dc",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<p>Who's the top closer? Deals closed by your company.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "12296aaf-3539-4353-9bdb-36a4551e0f91",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "cacheAge" : 1440,
+            "filterName" : "",
+            "reportId" : "00O1N000008zEiQ",
+            "showRefreshButton" : false,
+            "showTitle" : false
+          },
+          "componentName" : "forceCommunity:reportChart",
+          "id" : "55f374a8-f99b-4ff3-9c89-c4b6c9eedcbd",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "c3f9362b-33c1-4601-a888-53da67c20e53",
+        "regionLabel" : "My Company",
+        "regionName" : "6b63e",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9d227457-06c8-40e8-a974-d7229ee2d23c",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "actions" : [ {
+          "isPublic" : false,
+          "name" : "Register_Deal"
+        } ],
+        "label" : "Register Deal"
+      },
+      "componentName" : "forceCommunity:createRecordButton",
+      "id" : "a1af73a9-1e9d-4c3c-8b9a-7eabd9ca7bb3",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "2e8c91a3-2f1b-4428-b66d-716d834c7b17",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "10946998-b1e2-48c7-8d1a-7b71174883da",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Tips"
+          }, {
+            "UUID" : "3b5692e4-d393-415b-bb68-a2dc30898170",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "Activity"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "2e8c91a3-2f1b-4428-b66d-716d834c7b17",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "channel" : "CustomChannel3"
+          },
+          "componentName" : "forceCommunity:recommendations",
+          "id" : "b88aaa47-4eb6-4c48-a9fa-9745460fc9ea",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "10946998-b1e2-48c7-8d1a-7b71174883da",
+        "regionLabel" : "Tips",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "canChangeSorting" : true,
+            "feedDesign" : "BROWSE",
+            "hasFeedSearch" : true,
+            "subjectId" : "{!recordId}",
+            "type" : "News"
+          },
+          "componentName" : "forceCommunity:forceCommunityFeed",
+          "id" : "2534fe80-dd6d-4440-a652-b81d0f15b40e",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "3b5692e4-d393-415b-bb68-a2dc30898170",
+        "regionLabel" : "Activity",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6f6ed905-ab2e-4199-b26b-874b31e6d9b8",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "325b0584-6e2a-4161-be2a-6c5d554578e2",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Sales Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "76ed67ad-fff0-4e6b-a8db-4deb4b6b7085",
+      "renditionMap" : {
+        "de" : "4b1f200b-0194-4e98-a355-0159dce0c72a",
+        "es" : "17661c2c-5930-4c5a-b3c5-ccf0ee583aea",
+        "fr" : "aadfe3a2-2dd3-4b8d-925e-2647acc445d0",
+        "ja" : "654e5365-3efc-4f81-98d8-823f5c250716"
+      },
+      "renditions" : [ {
+        "id" : "4b1f200b-0194-4e98-a355-0159dce0c72a",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Sales Home"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "aadfe3a2-2dd3-4b8d-925e-2647acc445d0",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Sales Home"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "17661c2c-5930-4c5a-b3c5-ccf0ee583aea",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Sales Home"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "654e5365-3efc-4f81-98d8-823f5c250716",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Sales Home"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "1a5e285b-1c5c-4789-ae06-79e623025863",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-sales-home"
+}

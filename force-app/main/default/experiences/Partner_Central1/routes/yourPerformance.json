@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "fec7add5-ea28-44d9-8e8c-79e957bd9744",
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "configurationTags" : [ ],
+  "id" : "f994fade-6326-40a1-87bb-8acc95c34c6f",
+  "label" : "Your Performance",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-measure",
+  "type" : "route",
+  "urlPrefix" : "measure"
+}

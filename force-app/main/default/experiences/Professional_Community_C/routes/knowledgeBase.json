@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "a237cc67-7a7d-4902-8eb4-8d66e1a6b21c",
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "configurationTags" : [ ],
+  "id" : "d52420fd-0d44-4fb7-9184-f7b13c79ccc5",
+  "label" : "Knowledge Base",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-knowledge-base",
+  "type" : "route",
+  "urlPrefix" : "knowledge-base"
+}

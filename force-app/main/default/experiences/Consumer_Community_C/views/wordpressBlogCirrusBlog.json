@@ -1,0 +1,50 @@
+{
+  "appPageId" : "e4bd7437-87f9-492f-bb9b-cca60c9128dd",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "b138e492-eb7d-43e2-be9d-d7ee858542ee",
+  "label" : "Wordpress_Blog-Cirrus_Blog",
+  "regions" : [ {
+    "id" : "3b3a573c-c262-45ea-b78b-39e480f88307",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "cmsJsonConfig" : {
+          "cmsConnectJsonPath" : "Blog_Entry",
+          "cmsConnectSettingName" : "Wordpress_Blog",
+          "componentPathUrl" : "{!recordId}",
+          "contentLayoutAttributeProviderType" : "DesignFile",
+          "contentLayoutAttributes" : {
+            "author" : "@author/name",
+            "content" : "@content",
+            "imageSrc" : "@featured_image",
+            "publishedOn" : "@date",
+            "title" : "@title"
+          },
+          "contentLayoutName" : "forceCommunity:cmsContentItemDetailLayout",
+          "dataBindingProviderAttributes" : { },
+          "dataBindingProviderComponent" : "forceCommunity:cmsConnectJSONItemDataBindingProvider",
+          "dataProviderComponent" : "forceCommunity:cmsConnectJSONDataProvider",
+          "isSelectedCmsSiteConfigDisabled" : "true"
+        }
+      },
+      "componentName" : "forceCommunity:cmsContent",
+      "id" : "9e896d25-fad7-4a91-83fd-f2a7b93b5317",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9d744140-bbe8-472a-8210-dba224ef000d",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "5f5c0450-c964-4da7-8616-0912d3b8b4ca",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "extdetail-cms-Wordpress_Blog-Cirrus_Blog"
+}

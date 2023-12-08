@@ -1,0 +1,72 @@
+{
+  "appPageId" : "e4bd7437-87f9-492f-bb9b-cca60c9128dd",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "9738c793-7e12-412c-8667-01578f8613f6",
+  "label" : "Ideas",
+  "regions" : [ {
+    "id" : "5b4e0c29-c188-4fbd-b2f2-655bfb2026fd",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "ideaDetailPath" : "idea/",
+        "ideaPostPath" : "post-idea/",
+        "ideasPerPage" : 20,
+        "listingTitle" : "Ideas",
+        "viewName" : "Popular"
+      },
+      "componentName" : "c:CommunityIdeaList",
+      "id" : "3e6ee72f-adab-4d3f-a42c-23715718ea5c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "26753a15-958e-42e2-ba02-64c2b4772f9e",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "84f83b7e-3918-4d01-8103-6ca4bbd9fd6a",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Ideas"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "e189041c-ce78-43c1-8061-969a92ed524d",
+      "renditionMap" : {
+        "de" : "04a1367a-ceee-4f09-8efb-dcded3aec040",
+        "fr" : "b08e1362-a276-4190-a560-2d0ba632f5f4"
+      },
+      "renditions" : [ {
+        "id" : "04a1367a-ceee-4f09-8efb-dcded3aec040",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Ideas"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "b08e1362-a276-4190-a560-2d0ba632f5f4",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Ideas"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "c2aa93e7-e83a-4e40-bfdd-42e97622b607",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-ideas"
+}

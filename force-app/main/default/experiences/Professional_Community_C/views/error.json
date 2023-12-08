@@ -1,0 +1,76 @@
+{
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "5db287d1-2c1f-45d0-ad5b-d88ef6892ba6",
+  "label" : "Error",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div style=\"text-align: center;\">Invalid Page</div>"
+      },
+      "componentName" : "flexipage:richText",
+      "id" : "507ca2a0-29cb-4f44-a1f8-c153506c837d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "82df4445-9d59-48e8-b994-4372a1c9bd44",
+        "fr" : "ca8d84bf-7b0f-45c4-99f9-f42cbaccb512"
+      },
+      "renditions" : [ {
+        "id" : "ca8d84bf-7b0f-45c4-99f9-f42cbaccb512",
+        "renditionValue" : {
+          "componentAttributes" : { }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "82df4445-9d59-48e8-b994-4372a1c9bd44",
+        "renditionValue" : {
+          "componentAttributes" : { }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "0affe127-3701-4dfc-a312-6bc111f73308",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Error"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "3e6dded1-b1b6-459d-912e-90ea0a244170",
+      "renditionMap" : {
+        "de" : "198ea9bc-6645-4eb5-8d2e-49467aca2659",
+        "fr" : "6a133200-db0e-404b-8a05-e16838f26c05"
+      },
+      "renditions" : [ {
+        "id" : "198ea9bc-6645-4eb5-8d2e-49467aca2659",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Error"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "6a133200-db0e-404b-8a05-e16838f26c05",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Error"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "d8a6227c-5c8a-4494-9e38-62bb56c8f019",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "error"
+}

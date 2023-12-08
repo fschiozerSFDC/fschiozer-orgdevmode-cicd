@@ -1,0 +1,334 @@
+{
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "845485cd-7e85-45c8-9c04-d8bb0ad63532",
+  "label" : "Videos",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgb(255,255,255)",
+        "backgroundOverlay" : "rgba(255,255,255,0.7)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "146cccbe-9c7f-406d-a90e-b70d9b509be2",
+          "columns" : [ {
+            "UUID" : "0ed62363-92f3-495e-a47a-8b930317a176",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "2",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "72627b59-c4a5-4cd6-8372-4f5ca36754be",
+            "columnKey" : "13a26",
+            "columnName" : "Column 2",
+            "columnWidth" : "10",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "146cccbe-9c7f-406d-a90e-b70d9b509be2",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h2 style=\"text-align: center;\">Join Us on YouTube!</h2>\n<p style=\"text-align: center;\"><a href=\"//www.youtube.com\" target=\"_blank\"><img class=\"sfdcCbImage\" src=\"{!contentAsset.youtubeicon.1}\" /></a></p>\n<p style=\"text-align: center;\"><span style=\"font-size: 14px;\">Join and </span><a href=\"//www.youtube.com\" target=\"_blank\" style=\"font-size: 14px;\">subscribe</a><span style=\"font-size: 14px;\"> to our YouTube channel to get the latest videos as they are uploaded!</span></p>\n<p style=\"text-align: center;\"><br /></p>\n<p style=\"text-align: center;\">Our channel is updated every week with new content, events, and other items.</p>\n<p style=\"text-align: center;\"><br /></p>\n<p style=\"text-align: center;\">Want regular tips and tricks for getting the most out of your purchase? <a href=\"//www.salesforce.com\" target=\"_blank\">Subscribe to our newsletter</a>!</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "f450e3e1-738a-49d8-8dba-e0c1adfba56e",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "0ed62363-92f3-495e-a47a-8b930317a176",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "config" : {
+              "collectionLayoutDefinition" : {
+                "attributes" : {
+                  "contentIndicatorSpacing" : "none",
+                  "limitItems" : 5,
+                  "showProgressArrows" : true,
+                  "showProgressIndicator" : true,
+                  "transitionSpeed" : 600,
+                  "transitionType" : "slide"
+                },
+                "componentName" : "forceCommunity:dynamicCollectionCarousel"
+              },
+              "dataProviderDefinition" : {
+                "attributes" : {
+                  "dataProviderInfo" : {
+                    "apiName" : "Video_Home_Featured_Videos"
+                  },
+                  "dataProviderType" : "NamedCollection"
+                },
+                "componentName" : "forceCommunity:managedContentCollectionDataProvider"
+              },
+              "itemLayoutDefinition" : {
+                "attributes" : {
+                  "additionalLinks" : "{}",
+                  "backgroundPosition" : "center center",
+                  "backgroundSize" : "cover",
+                  "bannerAspectRatio" : "16:9",
+                  "bannerHeight" : 450,
+                  "bannerSubTitleTextColor" : "#ffffff",
+                  "bannerTitleTextColor" : "#ffffff",
+                  "callToActionButtonBackgroundColor" : "",
+                  "callToActionButtonBackgroundColorHover" : "",
+                  "callToActionButtonBorderColor" : "",
+                  "callToActionButtonBorderColorHover" : "",
+                  "callToActionButtonBorderStyles" : "{\"borderTopLeftRadius\":{\"value\":\"30\",\"isPx\":true},\"borderTopRightRadius\":{\"value\":\"30\",\"isPx\":true},\"borderBottomRightRadius\":{\"value\":\"30\",\"isPx\":true},\"borderBottomLeftRadius\":{\"value\":\"30\",\"isPx\":true}}",
+                  "callToActionButtonTextColor" : "",
+                  "callToActionButtonTextColorHover" : "",
+                  "callToActionLabel" : "View",
+                  "componentHoverEffect" : "none",
+                  "contentWidth" : 80,
+                  "defaultLinksOverrides" : "{}",
+                  "eyebrowFontSize" : "regular",
+                  "eyebrowHighlightColor" : "",
+                  "eyebrowText" : "",
+                  "eyebrowTextColor" : "#ffffff",
+                  "eyebrowTextDecoration" : "",
+                  "flagAlignment" : "top left",
+                  "flagBackgroundColor" : "rgb(53, 167, 86)",
+                  "flagBorderColor" : "#ffffff",
+                  "flagBorderStyles" : "{\"borderTopLeftRadius\":{\"value\":\"26\",\"isPx\":true},\"borderTopRightRadius\":{\"value\":\"26\",\"isPx\":true},\"borderBottomRightRadius\":{\"value\":\"26\",\"isPx\":true},\"borderBottomLeftRadius\":{\"value\":\"26\",\"isPx\":true}}",
+                  "flagRotation" : 20,
+                  "flagSpacing" : "large",
+                  "flagText" : "{!CurrentItem.flag}",
+                  "flagTextColor" : "#ffffff",
+                  "flagTextDecoration" : "{\"textTransform\":\"uppercase\",\"bold\":true}",
+                  "hideTextElementsForVideo" : false,
+                  "imageAltText" : "{!CurrentItem.title}",
+                  "imageUrl" : "{!CurrentItem.image.url}",
+                  "metadata1HighlightColor" : "",
+                  "metadata1Text" : "",
+                  "metadata2HighlightColor" : "",
+                  "metadata2Text" : "",
+                  "metadataFontSize" : "regular",
+                  "metadataTextColor" : "#ffffff",
+                  "metadataTextDecoration" : "",
+                  "overlayBackgroundColor" : "rgba(0, 0, 0, 0.4)",
+                  "showButton" : true,
+                  "showCaption" : true,
+                  "showEyebrow" : true,
+                  "showEyebrowHighlight" : false,
+                  "showFlag" : true,
+                  "showMetadata1" : true,
+                  "showMetadata1Highlight" : false,
+                  "showMetadata2" : true,
+                  "showMetadata2Highlight" : false,
+                  "showTitle" : true,
+                  "showTitleHighlight" : false,
+                  "subTitle" : "{!CurrentItem.excerpt}",
+                  "subTitleFontSize" : "regular",
+                  "textAlignment" : "center center",
+                  "title" : "{!CurrentItem.title}",
+                  "titleFontSize" : "large",
+                  "titleHeadingTag" : "p",
+                  "titleHighlightColor" : "",
+                  "titleTextDecoration" : "",
+                  "useAspectRatio" : false,
+                  "videoUrl" : "{!CurrentItem.videoURL}"
+                },
+                "componentName" : "forceCommunity:bannerLayout"
+              },
+              "schemaVersion" : "V2.0"
+            }
+          },
+          "componentName" : "forceCommunity:dynamicCollection",
+          "id" : "be28378d-4402-4bcd-883e-5d04f64ae01e",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "72627b59-c4a5-4cd6-8372-4f5ca36754be",
+        "regionLabel" : "Column 2",
+        "regionName" : "13a26",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgb(255,255,255)",
+        "backgroundOverlay" : "rgba(255,255,255,0.7)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "12bcc626-2941-466a-9588-623a20c0aaf3",
+          "columns" : [ {
+            "UUID" : "dccae69a-77ba-4f55-8469-7097a7afe5db",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "12bcc626-2941-466a-9588-623a20c0aaf3",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h1>Latest Videos</h1><p>Enjoy our collection of informative videos on sustainable energy from guest contributors!</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "5573aff3-203f-4340-9026-12a2c666a869",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "config" : {
+              "collectionLayoutDefinition" : {
+                "attributes" : {
+                  "collectionTitle" : "",
+                  "collectionTitleHeadingTag" : "h2",
+                  "columns" : "4",
+                  "rows" : "2",
+                  "showCollectionTitle" : true,
+                  "showViewMoreButton" : true,
+                  "spacing" : "medium",
+                  "viewMoreButtonBackgroundColor" : "",
+                  "viewMoreButtonBackgroundColorHover" : "",
+                  "viewMoreButtonBorderColor" : "",
+                  "viewMoreButtonBorderColorHover" : "",
+                  "viewMoreButtonLabel" : "More Videos",
+                  "viewMoreButtonPlacement" : "center",
+                  "viewMoreButtonRadius" : "20",
+                  "viewMoreButtonTextColor" : "",
+                  "viewMoreButtonTextColorHover" : ""
+                },
+                "componentName" : "forceCommunity:dynamicCollectionGrid"
+              },
+              "dataProviderDefinition" : {
+                "attributes" : {
+                  "dataProviderInfo" : {
+                    "apiName" : "Video_Home"
+                  },
+                  "dataProviderType" : "NamedCollection"
+                },
+                "componentName" : "forceCommunity:managedContentCollectionDataProvider"
+              },
+              "itemLayoutDefinition" : {
+                "attributes" : {
+                  "additionalLinks" : "{\"links\":[{\"linkText\":\"{!CurrentItem.metadata2}\",\"linkURL\":\"{!CurrentItem.videoURL}\"}],\"alignment\":\"vertical\"}",
+                  "backgroundPosition" : "center center",
+                  "backgroundSize" : "cover",
+                  "borderColor" : "",
+                  "componentBorderStyles" : "",
+                  "componentHoverEffect" : "none",
+                  "componentPadding" : "none",
+                  "contentBackgroundColor" : "#ffffff",
+                  "contentOffset" : "0",
+                  "contentOffsetBackgroundColor" : "#ffffff",
+                  "contentOffsetPadding" : "medium",
+                  "contentPosition" : "center",
+                  "contentWidth" : 100,
+                  "defaultLinksOverrides" : "{}",
+                  "eyebrowFontSize" : "regular",
+                  "eyebrowHighlightColor" : "",
+                  "eyebrowText" : "{!CurrentItem.eyebrow}",
+                  "eyebrowTextColor" : "",
+                  "eyebrowTextDecoration" : "{\"bold\":true,\"textTransform\":\"capitalize\"}",
+                  "flagAlignment" : "top left",
+                  "flagBackgroundColor" : "rgb(53, 167, 86)",
+                  "flagBorderColor" : "#ffffff",
+                  "flagBorderStyles" : "{\"borderTopLeftRadius\":{\"value\":\"26\",\"isPx\":true},\"borderTopRightRadius\":{\"value\":\"26\",\"isPx\":true},\"borderBottomRightRadius\":{\"value\":\"26\",\"isPx\":true},\"borderBottomLeftRadius\":{\"value\":\"26\",\"isPx\":true}}",
+                  "flagConstraints" : "media",
+                  "flagRotation" : 15,
+                  "flagSpacing" : "medium",
+                  "flagText" : "{!CurrentItem.flag}",
+                  "flagTextColor" : "#ffffff",
+                  "flagTextDecoration" : "",
+                  "imageAlignment" : "top",
+                  "imageAltText" : "{!CurrentItem.title}",
+                  "imageBorderColor" : "#ffffff",
+                  "imageBorderStyles" : "",
+                  "imageUrl" : "{!CurrentItem.image.url}",
+                  "mediaAspectRatio" : "16:9",
+                  "mediaHeight" : "361",
+                  "metadata1HighlightColor" : "rgb(158, 202, 248)",
+                  "metadata1Text" : "",
+                  "metadata2HighlightColor" : "",
+                  "metadata2Text" : "",
+                  "metadataFontSize" : "regular",
+                  "metadataTextColor" : "",
+                  "metadataTextDecoration" : "",
+                  "showExcerpt" : true,
+                  "showEyebrow" : true,
+                  "showEyebrowHighlight" : true,
+                  "showFeaturedMedia" : true,
+                  "showFlag" : true,
+                  "showMetadata1" : true,
+                  "showMetadata1Highlight" : true,
+                  "showMetadata2" : true,
+                  "showMetadata2Highlight" : false,
+                  "showTitle" : true,
+                  "showTitleHighlight" : true,
+                  "subTitle" : "{!CurrentItem.excerpt}",
+                  "subTitleFontSize" : "regular",
+                  "subTitleTextColor" : "",
+                  "textAlignment" : "left",
+                  "title" : "{!CurrentItem.title}",
+                  "titleFontSize" : "medium",
+                  "titleHeadingTag" : "p",
+                  "titleHighlightColor" : "",
+                  "titleTextColor" : "",
+                  "titleTextDecoration" : "",
+                  "useAspectRatio" : false,
+                  "videoUrl" : "{!CurrentItem.videoURL}"
+                },
+                "componentName" : "forceCommunity:flexTileLayout"
+              },
+              "schemaVersion" : "V2.0"
+            }
+          },
+          "componentName" : "forceCommunity:dynamicCollection",
+          "id" : "cc52a64c-4917-40d8-882d-9c5cb412a95e",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "dccae69a-77ba-4f55-8469-7097a7afe5db",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "73f8b021-20f3-490e-9372-4ed384d3ee05",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Videos"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "2a57e063-3365-4997-90b6-a1a40e6c9a4a",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "26aefb67-ffb6-4c1e-ac86-69c55d87c85c",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-videos"
+}

@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "017b0349-e266-4393-ba57-7a2bc48348a0",
+  "appPageId" : "e4bd7437-87f9-492f-bb9b-cca60c9128dd",
+  "configurationTags" : [ ],
+  "id" : "3ab0d215-ebd4-4c88-9228-aefd36644ade",
+  "label" : "My Feed",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-my-feed",
+  "type" : "route",
+  "urlPrefix" : "my-feed"
+}

@@ -1,0 +1,10 @@
+{
+  "activeViewId" : "ab914b59-9fa8-40a3-8889-41b2099359ea",
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "configurationTags" : [ ],
+  "id" : "a4f24f3e-03f2-434d-b68c-0f947a38cfc8",
+  "label" : "Work Order Related List",
+  "routeType" : "relatedlist-0WO",
+  "type" : "route",
+  "urlPrefix" : "workorder"
+}

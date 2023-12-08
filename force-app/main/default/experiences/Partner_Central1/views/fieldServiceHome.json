@@ -1,0 +1,131 @@
+{
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "02cd284b-9059-4554-bb98-cf0235630b9e",
+  "label" : "Field Service Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h1><b style=\"font-size: 18px;\"><img class=\"sfdcCbImage\" src=\"{!contentAsset.ICON_Laptop.1}\" style=\"width: 50.4px; height: 50.4px;\" /> Field Service Home</b></h1>\n<p>Use this page as your source of truth for working with our mutual clients in the field.</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "4a3f7f66-85c6-4f47-87f5-76ae72e91f20",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "684428d9-0950-46c1-85ec-d207b6e7dca2",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "filterName" : "00B1N000008fdxTUAQ",
+        "layout" : "FULL",
+        "pageSize" : 25,
+        "scope" : "ServiceAppointment",
+        "showDisplay" : "showall"
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "e9fd6bdc-4ebd-488b-b563-50c97218404f",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e2fc03c4-6e35-4497-9692-12d8515d13f3",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "actions" : [ {
+          "isPublic" : false,
+          "name" : "Create_Appointment"
+        }, {
+          "isPublic" : false,
+          "name" : "Work_Order"
+        } ],
+        "label" : "New"
+      },
+      "componentName" : "forceCommunity:createRecordButton",
+      "id" : "64510723-c4c3-487f-8902-caba4c796b83",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "channel" : "DefaultChannel",
+        "title" : ""
+      },
+      "componentName" : "forceCommunity:recommendations",
+      "id" : "90808d8f-6e43-4c77-b88d-380c707e62fc",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d270e8f7-3f4f-466d-969b-8f605520553f",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "480488f7-60cb-4c68-b971-f3b0d59c6898",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Field Service Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "1184bc59-faef-4800-a80b-e828840ffac7",
+      "renditionMap" : {
+        "de" : "9587bd93-e636-4602-9c16-8b38cb1139ab",
+        "es" : "6e56e5e6-a59a-4cba-8e16-588cf193f52e",
+        "fr" : "38e47d43-e431-4d8f-bc46-97732e4714d9",
+        "ja" : "065140a7-8516-437e-8135-9b6983c44baa"
+      },
+      "renditions" : [ {
+        "id" : "9587bd93-e636-4602-9c16-8b38cb1139ab",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Field Service Home"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "38e47d43-e431-4d8f-bc46-97732e4714d9",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Field Service Home"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "6e56e5e6-a59a-4cba-8e16-588cf193f52e",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Field Service Home"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "065140a7-8516-437e-8135-9b6983c44baa",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Field Service Home"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "013fdd7b-970e-49a8-af7e-4010209a4a84",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-field-service-home"
+}

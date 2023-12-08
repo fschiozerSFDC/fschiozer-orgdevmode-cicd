@@ -1,0 +1,193 @@
+{
+  "appPageId" : "e4bd7437-87f9-492f-bb9b-cca60c9128dd",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "ca77f560-2c44-4796-8789-b02a33fe268b",
+  "label" : "Topic Catalog",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "bannerText" : "",
+        "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "pageType" : "",
+        "showSubTopics" : true,
+        "title" : "Topics",
+        "uniqueNameOrId" : ""
+      },
+      "componentName" : "forceCommunity:headline",
+      "id" : "e7d8a52b-4342-4e18-b70f-c9f5dc8698a9",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "ea5629d3-e41f-42f5-9492-374a440d39fa"
+      },
+      "renditions" : [ {
+        "id" : "ea5629d3-e41f-42f5-9492-374a440d39fa",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "bannerText" : "Kollaborieren Sie an optimalen Kommunikationslösungen für Ihre Organisation!",
+            "bannerTextWithKnowledge" : "Finden Sie weitere<a href=\"javascript:void(0)\" class=\"headlineArticles\">Artikel</a>und<a href=\"javascript:void(0)\" class=\"headlineDiscussions\">Diskussionen</a>zu diesem Thema.",
+            "bannerTextWithoutKnowledge" : "Finden Sie weitere<a href=\"javascript:void(0)\" class=\"headlineDiscussions\">Diskussionen</a>zu diesem Thema.",
+            "title" : "Willkommen!"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "f5d7a6c7-a4b9-4515-9a11-cd637bd1affb",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "35a2964c-c409-4107-b387-ed83cddc688a",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "f10efc78-005b-42d1-a229-5267a4df906d",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Featured"
+          }, {
+            "UUID" : "0dd2534c-1a22-4b79-a2ac-a409fb2c5848",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "All Topics"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "35a2964c-c409-4107-b387-ed83cddc688a",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "maxWidth" : 100,
+            "overlayColor" : "rgba(0, 0, 0, 0)",
+            "overlayHoverColor" : "rgba(58, 73, 130, 0.44)",
+            "radius" : 0,
+            "showTitle" : false,
+            "textAlignment" : "center",
+            "textBgColor" : "rgba(0,0,0,0)",
+            "textBgHoverColor" : "rgba(0,0,0,0)",
+            "textColor" : "rgb(0, 0, 0)",
+            "textHoverColor" : "",
+            "textPosition" : "bottom center",
+            "title" : "Featured Topics"
+          },
+          "componentName" : "forceTopic:featuredTopics",
+          "id" : "08915b55-29dd-4e90-b7ef-c991ad3abc6d",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "f10efc78-005b-42d1-a229-5267a4df906d",
+        "regionLabel" : "Featured",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "forceCommunity:topicCatalog",
+          "id" : "f7c2f64d-b11a-4a4e-bb7d-1159131416b5",
+          "renditionMap" : {
+            "de" : "a2ec3f85-f644-44cb-a8ab-398cf6e05dd1"
+          },
+          "renditions" : [ {
+            "id" : "a2ec3f85-f644-44cb-a8ab-398cf6e05dd1",
+            "renditionValue" : {
+              "componentAttributes" : { }
+            },
+            "type" : "renditionComponent"
+          } ],
+          "type" : "component"
+        } ],
+        "id" : "0dd2534c-1a22-4b79-a2ac-a409fb2c5848",
+        "regionLabel" : "All Topics",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "373f0ecb-3022-47a6-96d7-79055ce33032",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "askCommunityLabel" : "Ask A Question",
+        "buttonRadius" : 50,
+        "buttonTwoRadius" : 50,
+        "contactSupportLabel" : "Contact Support",
+        "headerLabel" : "Don't see what you're looking for?"
+      },
+      "componentName" : "siteforce:napiliFooter",
+      "id" : "3a9b8684-4460-4a96-be45-6e46ebf67fda",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "e53ece26-bdb7-411b-94d0-56c0aec68b4b"
+      },
+      "renditions" : [ {
+        "id" : "e53ece26-bdb7-411b-94d0-56c0aec68b4b",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "askCommunityLabel" : "Stellen Sie eine Frage",
+            "contactSupportLabel" : "Support kontaktieren",
+            "headerLabel" : "Sie finden nicht wonach Sie suchen?"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "8a49355a-539b-49f8-8712-e7b16ad4a8a6",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Topic Catalog"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "0130a9f7-ec65-47f6-873b-9bac4d0faa4a",
+      "renditionMap" : {
+        "de" : "69e2677b-8034-4da2-9a23-626189117c96",
+        "fr" : "19356f2e-bb8e-4111-9066-64235a5fda68"
+      },
+      "renditions" : [ {
+        "id" : "69e2677b-8034-4da2-9a23-626189117c96",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Topic Catalog"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "19356f2e-bb8e-4111-9066-64235a5fda68",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Topic Catalog"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "eb3413a4-372b-461e-96cd-f26394165847",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "topic-catalog"
+}

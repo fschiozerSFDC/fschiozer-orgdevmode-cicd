@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "2031968b-35b8-4624-ab90-a3d6d5ded14f",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "1667d73d-58b4-4a14-ae48-2f759d5eebb6",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Shop_Flexible_CMS_Collection_1_Component",
+  "id" : "27627792-aec7-40ed-b2aa-81339e0919b0",
+  "type" : "experienceVariation"
+}

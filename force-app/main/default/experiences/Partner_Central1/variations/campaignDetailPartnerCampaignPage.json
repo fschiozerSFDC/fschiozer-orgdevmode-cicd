@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "beca9d0d-5f81-4980-a124-a725324c8817",
+    "propertyOverrides" : {
+      "activeViewId" : "f458d845-0dfb-4d9a-9dfa-f198c2f0c889"
+    },
+    "targetId" : "dd43a66c-86d9-4524-8469-581e7fc61b73",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Campaign_Detail_Partner_Campaign_Page",
+  "id" : "04e4fdd7-a48b-4662-94bd-5af9500aa62a",
+  "type" : "experienceVariation"
+}

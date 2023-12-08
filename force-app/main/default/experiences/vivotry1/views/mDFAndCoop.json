@@ -1,0 +1,171 @@
+{
+  "appPageId" : "beaaa329-04c2-44d0-88d4-e747ec01a777",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "edbee40c-bd24-4e2d-a4eb-faa6484451e2",
+  "label" : "MDF and Coop",
+  "regions" : [ {
+    "id" : "5beac8f4-07db-4ab3-8e61-483320490bbc",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "             <p>                 <span style=\"font-size: 20px;\">Request and Manage your Market Developments Funds.</span>             </p>        "
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "54907a90-472c-493f-86d6-a58656e3da83",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "21074c2a-8678-4389-957e-27988c44a8eb",
+          "activeTab" : "tab1",
+          "tabs" : [ {
+            "UUID" : "bf9a4791-679c-4a5f-8176-7532bd6460f2",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : {
+                "filterName" : "Recent",
+                "scope" : "PartnerFundAllocation"
+              },
+              "fqn" : "forceCommunity:objectHome"
+            } ],
+            "tabKey" : "tab1",
+            "tabName" : "Fund Allocations"
+          }, {
+            "UUID" : "3f9444e5-0a2a-4480-a3fb-f79795609dcb",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : {
+                "filterName" : "Recent",
+                "scope" : "PartnerFundRequest"
+              },
+              "fqn" : "forceCommunity:objectHome"
+            } ],
+            "tabKey" : "tab2",
+            "tabName" : "Fund Requests"
+          }, {
+            "UUID" : "4430bec1-f5e4-44b6-893b-78fca9e1a628",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : {
+                "filterName" : "Recent",
+                "scope" : "PartnerFundClaim"
+              },
+              "fqn" : "forceCommunity:objectHome"
+            } ],
+            "tabKey" : "tab3",
+            "tabName" : "Fund Claims"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "21074c2a-8678-4389-957e-27988c44a8eb",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "enableInlineEdit" : true,
+            "filterName" : "Recent",
+            "layout" : "FULL",
+            "pageSize" : 25,
+            "scope" : "PartnerFundAllocation",
+            "showActionBar" : true,
+            "showChartsPanel" : true,
+            "showDisplay" : "showall",
+            "showFilterPanel" : true,
+            "showImageIcon" : true,
+            "showManualRefreshButton" : true,
+            "showObjectName" : true,
+            "showPinnedList" : true,
+            "showSearchBar" : true
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "5a97c8f9-f1d9-40d4-bfb2-430001260098",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "bf9a4791-679c-4a5f-8176-7532bd6460f2",
+        "regionLabel" : "Fund Allocations",
+        "regionName" : "tab1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "enableInlineEdit" : true,
+            "filterName" : "Recent",
+            "layout" : "FULL",
+            "pageSize" : 25,
+            "scope" : "PartnerFundRequest",
+            "showActionBar" : true,
+            "showChartsPanel" : true,
+            "showDisplay" : "showall",
+            "showFilterPanel" : true,
+            "showImageIcon" : true,
+            "showManualRefreshButton" : true,
+            "showObjectName" : true,
+            "showPinnedList" : true,
+            "showSearchBar" : true
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "e219c337-781a-429d-a381-227560185fc5",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "3f9444e5-0a2a-4480-a3fb-f79795609dcb",
+        "regionLabel" : "Fund Requests",
+        "regionName" : "tab2",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "enableInlineEdit" : true,
+            "filterName" : "Recent",
+            "layout" : "FULL",
+            "pageSize" : 25,
+            "scope" : "PartnerFundClaim",
+            "showActionBar" : true,
+            "showChartsPanel" : true,
+            "showDisplay" : "showall",
+            "showFilterPanel" : true,
+            "showImageIcon" : true,
+            "showManualRefreshButton" : true,
+            "showObjectName" : true,
+            "showPinnedList" : true,
+            "showSearchBar" : true
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "9cde8ceb-087e-42fa-a6b1-9a029bb85ba4",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "4430bec1-f5e4-44b6-893b-78fca9e1a628",
+        "regionLabel" : "Fund Claims",
+        "regionName" : "tab3",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d2c03c80-4a48-46b0-b5b6-f61dd1a97c87",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "4be28653-8438-4e4d-be54-6072a7077809",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "mdf"
+}

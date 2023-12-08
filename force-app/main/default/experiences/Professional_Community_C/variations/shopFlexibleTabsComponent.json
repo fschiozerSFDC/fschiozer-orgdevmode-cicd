@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "c3ee761d-08ba-4b3e-b16b-4cfd05309153",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "5886898f-ceb4-48c7-9ff1-37c1889e47b1",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Shop_Flexible_Tabs_Component",
+  "id" : "7163d49e-1171-44d8-9b8f-4ebc4f5e536f",
+  "type" : "experienceVariation"
+}

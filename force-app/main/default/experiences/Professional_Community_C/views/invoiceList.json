@@ -1,0 +1,189 @@
+{
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "ddd8f772-d363-4683-b8ee-97e443517eb6",
+  "label" : "Invoice List",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "config" : {
+          "collectionLayoutDefinition" : {
+            "attributes" : {
+              "contentIndicatorSpacing" : "medium",
+              "limitItems" : 5,
+              "numberThumbnailRow" : 7,
+              "showProgressArrows" : true,
+              "showProgressIndicator" : false,
+              "thumbnailHeight" : 60,
+              "thumbnailUrls" : "{!CurrentItem.bannerImage.url}",
+              "transitionSpeed" : 600,
+              "transitionType" : "slide"
+            },
+            "componentName" : "forceCommunity:dynamicCollectionCarouselSlideshow"
+          },
+          "dataProviderDefinition" : {
+            "attributes" : {
+              "dataProviderInfo" : {
+                "apiName" : "Invoice_Record_Details"
+              },
+              "dataProviderType" : "NamedCollection"
+            },
+            "componentName" : "forceCommunity:managedContentCollectionDataProvider"
+          },
+          "itemLayoutDefinition" : {
+            "attributes" : {
+              "additionalLinks" : "{}",
+              "backgroundPosition" : "center center",
+              "backgroundSize" : "cover",
+              "bannerAspectRatio" : "16:9",
+              "bannerHeight" : "268",
+              "bannerSubTitleTextColor" : "#ffffff",
+              "bannerTitleTextColor" : "#ffffff",
+              "callToActionButtonBackgroundColor" : "",
+              "callToActionButtonBackgroundColorHover" : "",
+              "callToActionButtonBorderColor" : "",
+              "callToActionButtonBorderColorHover" : "",
+              "callToActionButtonBorderStyles" : "",
+              "callToActionButtonTextColor" : "",
+              "callToActionButtonTextColorHover" : "",
+              "callToActionLabel" : "View",
+              "componentHoverEffect" : "zoomIn",
+              "contentWidth" : 80,
+              "defaultLinksOverrides" : "{}",
+              "eyebrowFontSize" : "regular",
+              "eyebrowHighlightColor" : "",
+              "eyebrowText" : "",
+              "eyebrowTextColor" : "#ffffff",
+              "eyebrowTextDecoration" : "",
+              "flagAlignment" : "top left",
+              "flagBackgroundColor" : "#ff0000",
+              "flagBorderColor" : "#ffffff",
+              "flagBorderStyles" : "{\"borderTopLeftRadius\":{\"value\":\"0\"},\"borderTopRightRadius\":{\"value\":\"0\"},\"borderBottomRightRadius\":{\"value\":\"0\"},\"borderBottomLeftRadius\":{\"value\":\"0\"}}",
+              "flagRotation" : 0,
+              "flagSpacing" : "medium",
+              "flagText" : "",
+              "flagTextColor" : "#ffffff",
+              "flagTextDecoration" : "",
+              "hideTextElementsForVideo" : false,
+              "imageAltText" : "{!CurrentItem.excerpt}",
+              "imageUrl" : "{!CurrentItem.bannerImage.url}",
+              "metadata1HighlightColor" : "",
+              "metadata1Text" : "",
+              "metadata2HighlightColor" : "",
+              "metadata2Text" : "",
+              "metadataFontSize" : "regular",
+              "metadataTextColor" : "#ffffff",
+              "metadataTextDecoration" : "",
+              "overlayBackgroundColor" : "rgba(0, 0, 0, 0.4)",
+              "showButton" : true,
+              "showCaption" : true,
+              "showEyebrow" : true,
+              "showEyebrowHighlight" : false,
+              "showFlag" : true,
+              "showMetadata1" : true,
+              "showMetadata1Highlight" : false,
+              "showMetadata2" : true,
+              "showMetadata2Highlight" : false,
+              "showTitle" : true,
+              "showTitleHighlight" : false,
+              "subTitle" : "{!CurrentItem.excerpt}",
+              "subTitleFontSize" : "regular",
+              "textAlignment" : "center center",
+              "title" : "{!CurrentItem.title}",
+              "titleFontSize" : "large",
+              "titleHeadingTag" : "p",
+              "titleHighlightColor" : "",
+              "titleTextDecoration" : "",
+              "useAspectRatio" : false,
+              "videoUrl" : ""
+            },
+            "componentName" : "forceCommunity:bannerLayout"
+          },
+          "schemaVersion" : "V2.0"
+        }
+      },
+      "componentName" : "forceCommunity:dynamicCollection",
+      "id" : "5896aa46-e773-4f39-bd98-edc404ac2e67",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b0d9c76a-b558-42aa-aa82-11cf6c4ce942",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h1>Your Invoices</h1><p>View and query your company's invoices and payments by status.</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "02811aca-eae3-4aac-810c-ef521e60a2d1",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "filterName" : "00B1N000008fddGUAQ",
+        "layout" : "FULL",
+        "pageSize" : 10,
+        "scope" : "Invoice_Example__c",
+        "showDisplay" : "showall"
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "bae669b5-624f-4e7c-9429-d1d1f31818ff",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "4dfe065c-94ee-4ad6-a3e6-ce1a5b9bd6a1",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "a281e7d3-dc6d-4d26-9159-d10a7f2d5dfc",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "askCommunityLabel" : "Post to Community",
+        "buttonBgColor" : "",
+        "buttonBgHoverColor" : "",
+        "buttonBorderColor" : "",
+        "buttonRadius" : 50,
+        "buttonTextColor" : "",
+        "buttonTextHoverColor" : "",
+        "buttonTwoBgColor" : "",
+        "buttonTwoBgHoverColor" : "",
+        "buttonTwoBorderColor" : "",
+        "buttonTwoRadius" : 50,
+        "buttonTwoTextColor" : "",
+        "buttonTwoTextHoverColor" : "",
+        "confirmationMessage" : "Got it!",
+        "contactSupportLabel" : "Contact Us",
+        "followUpPromptLabel" : "Can we close your question?",
+        "headerLabel" : "Need more help?",
+        "isAskFollowPromptEnabled" : true,
+        "isIncludeArticlesEnabled" : true,
+        "isIncludeDiscussionsEnabled" : true,
+        "isInitialSatisfactionPromptEnabled" : true,
+        "isPublisherDeflectionEnabled" : true,
+        "maxSuggestions" : 5,
+        "satisfactionPromptLabel" : "Did we help to answer your question?",
+        "showDetails" : true,
+        "showTopics" : true
+      },
+      "componentName" : "siteforce:napiliFooter",
+      "id" : "dffdc1c5-52ad-49a0-b927-eabe94785273",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "72dc65f1-9b03-4585-93f4-1a64dd7e6946",
+    "regionName" : "sidebar",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list-a02"
+}

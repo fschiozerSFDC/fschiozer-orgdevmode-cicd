@@ -1,0 +1,145 @@
+{
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "f458d845-0dfb-4d9a-9dfa-f198c2f0c889",
+  "label" : "Partner Campaign",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "fe02ac13-633f-4273-8b36-ee2f60fb9284",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:pathAssistant",
+      "id" : "5f7584b3-a66b-498b-ae55-ed3622d421cf",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c761fc90-3ea5-4f5d-b5d2-f6a3752c21d2",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "f0671e5d-509f-453d-b044-c9390789a88a",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "7ea79728-1ac3-4d99-af6a-9392bfe61b4f",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Details"
+          }, {
+            "UUID" : "ddb3faf4-8a14-4b57-b034-aa820acd611f",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "Messages"
+          }, {
+            "UUID" : "f004eb29-8c28-4b39-91ea-88acdc7f2ad0",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "3",
+            "tabName" : "Members & Related"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "f0671e5d-509f-453d-b044-c9390789a88a",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:recordDetail",
+          "id" : "4c66e50b-9fce-4cbd-a83a-64951e3c8f41",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "7ea79728-1ac3-4d99-af6a-9392bfe61b4f",
+        "regionLabel" : "Details",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h2><span style=\"color: rgb(230, 0, 0);\">SEs: Distributed Marketing Instructions</span></h2><p>Looking to show Distributed Marketing for PRM? You'll need to connect this org to your Marketing Cloud instance. <a href=\"https://sfdc.co/SDODMInstrustions\" target=\"_blank\">Click here</a> (Aloha SSO required) for full instructions on connecting SDO to Marketing Cloud via Distributed Marketing.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "376bd7f2-6d97-4430-9509-ffbe19fecf78",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : { },
+          "componentName" : "mcdm_15:CommunityCampaignMessages",
+          "id" : "a5f8e266-452e-40c1-899d-062419faf6da",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "ddb3faf4-8a14-4b57-b034-aa820acd611f",
+        "regionLabel" : "Messages",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:relatedRecords",
+          "id" : "6773d2a4-026e-4c9e-8e02-6534678cf2e0",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "f004eb29-8c28-4b39-91ea-88acdc7f2ad0",
+        "regionLabel" : "Members & Related",
+        "regionName" : "3",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b55fcf57-8a78-470e-9b92-752809893d69",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "5bbf3360-c110-4274-b9da-2d79318a49db",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "cdf6b794-2194-4bf9-8865-a6d9df1b7d33",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "374f401d-4c60-41ba-94c6-1122076561b0",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-701"
+}

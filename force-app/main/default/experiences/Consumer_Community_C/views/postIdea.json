@@ -1,0 +1,68 @@
+{
+  "appPageId" : "e4bd7437-87f9-492f-bb9b-cca60c9128dd",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "c7b145f5-5d23-4a0f-a202-0093019ff908",
+  "label" : "Post Idea",
+  "regions" : [ {
+    "id" : "ac1fc1ad-40ae-498e-8920-64af4c326684",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "listingTitle" : "Post Idea"
+      },
+      "componentName" : "c:CommunityPostIdea",
+      "id" : "33637e19-6ac4-4231-ac73-ab589f09e8d7",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "faaa818c-5c8e-4450-9e00-18f33b8b39a7",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "1c7f9863-aa61-451e-b897-d261ce71fc76",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Post Idea"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "e7419e15-7ff7-448f-916b-905b1507b53c",
+      "renditionMap" : {
+        "de" : "3e81736f-f2f2-4fe3-b5f7-3adb90583e4d",
+        "fr" : "a749e784-5d51-4d62-9437-11528f8b1202"
+      },
+      "renditions" : [ {
+        "id" : "3e81736f-f2f2-4fe3-b5f7-3adb90583e4d",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Post Idea"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "a749e784-5d51-4d62-9437-11528f8b1202",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Post Idea"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "06f8516d-2079-4a60-97d1-3cde9e6932cc",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-post-idea"
+}

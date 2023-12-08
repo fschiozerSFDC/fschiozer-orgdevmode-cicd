@@ -1,0 +1,198 @@
+{
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "73427aad-7f4d-427c-a728-3ee1640148b6",
+  "label" : "Resources",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "forceCommunity:managedContent",
+      "id" : "69299ebc-b5d0-4531-8f0a-bad2fba11c96",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f9e4785d-850a-4cc2-9a8e-6b2f8dde2f7b",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "ea9e48a7-ec8e-4b15-82b3-cb0f6f4100c1",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "67e8f0b4-084c-4759-88f7-ce00bb248bd5",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Campaigns"
+          }, {
+            "UUID" : "7bf50eae-7489-43e2-8776-726ce73f9fa8",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "54b6d",
+            "tabName" : "Settings"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "ea9e48a7-ec8e-4b15-82b3-cb0f6f4100c1",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<p>Choose from any of these preconfigured campaigns. Add your prospect or customer, and they will receive customized messages and calls to action. Click into a campaign for more details.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "b9b5ab6e-7438-4a86-bcea-dc6a4aecf066",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "bodyField" : "Description",
+            "categoryField" : "Type",
+            "dataFieldsConfig" : [ {
+              "label" : "Type",
+              "name" : "Type"
+            }, {
+              "label" : "End Date",
+              "name" : "EndDate"
+            } ],
+            "highlight" : "Name",
+            "highlightColor" : "#007DB8",
+            "listLabel" : "Available Campaigns",
+            "listViewName" : "All_Partner_Campaigns",
+            "showImage" : true,
+            "sortBy" : "Name",
+            "sortOrder" : "Ascending",
+            "titleField" : "Name"
+          },
+          "componentName" : "forceCommunity:campaignTileList",
+          "id" : "24940d00-ae46-4de1-add3-5e19f63c2abf",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "67e8f0b4-084c-4759-88f7-ce00bb248bd5",
+        "regionLabel" : "Campaigns",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h2>Marketing Settings</h2><p>Use this page to set a default greeting for your marketing emails.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "77d6dfa2-632d-40f1-af6c-192fd2633688",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : { },
+          "componentName" : "mcdm_15:UserPersonalizationSettings",
+          "id" : "f7197704-07e9-496a-89a4-4528dd092b32",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "7bf50eae-7489-43e2-8776-726ce73f9fa8",
+        "regionLabel" : "Settings",
+        "regionName" : "54b6d",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "1f4a4e6a-b13a-4306-af87-15610d122e93",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "fd2f38da-9dcd-49a8-9ed0-ce80fd571cd1",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h2><span style=\"color: rgb(230, 0, 0);\">SEs: Distributed Marketing Instructions</span></h2><p>Looking to show Distributed Marketing for PRM? You'll need to connect this org to your Marketing Cloud instance. <a href=\"https://sfdc.co/SDODMInstrustions\" target=\"_blank\">Click here</a> (Aloha SSO required) for full instructions on connecting SDO to Marketing Cloud via Distributed Marketing.</p><p>&nbsp;</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "4ceacba9-84aa-426b-9a80-c90950db3ce9",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "channel" : "CustomChannel2",
+        "title" : "Recommended Collateral"
+      },
+      "componentName" : "forceCommunity:recommendations",
+      "id" : "75f514bd-0818-4911-a64a-64f49fde772d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "784ce72b-a2c0-44d7-98dd-725dc273c13b",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "Choose m our available campaigns & collateral to se with your customers and prospects.",
+        "title" : "Campaign Marketplace"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "213651b5-cbb0-4133-9fea-d4a68e77813e",
+      "renditionMap" : {
+        "de" : "454e4ec4-c056-4ea2-b94f-2a3f1e89c7ec",
+        "es" : "a13b9e8f-edfa-4cc4-94f1-c45dbed8088a",
+        "fr" : "c25b0f1e-2f6b-4373-8be9-e6e63277b172",
+        "ja" : "17b2cc6b-20c2-45bd-992d-9e88186952d2"
+      },
+      "renditions" : [ {
+        "id" : "454e4ec4-c056-4ea2-b94f-2a3f1e89c7ec",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Resources"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "c25b0f1e-2f6b-4373-8be9-e6e63277b172",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Resources"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "a13b9e8f-edfa-4cc4-94f1-c45dbed8088a",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Resources"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "17b2cc6b-20c2-45bd-992d-9e88186952d2",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Resources"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "c0366d58-86bd-48b4-bbf6-01629426b8d0",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "files"
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>1</activeVersionNumber>
+    <description>Allows Einstein Bots to create a new order on behalf of the user.</description>
+    <masterLabel>Einstein Bots (Sunny 1.0) Create New Order OLD</masterLabel>
+</FlowDefinition>

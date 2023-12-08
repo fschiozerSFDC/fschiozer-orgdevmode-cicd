@@ -1,0 +1,101 @@
+{
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "3e056b46-d508-41bf-a79b-092d1ba4aaec",
+  "label" : "Contact Support",
+  "regions" : [ {
+    "id" : "ccdf68aa-81ef-4255-b8fc-4f042dfee01a",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "attachFiles" : true,
+        "authenticatedActionName" : "NewCase",
+        "confirmationMessageDescription" : "You'll hear back from us soon.",
+        "confirmationMessageTitle" : "Your request was submitted successfully.",
+        "deflectionCategoryGroupName" : "{!DataCategoryGroupName}",
+        "deflectionNotHelpful" : "Didn't find what you're looking for?",
+        "deflectionNumberOfArticles" : 6,
+        "deflectionParentCategory" : "{!TopLevelCategory}",
+        "deflectionSubHeader" : "Check out these articles...",
+        "deflectionTitle" : "Need Answers Fast?",
+        "hasDeflection" : true,
+        "headerTitle" : "Create a Case",
+        "isReCaptchaEnabled" : false,
+        "reCaptchaPrivateKey" : "",
+        "reCaptchaPublicKey" : "",
+        "unauthenticatedActionName" : "NewCase"
+      },
+      "componentName" : "selfService:caseCreate",
+      "id" : "bf72455c-00e9-46a9-81f3-435ad26fcbd8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c46145c5-53ee-4779-99d7-06f2020500e6",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "09cd4f83-ee1d-496c-9fa9-5b0f596293cf",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Contact Support"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "73dadee3-422c-4f88-9783-e69e2f8521fd",
+      "renditionMap" : {
+        "de" : "db80acfa-aadd-4a7d-b33e-d02547107e86",
+        "es" : "883e8ed9-dc5e-4758-80da-08bf820c75c5",
+        "fr" : "50b31bc2-9a8b-465e-bfb9-42f4310b9f0c",
+        "ja" : "1466605a-9809-42bc-80da-372de779c82d"
+      },
+      "renditions" : [ {
+        "id" : "db80acfa-aadd-4a7d-b33e-d02547107e86",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Contact Support"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "50b31bc2-9a8b-465e-bfb9-42f4310b9f0c",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Contact Support"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "883e8ed9-dc5e-4758-80da-08bf820c75c5",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Contact Support"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "1466605a-9809-42bc-80da-372de779c82d",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Contact Support"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "a374f802-f07a-4a47-b62d-122dd3d59b02",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "contactsupport"
+}

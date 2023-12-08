@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>2</activeVersionNumber>
+    <description>Prompts customer if they would like to be moderator in the community. Used for Next Best Action as part of the Case layout.</description>
+    <masterLabel>NBA-Offer Community Moderator Status</masterLabel>
+</FlowDefinition>

@@ -1,0 +1,109 @@
+{
+  "appPageId" : "e4bd7437-87f9-492f-bb9b-cca60c9128dd",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "602bfb96-0f32-424d-9a54-8cf081c24541",
+  "label" : "Search",
+  "regions" : [ {
+    "id" : "63beda8e-c9ee-4044-a890-199391327892",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "scopes" : [ {
+          "isPublic" : true,
+          "name" : "Knowledge__kav"
+        }, {
+          "isPublic" : true,
+          "name" : "FullFeed"
+        }, {
+          "isPublic" : true,
+          "name" : "Topic"
+        }, {
+          "isPublic" : false,
+          "name" : "ContentDocument"
+        }, {
+          "isPublic" : true,
+          "name" : "Case"
+        }, {
+          "isPublic" : false,
+          "name" : "User"
+        } ],
+        "searchTerm" : "{!searchString}",
+        "showTopResults" : true
+      },
+      "componentName" : "forceCommunity:search",
+      "id" : "f2a52c3c-66eb-4078-bf27-857a1163ee48",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "567c8f6b-5c8c-4247-9081-8ed6ceb415a0",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "askCommunityLabel" : "Ask A Question",
+        "contactSupportLabel" : "Contact Support",
+        "headerLabel" : "Don't see what you're looking for?"
+      },
+      "componentName" : "siteforce:napiliFooter",
+      "id" : "9db7b88e-bac6-42c3-98f2-cdfdb6259397",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "90da7425-9032-46dc-bf5f-4c33bf600772",
+        "fr" : "32ed1241-9e15-4511-b48a-79f922deb075"
+      },
+      "renditions" : [ {
+        "id" : "32ed1241-9e15-4511-b48a-79f922deb075",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "askCommunityLabel" : "Poser une question",
+            "contactSupportLabel" : "Contacter le support",
+            "headerLabel" : "Vous ne trouvez pas ce que vous cherchez?"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "90da7425-9032-46dc-bf5f-4c33bf600772",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "askCommunityLabel" : "Stellen Sie eine Frage",
+            "contactSupportLabel" : "Support kontaktieren",
+            "headerLabel" : "Sie finden nicht wonach Sie suchen?"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "f3a11347-14f5-409c-a85b-27136e7d6510",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "PeopleTabText" : "PEOPLE",
+        "SearchString" : "{!searchString}",
+        "TopicsTabText" : "TOPICS"
+      },
+      "componentName" : "c:MembersAndTopicsResults",
+      "id" : "b1f20a47-00ee-49ab-8d65-8774b6ed855e",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "95c454f0-041b-4c78-84bf-9e3a2c7b0cac",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "f729d870-11af-421e-ae89-265887a8dbd1",
+    "regionName" : "sidebarAlt",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "global-search"
+}

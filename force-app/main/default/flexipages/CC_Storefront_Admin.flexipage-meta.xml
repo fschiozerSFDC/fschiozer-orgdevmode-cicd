@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Storefront administration page for B2B Commerce.</description>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>decorate</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;span style=&quot;font-size:18px;&quot;&gt;&lt;b&gt;Want to Learn B2B Commerce? Start Here!&lt;/b&gt;&lt;/span&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://bit.ly/2uxETKE&quot;&gt;Trailhead for Distribution&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://bit.ly/2ux6ZWr&quot; target=&quot;_blank&quot;&gt;Giving B2B Commerce Demos&lt;/a&gt;: When and where, where to start.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://bit.ly/2KWPdap&quot;&gt;B2B Commerce Online Training Center &lt;/a&gt;(requires permission)&lt;/li&gt;
+&lt;/ul&gt;</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:richText</componentName>
+                <identifier>flexipage_richText</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>decorate</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;span style=&quot;color: rgb(62, 62, 60); font-family: &amp;quot;Salesforce Sans&amp;quot;, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;FEATURED PRODUCTS&lt;/b&gt;&lt;/span&gt;&lt;br /&gt;
+Items featured on the B2B Commerce store home page. Two sections available: Spotlight and Featured. &lt;a href=&quot;http://salesforce.quip.com/eb0OAjutbS80#DULACAIjH5y&quot; target=&quot;_blank&quot;&gt;Documentation&lt;/a&gt;.&lt;/span&gt;</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:richText</componentName>
+                <identifier>flexipage_richText2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>headerText</name>
+                    <value>Product Wizard</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showHeader</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentName>ckz_PIM_MainPanel</componentName>
+                <identifier>ckz_PIM_MainPanel</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>enableInlineEdit</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>entityName</name>
+                    <value>ccrz__E_FeaturedProduct__c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>filterName</name>
+                    <value>ccrz__All</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>hideActionBar</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>hideSearchBar</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>pageSize</name>
+                    <value>5</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:filterListCard</componentName>
+                <identifier>flexipage_filterListCard</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>decorate</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;span style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;PROMOTIONS&lt;/b&gt;&lt;/span&gt;&lt;br /&gt;
+Control promotional content that is displayed on the Storefront.&lt;br /&gt;
+&lt;a href=&quot;http://salesforce.quip.com/eb0OAjutbS80#DULACAGiO70&quot; target=&quot;_blank&quot;&gt;Promotions Documentation&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://salesforce.quip.com/BM1fAHTB7D4P&quot; target=&quot;_blank&quot;&gt;Replacing Promotion Images&lt;/a&gt;</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:richText</componentName>
+                <identifier>flexipage_richText3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>enableInlineEdit</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>entityName</name>
+                    <value>ccrz__E_Promo__c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>filterName</name>
+                    <value>ccrz__All</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>hideActionBar</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>hideSearchBar</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>pageSize</name>
+                    <value>5</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:filterListCard</componentName>
+                <identifier>flexipage_filterListCard2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>decorate</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;span style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;COUPONS&lt;/b&gt;&lt;/span&gt;&lt;br /&gt;
+Discounts available to the B2B Commerce Storefront. You can apply &lt;i&gt;&lt;b&gt;CIRRUS15&lt;/b&gt;&lt;/i&gt; on the Shopping Cart to receive a 15% discount of the entire cart.&lt;br /&gt;
+&lt;br /&gt;
+You can apply &lt;i&gt;&lt;b&gt;OHANA20&lt;/b&gt;&lt;/i&gt; to turbine products. This discount will be promoted specifically to Lauren Bailey on the storefront.&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://salesforce.quip.com/eb0OAjutbS80#DULACAyWTMk&quot;&gt;Coupons Documentation&lt;/a&gt;</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:richText</componentName>
+                <identifier>flexipage_richText4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>enableInlineEdit</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>entityName</name>
+                    <value>ccrz__E_Coupon__c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>filterName</name>
+                    <value>ccrz__All</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>hideActionBar</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>hideSearchBar</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>pageSize</name>
+                    <value>3</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:filterListCard</componentName>
+                <identifier>flexipage_filterListCard3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>region1</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>decorate</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;b&gt;&lt;span style=&quot;font-size:16px;&quot;&gt;Quick Theme Instructions&lt;/span&gt;&lt;/b&gt;&lt;br /&gt;
+Want to quickly apply a UI theme to the storefront? Read the instructions!&lt;br /&gt;
+&lt;a href=&quot;https://salesforce.quip.com/gQqJAy59C1E0&quot;&gt;Quick Theme Documentation (Aloha Credentials Required)&lt;/a&gt;</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:richText</componentName>
+                <identifier>flexipage_richText5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>decorate</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;span style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;STOREFRONT MENU&lt;/b&gt;&lt;/span&gt;&lt;br /&gt;
+Edit the main navigation on the B2B Commerce Storefront here. &lt;a href=&quot;http://salesforce.quip.com/eb0OAjutbS80#DULACAZoTt4&quot;&gt;Documentation&lt;/a&gt;.</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:richText</componentName>
+                <identifier>flexipage_richText6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>enableInlineEdit</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>entityName</name>
+                    <value>ccrz__E_Menu__c</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>filterName</name>
+                    <value>All_Active</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>hideActionBar</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>hideSearchBar</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>pageSize</name>
+                    <value>5</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:filterListCard</componentName>
+                <identifier>flexipage_filterListCard4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>region2</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <name>region3</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>CC Storefront Admin</masterLabel>
+    <template>
+        <name>flexipage:appHomeTemplateTwoColumnsStacked</name>
+    </template>
+    <type>AppPage</type>
+</FlexiPage>

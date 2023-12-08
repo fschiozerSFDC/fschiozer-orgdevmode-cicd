@@ -1,0 +1,27 @@
+{
+  "definitionName" : "webster:branding-webster",
+  "id" : "23f881c5-c28c-4890-8117-1382163c7b6d",
+  "label" : "Webster",
+  "type" : "brandingSet",
+  "values" : {
+    "ActionColor" : "rgb(8, 135, 86)",
+    "BorderColor" : "#D4D4D4",
+    "CardBackgroundColor" : "rgba(255, 255, 255, 0)",
+    "CompanyLogo" : "/file-asset/Professional_Community_Logo?v=1",
+    "DetailTextColor" : "rgb(112, 111, 111)",
+    "ErrorFontColor" : "#ff9e9e",
+    "HeaderFonts" : "Raleway",
+    "LinkColor" : "rgb(8, 135, 86)",
+    "LoginBackgroundColor" : "#F4F4F4",
+    "LoginBackgroundImage" : "/file-asset/professionalherowindturbinestall?v=1",
+    "OverlayTextColor" : "#FFFFFF",
+    "PageBackgroundColor" : "#FFFFFF",
+    "PrimaryFont" : "Raleway",
+    "TextColor" : "rgba(0, 0, 0, 0.8)",
+    "TextTransformStyle" : "none",
+    "_ActionColorDarker" : "#055737",
+    "_ActionColorTrans" : "rgba(8, 135, 86, 0.9)",
+    "_HoverColor" : "rgba(8, 135, 86, 0.05)",
+    "_LinkColorDarker" : "#06603d"
+  }
+}

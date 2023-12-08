@@ -1,0 +1,188 @@
+{
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "componentName" : "siteforce:sldsTwoCol48Layout",
+  "dataProviders" : [ ],
+  "id" : "2eafec1f-c863-484d-821a-72395cb2a579",
+  "label" : "Support",
+  "regions" : [ {
+    "id" : "1373629d-80ac-4737-a6cd-cf7de5cc349a",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "channel" : "CustomChannel1"
+      },
+      "componentName" : "forceCommunity:recommendations",
+      "id" : "164d5070-b9b1-4ce0-8f46-f1a78f263e0b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "actions" : [ {
+          "isPublic" : true,
+          "name" : "New_Case_CustomerCommunity"
+        } ],
+        "label" : "Contact Support"
+      },
+      "componentName" : "forceCommunity:createRecordButton",
+      "id" : "0583f2fa-fdd2-4145-a067-64409645d989",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ec2ab9d7-9830-4427-80c7-df109c806865",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h1><img class=\"sfdcCbImage\" src=\"{!contentAsset.support1.1}\" />&nbsp;Supporting YOU and YOUR CUSTOMERS</h1>\n<p>We're here to provide best-in-class support to <b>you</b>, so you can support your customers.</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "ac53a116-4424-4d16-9a70-31c4f21133f9",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "1bc958ff-c247-43da-9af1-f59a7c99cc60",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "1214ed15-0115-4808-bb10-56b89375f2ca",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Cases"
+          }, {
+            "UUID" : "990a3597-222b-49d5-9c08-20d7259cac69",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "3",
+            "tabName" : "Community"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "1bc958ff-c247-43da-9af1-f59a7c99cc60",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "filterName" : "00Bo0000004khuQEAQ",
+            "layout" : "FULL",
+            "pageSize" : 25,
+            "scope" : "Case",
+            "showDisplay" : "showall"
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "00a17905-ddcf-4e84-a43f-02b2c775f0f1",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "1214ed15-0115-4808-bb10-56b89375f2ca",
+        "regionLabel" : "Cases",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h2>\n      <img class=\"sfdcCbImage\" src=\"/community-icon-21-543617.png\" style=\"width: 87px; height: 87px;\">&nbsp;Get Support From The Community</h2>\n    <p>Our best-in-class community has a plethora of product experts to help you. Peruse our featured groups here, or click through to the <a href=\"./community\">Community page</a> for all community content.<!--render facet: 13:2267;a--></p>"
+          },
+          "componentName" : "forceCommunity:richText",
+          "id" : "5d5a2b8a-b9ce-4a2f-a250-e4eec8ff4578",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "filterName" : "00Ba000000A89AxEAJ",
+            "layout" : "FULL",
+            "pageSize" : 5,
+            "scope" : "CollaborationGroup",
+            "showDisplay" : "showall"
+          },
+          "componentName" : "forceCommunity:objectHome",
+          "id" : "e8c5121a-7c1f-465b-9cda-a90ce4fb6da7",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "990a3597-222b-49d5-9c08-20d7259cac69",
+        "regionLabel" : "Community",
+        "regionName" : "3",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7fe24f75-ed8d-43ee-81f9-21368aeecb60",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "b5151d03-d78c-4f2c-b7c6-ba5c073d6ad4",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Support"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "403d091d-282a-4ae1-a3b1-3f9b9c304346",
+      "renditionMap" : {
+        "de" : "79c1fb02-0ce4-4358-944b-5e1109ceb053",
+        "es" : "f3841c6e-2a0d-48f5-8ccc-bdb503783807",
+        "fr" : "fb78122c-ae71-4cea-ad7c-5c8dee40a127",
+        "ja" : "82e9bd0f-9a81-4b5c-a9e0-c66a5937b4e2"
+      },
+      "renditions" : [ {
+        "id" : "79c1fb02-0ce4-4358-944b-5e1109ceb053",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Support"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "fb78122c-ae71-4cea-ad7c-5c8dee40a127",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Support"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "f3841c6e-2a0d-48f5-8ccc-bdb503783807",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Support"
+          }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "82e9bd0f-9a81-4b5c-a9e0-c66a5937b4e2",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "title" : "Support"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "a987744b-a9aa-4e85-953a-e1add099bff0",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-support"
+}

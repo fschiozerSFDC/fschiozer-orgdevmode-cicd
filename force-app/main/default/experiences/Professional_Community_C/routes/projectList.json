@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "6c16eb32-4724-4ad0-b02c-f1443f7f21b9",
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "configurationTags" : [ ],
+  "id" : "b1c12dfc-10db-4099-8a9b-d76076d3c6fb",
+  "label" : "Project List",
+  "objectApiName" : "Milestone1_Project__c",
+  "routeType" : "list-a1V",
+  "type" : "route",
+  "urlPrefix" : "milestone1-project"
+}

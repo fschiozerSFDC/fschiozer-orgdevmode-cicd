@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "198c5a74-e5b7-4d58-99be-4166fa892d7e",
+  "appPageId" : "a87943dd-84b1-4974-b221-37c3b17f38cf",
+  "configurationTags" : [ ],
+  "id" : "b8c4f25f-8fe4-4da9-a57f-52072d79303f",
+  "label" : "Channel_Blog-Channel_Blog",
+  "pageAccess" : "UseParent",
+  "routeType" : "extdetail-cms-Channel_Blog-Channel_Blog",
+  "type" : "route",
+  "urlPrefix" : "channel-blog-channel-blog"
+}

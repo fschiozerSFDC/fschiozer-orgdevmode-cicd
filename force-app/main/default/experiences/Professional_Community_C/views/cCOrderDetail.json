@@ -1,0 +1,65 @@
+{
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "2e2f4287-c93f-4c5f-8e9f-ad9a61d37f89",
+  "label" : "CC Order Detail",
+  "regions" : [ {
+    "id" : "564cc526-b66f-4526-8415-bfc82a55edec",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "369ace7f-f387-4947-b461-bae0da059955",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "detailsTabLabel" : "Details",
+        "discussionsTabLabel" : "Feed",
+        "recordId" : "{!recordId}",
+        "relatedTabLabel" : "Related",
+        "tab1Type" : "details",
+        "tab2Type" : "related",
+        "tab3Type" : "none",
+        "tab4Type" : "none",
+        "timelineTabLabel" : "Activity"
+      },
+      "componentName" : "forceCommunity:recordHomeTabs",
+      "id" : "b78594bc-ccc4-4e46-8d0c-0d4a4a6b2dae",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f5fec1e5-60f9-423c-8c1e-9067012d577f",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "864bf6e0-1d8f-4925-997b-5a01a4084151",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "7316e53b-8453-4a04-91cf-2a92f22a64ea",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "16718fd8-ccf5-4070-9b78-63b71f9769da",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-a5W"
+}

@@ -1,0 +1,140 @@
+{
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "a3e26f25-97df-4279-8ab6-2afeff02107d",
+  "label" : "Topics",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h1><b>Community Topics</b></h1><p>This page shows key discussion topics being used in the community. Click through to a topic page to see discussions, content, and experts in that topic!</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "4e09ea29-6c77-4cf2-b17e-819450ac6d9d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "74c65b7a-d393-48e9-9a57-d68045b62144",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "45424262-895f-41e3-a0dc-964808905730",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "776b1abb-951b-451c-adc7-f5c1b7b81f82",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Featured"
+          }, {
+            "UUID" : "9c4f924c-1b3d-411c-8236-84d1f00b5323",
+            "allowGuestUser" : true,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "All Topics"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "45424262-895f-41e3-a0dc-964808905730",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "showTitle" : false,
+            "title" : "Featured Topics"
+          },
+          "componentName" : "forceTopic:featuredTopics",
+          "id" : "145be989-7061-4793-9405-c0cbf6eabcc7",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "776b1abb-951b-451c-adc7-f5c1b7b81f82",
+        "regionLabel" : "Featured",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "forceCommunity:topicCatalog",
+          "id" : "98ef3d66-2bfa-4ff3-b745-6ff34d5f8fcd",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "9c4f924c-1b3d-411c-8236-84d1f00b5323",
+        "regionLabel" : "All Topics",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "4cb45e50-fe27-4219-ad96-dde7387fb133",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "77656802-fcbe-47a8-a2df-62571f3cfd66",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "display" : "KNOWLEDGE_POINTS",
+        "excludeInternalUsers" : true,
+        "knowledgeLabel" : "Knows about",
+        "numberOfUsers" : 5,
+        "showContextUser" : true,
+        "showTooltip" : true,
+        "showUserRank" : true,
+        "title" : "Leaderboard",
+        "tooltipText" : "Earn points and climb to new levels when you contribute in the community!"
+      },
+      "componentName" : "forceCommunity:reputationLeaderboard42",
+      "id" : "0cd69ec4-bd1f-4681-aff5-ed4774192efa",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "numberOfTopics" : 5,
+        "showTopicsMetric" : true,
+        "title" : "Trending Topics"
+      },
+      "componentName" : "forceCommunity:trendingTopics",
+      "id" : "6a2f95fb-38eb-406a-9195-161128917269",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "375f58cb-ebc2-4fd9-bb7f-68370c49c3ef",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Topics"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "6697d0f8-801f-4600-869a-ba64a506a0a4",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7fc37b1a-ec52-487c-b16c-2d7dc784b2b0",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-topics"
+}

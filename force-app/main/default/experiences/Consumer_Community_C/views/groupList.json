@@ -1,0 +1,52 @@
+{
+  "appPageId" : "e4bd7437-87f9-492f-bb9b-cca60c9128dd",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "478f26f4-4274-446c-a9e7-0a66f99f3286",
+  "label" : "Group List",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h1>Community Groups</h1><p>Groups provide regular updates from key experts, people with interets similar to your own, and important content on our products, services, and practices. Browse the groups and join a few today!</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "11bc365f-6faf-4bd7-acb7-2136b61c2da6",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "fr" : "dbd45d74-09e4-4e9a-b12f-156e56e00263"
+      },
+      "renditions" : [ {
+        "id" : "dbd45d74-09e4-4e9a-b12f-156e56e00263",
+        "renditionValue" : {
+          "componentAttributes" : {
+            "richTextValue" : "<h1>Groupes de la Communauté</h1><p>Les groupes fournissent des mises à jour régulières des experts clés, des personnes ayant des interets similaires aux vôtres et un contenu important sur nos produits, services et pratiques. Parcourez les groupes et rejoignez-en quelques-uns aujourd'hui!</p>"
+          }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "ca235f04-5f03-4de1-92ff-f0312394ad4d",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "forceCommunity:groupObjectHome",
+      "id" : "d0288846-56a0-47a4-bc66-f20befa40eda",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a201e2cc-0e75-44ee-807b-044d2ca5d4b9",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "10686112-74a9-4213-8aa4-c18528297b61",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list-0F9"
+}

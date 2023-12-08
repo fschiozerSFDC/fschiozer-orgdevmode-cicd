@@ -1,0 +1,135 @@
+{
+  "appPageId" : "6a93cc42-eeb0-40b3-a744-1cd1e5817e1e",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "02e14d69-feaf-4a38-b93e-5cfc062bbead",
+  "label" : "Record Detail",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordDetail",
+      "id" : "43487403-c5e5-4f09-9e44-a4b2a56280df",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:relatedRecords",
+      "id" : "af5495dd-1211-4f2a-a2de-63b3ad9f3bc7",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "07a3d7a2-d51b-4eb1-ae69-1620233b8304",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:pathAssistant",
+      "id" : "95861d55-2445-42c0-9562-6d24e836d4ef",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "472dbfa4-75a3-44e3-a24a-d0905e654df7",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : {
+        "de" : "d3a47556-1702-4e9f-9e36-849adf72aaa2",
+        "fr" : "2abc7889-d17c-4f50-ab42-1a6d7d932bf1"
+      },
+      "renditions" : [ {
+        "id" : "2abc7889-d17c-4f50-ab42-1a6d7d932bf1",
+        "renditionValue" : {
+          "componentAttributes" : { }
+        },
+        "type" : "renditionComponent"
+      }, {
+        "id" : "d3a47556-1702-4e9f-9e36-849adf72aaa2",
+        "renditionValue" : {
+          "componentAttributes" : { }
+        },
+        "type" : "renditionComponent"
+      } ],
+      "type" : "component"
+    } ],
+    "id" : "cb341308-4e01-41f2-ab10-eca727418373",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "numberOfTopicsToDisplay" : 10,
+        "searchHint" : "Type a topic name and press Enter.",
+        "title" : "Topics"
+      },
+      "componentName" : "forceCommunity:topicsOnRecordWrapper",
+      "id" : "402f3227-94df-49a1-8729-c7aa84ffc16d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "context" : "RECORD",
+        "recordId" : "{!recordId}",
+        "width" : "WIDE"
+      },
+      "componentName" : "forceCommunity:feedPublisher",
+      "id" : "cf3db857-ed51-411d-b472-d5428ad84bf9",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "canChangeSorting" : true,
+        "defaultFilter" : "",
+        "defaultSortOrderHomeFeed" : "Relevance",
+        "defaultSortOrderTopicsFeed" : "Relevance",
+        "feedDesign" : "BROWSE",
+        "hasFeedSearch" : true,
+        "subjectId" : "{!recordId}",
+        "type" : "Record"
+      },
+      "componentName" : "forceCommunity:forceCommunityFeed",
+      "id" : "dadcc4e2-3280-4ed1-8d71-608ead46b8e3",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7481a949-c93a-48ca-978c-7b46a6ed2710",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "a5c57584-aeaa-4182-99db-aacbfb4a1dc9",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "49590661-c653-4c2a-a4c2-9a3b0e9ec907",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c41d7526-a223-427d-8943-a3641fafac6e",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail"
+}
