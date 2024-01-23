@@ -1,6 +1,5 @@
 {
   "builds": [
-
     {
       "type": "metadata",
       "manifestFile": "manifest/package.xml",
@@ -9,14 +8,10 @@
       "timeout": "33",
       "ignoreWarnings": true
     },
-
-
     {
       "type": "anonymousApex",
       "apexScript": "scripts/apex/hello.apex"
     },
-
-
     {
       "type": "command",
       "command": "sf --version"
