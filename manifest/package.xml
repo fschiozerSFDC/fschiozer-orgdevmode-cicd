@@ -4,5 +4,9 @@
 		<members>DummyClass</members>
 		<name>ApexClass</name>
 	</types>
-	<version>58.0</version>
+	<types>
+        <members>Eu_vou_ser_deletado__c</members>
+        <name>CustomObject</name>
+	</types>
+	<version>60.0</version>
 </Package>
