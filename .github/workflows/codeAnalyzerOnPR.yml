@@ -27,20 +27,14 @@ jobs:
         env:
           ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
         run: |
-          echo 'Todos os arquivos:'
-          echo ${ALL_CHANGED_FILES}
+          sf scanner run --target ${ALL_CHANGED_FILES}
           
-          for file in ${ALL_CHANGED_FILES}; do
-            echo "$file was changed"
-            cat $file
-          done
-
       - name: Run Salesforce Code Analyzer
         id: run-code-analyzer
         uses: forcedotcom/run-code-analyzer@v1
         with:
           run-command: run
-          run-arguments: --target ${ALL_CHANGED_FILES} --outfile results.html
+          run-arguments: --normalize-severity --target ${ALL_CHANGED_FILES} --outfile results.html
           results-artifact-name: salesforce-code-analyzer-results
 
       - name: Check the outputs to determine whether to fail
