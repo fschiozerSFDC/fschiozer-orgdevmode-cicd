@@ -26,9 +26,7 @@ private class DummyClassTest {
     static void myUnitTest() {
         // TO DO: implement unit test
 
-        DummyClass dc = new DummyClass();
-
-        String a = dc.getStatic();
+        String a = DummyClass.getStatic();
 
         System.Assert(a == 'Analiza o código', 'Test failed !!!');
 
