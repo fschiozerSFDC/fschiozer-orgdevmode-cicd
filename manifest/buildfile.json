@@ -1,22 +1,17 @@
 {
   "builds": [
-
     {
       "type": "metadata",
       "manifestFile": "manifest/package.xml",
-      "testLevel": "RunLocalTests",
+      "testLevel": "RunSpecifiedTests",
       "classPath": "force-app/main/default",
       "timeout": "33",
       "ignoreWarnings": true
     },
-
-
     {
       "type": "anonymousApex",
       "apexScript": "scripts/apex/hello.apex"
     },
-
-
     {
       "type": "command",
       "command": "sf --version"
