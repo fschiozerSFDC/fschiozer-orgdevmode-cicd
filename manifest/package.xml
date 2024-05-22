@@ -3,6 +3,8 @@
 	<types>
 		<members>DummyClass</members>
 		<members>DummyClassTest</members>
+		<members>DummyClass2</members>
+		<members>DummyClass2Test</members>
 		<name>ApexClass</name>
 	</types>
 	<types>

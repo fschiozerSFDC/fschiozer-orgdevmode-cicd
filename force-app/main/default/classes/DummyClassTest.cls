@@ -29,7 +29,5 @@ private class DummyClassTest {
         String a = DummyClass.getStatic();
 
         System.Assert(a == 'Analiza o código', 'Test failed !!!');
-
-
     }
 }
