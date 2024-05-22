@@ -1,8 +1,5 @@
 public with sharing class DummyClass {
     
-    public DummyClass() {
-
-    }
 
     public static String getStatic(){
 
