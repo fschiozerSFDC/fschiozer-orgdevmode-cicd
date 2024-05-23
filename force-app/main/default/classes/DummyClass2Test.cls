@@ -20,14 +20,14 @@
  * See the Apex Language Reference for more information about Testing and Code Coverage.
  */
 @isTest
-private class DummyClassTest {
+private class DummyClass2Test {
 
     @isTest
     static void myUnitTest() {
         // TO DO: implement unit test
 
-        String a = DummyClass.getStatic();
+        String a = DummyClass2.getStatic();
 
-        System.Assert(a == 'Analiza o código', 'Test failed !!!');
+        System.Assert(a == 'Analiza o código 2', 'Test failed !!!');
     }
 }
