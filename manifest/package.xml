@@ -11,5 +11,9 @@
         <members>Eu_vou_ser_deletado__c</members>
         <name>CustomObject</name>
 	</types>
+	<types>
+        <members>Órders Specialistãs</members>
+        <name>Profile</name>
+	</types>
 	<version>60.0</version>
 </Package>
