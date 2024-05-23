@@ -23,18 +23,24 @@ jobs:
         run: echo "y" | sf plugins install sf-orgdevmode-builds
 
       - name: Download Artifact
-        uses: actions/fetch-gh-release-asset@v1.1.1
+        uses: dsaltares/fetch-gh-release-asset@1.1.1
         with:
-          token: ${{ secrets.SVC_CLI_BOT_GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           version: tags/${{ inputs.tag }}
           file: ${{ github.event.repository.name }}-${{ inputs.tag }}.zip
 
       - name: Unzip artifact
         run: unzip ${{ github.event.repository.name }}-${{ inputs.tag }}.zip -d outputdir/
 
-      - name: Extracting private key
+      - name: Extracting private key Non Prod
+        if: ${{ inputs.environment != 'prod' }}
         working-directory: ./outputdir/
         run: 'echo "${{ secrets.JWT_KEY_NONPROD }}" > server.key'
+
+      - name: Extracting private key Prod
+        if: ${{ inputs.environment == 'prod' }}
+        working-directory: ./outputdir/
+        run: 'echo "${{ secrets.JWT_KEY_PROD }}" > server.key'
 
       - name: Running the build & deploy
         working-directory: ./outputdir/
