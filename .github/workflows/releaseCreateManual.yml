@@ -41,7 +41,7 @@ jobs:
         run: git config --global --add safe.directory '*'
 
       - name: Archiving Repository
-        run: git archive -o ${{ github.event.repository.name }}-${{ inputs.tag }}.zip HEAD
+        run: git archive --format=tar.gz -o ${{ github.event.repository.name }}-${{ inputs.tag }}.tar.gz HEAD
 
       - name: Create tag
         uses: actions/github-script@v6.4.1
@@ -60,4 +60,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.SVC_CLI_BOT_GITHUB_TOKEN }}
         with:
           tag_name: ${{ inputs.tag }}
-          files: ${{ github.event.repository.name }}-${{ inputs.tag }}.zip
+          files: ${{ github.event.repository.name }}-${{ inputs.tag }}.tar.gz
