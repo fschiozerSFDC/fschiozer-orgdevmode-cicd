@@ -1,4 +1,4 @@
-name: Release - create release and artifact
+name: Release - package
 
 on:
   workflow_dispatch:
@@ -43,4 +43,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.SVC_CLI_BOT_GITHUB_TOKEN }}
         with:
           tag_name: ${{ inputs.tag }}
-          files: ${{ github.event.repository.name }}-${{ inputs.tag }}.zip
+          files: ${{ github.event.repository.name }}-${{ inputs.tag }}.tar.gz
