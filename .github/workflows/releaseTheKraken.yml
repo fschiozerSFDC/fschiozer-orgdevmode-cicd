@@ -29,6 +29,9 @@ jobs:
           version: tags/${{ inputs.tag }}
           file: ${{ github.event.repository.name }}-${{ inputs.tag }}.tar.gz
 
+      - name: Create outputdir
+        run: mkdir outputdir
+        
       - name: Unzip artifact
         ####run: unzip ${{ github.event.repository.name }}-${{ inputs.tag }}.zip -d outputdir/
         run: tar -xzf ${{ github.event.repository.name }}-${{ inputs.tag }}.tar.gz -C outputdir/
