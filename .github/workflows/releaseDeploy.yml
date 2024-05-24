@@ -27,7 +27,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           version: tags/${{ inputs.tag }}
-          file: ${{ github.event.repository.name }}-${{ inputs.tag }}.zip
+          file: ${{ github.event.repository.name }}-${{ inputs.tag }}.tar.gz
 
       - name: Unzip artifact
         run: |
