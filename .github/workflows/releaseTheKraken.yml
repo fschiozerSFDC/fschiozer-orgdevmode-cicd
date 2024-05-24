@@ -28,13 +28,11 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           version: tags/${{ inputs.tag }}
           file: ${{ github.event.repository.name }}-${{ inputs.tag }}.tar.gz
-
-      - name: Create outputdir
-        run: mkdir outputdir
         
       - name: Unzip artifact
-        ####run: unzip ${{ github.event.repository.name }}-${{ inputs.tag }}.zip -d outputdir/
-        run: tar -xzf ${{ github.event.repository.name }}-${{ inputs.tag }}.tar.gz -C outputdir/
+        run: |
+              mkdir outputdir
+              tar -xzf ${{ github.event.repository.name }}-${{ inputs.tag }}.tar.gz -C outputdir/
 
       - name: Extracting private key Non Prod
         if: ${{ inputs.environment != 'prod' }}
