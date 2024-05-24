@@ -28,11 +28,11 @@ jobs:
         run: git config --global --add safe.directory '*'
 
       - name: Archiving Repository
-        run: git archive -o ${{ github.event.repository.name }}-${{ github.ref_name }}.zip HEAD
+        run: git archive --format=tar.gz -o ${{ github.event.repository.name }}-${{ inputs.tag }}.tar.gz HEAD
 
       - name: Upload Assets
         uses: softprops/action-gh-release@v0.1.15
         env:
           GITHUB_TOKEN: ${{ secrets.SVC_CLI_BOT_GITHUB_TOKEN }}
         with:
-          files: ${{ github.event.repository.name }}-${{ github.ref_name }}.zip
+          files: ${{ github.event.repository.name }}-${{ github.ref_name }}.tar.gz
