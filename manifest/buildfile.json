@@ -4,8 +4,9 @@
     {
       "type": "metadata",
       "manifestFile": "manifest/package.xml",
+      "postDestructiveChanges": "manifest/postDestructive/destructiveChanges.xml",
       "testLevel": "NoTestRun",
-      "classPath": "force-app/main/default/classes",
+      "classPath": "force-app/main/default/classes",      
       "timeout": "33",
       "ignoreWarnings": true
     },
